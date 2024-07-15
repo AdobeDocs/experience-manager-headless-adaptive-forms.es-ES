@@ -4,8 +4,8 @@ description: Configuración de un entorno de desarrollo para una zona protegida 
 hide: true
 exl-id: befac9ad-d2c4-4705-96fc-f0ea0ef823b8
 source-git-commit: 41286ff4303e0f4d404deb113fd59d1499768da5
-workflow-type: ht
-source-wordcount: '1248'
+workflow-type: tm+mt
+source-wordcount: '1149'
 ht-degree: 100%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 ## Antes de empezar
 
-* Instale la [última versión de Git](https://git-scm.com/downloads) en su equipo local. Si no tiene experiencia previa con Git, consulte [Instalación de Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git). El repositorio de Git se utiliza para insertar los formularios y el código personalizado desarrollados en el entorno de desarrollo local, en el entorno de desarrollo de Cloud Service.
+* Instale la [última versión de Git](https://git-scm.com/downloads) en su equipo local. Si no tiene experiencia previa con Git, consulte [Instalación de Git](https://git-scm.com/book/es/v2/Getting-Started-Installing-Git). El repositorio de Git se utiliza para insertar los formularios y el código personalizado desarrollados en el entorno de desarrollo local, en el entorno de desarrollo de Cloud Service.
 
 * Instale [Node.js 16.13.0 o posterior](https://nodejs.org/es/download/) en su equipo local. Si no tiene experiencia previa con Node.js, consulte [Cómo instalar Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).
 
@@ -38,7 +38,7 @@ Para habilitar Formularios adaptables sin encabezado en la zona protegida de For
 <table style="table-layout:auto">
 <tr>
   <td>
-  1. Inicie sesión en <a href="https://experience.adobe.com/" >https://experience.adobe.com/</a> y seleccione la opción <b>Experience Manager</b>.
+  1. Inicie sesión en <a href="https://experience.adobe.com/" > https://experience.adobe.com/ </a> y seleccione la opción <b> Experience Manager </b>.
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program.html?lang=es#create-program">

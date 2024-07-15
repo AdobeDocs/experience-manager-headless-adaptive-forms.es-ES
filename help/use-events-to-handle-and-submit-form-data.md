@@ -3,7 +3,7 @@ title: Utilización de sucesos para gestionar y enviar datos de formularios adap
 description: Utilización de sucesos para gestionar y enviar datos de formularios adaptables sin encabezado
 hide: false
 source-git-commit: ddd353329dfe5b47734d904b9a5e684051becc5b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 100%
 

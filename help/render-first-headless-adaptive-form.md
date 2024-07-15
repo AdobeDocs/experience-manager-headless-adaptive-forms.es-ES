@@ -5,8 +5,8 @@ keywords: formulario adaptable sin encabezado
 hide: true
 exl-id: 99985fed-4a34-47d6-bb6f-79f81e1cd71b
 source-git-commit: 41286ff4303e0f4d404deb113fd59d1499768da5
-workflow-type: ht
-source-wordcount: '1560'
+workflow-type: tm+mt
+source-wordcount: '1490'
 ht-degree: 100%
 
 ---
@@ -28,7 +28,7 @@ Los formularios adaptables sin encabezado de Adobe Experience Manager proporcion
 * Configure las variables de [entorno de desarrollo](setup-development-environment.md) para permitirle crear y probar un formulario adaptable sin encabezado en su equipo local.
 * El software siguiente debe estar instalado en el equipo de desarrollo local:
    * [Kit de desarrollo de Java 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
-   * [Última versión de Git](https://git-scm.com/downloads). Si no tiene experiencia previa con Git, consulte [Instalación de Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+   * [Última versión de Git](https://git-scm.com/downloads). Si no tiene experiencia previa con Git, consulte [Instalación de Git](https://git-scm.com/book/es/v2/Getting-Started-Installing-Git).
    * [Node.js 16.13.0 o posterior](https://nodejs.org/es/download/). Si no tiene experiencia previa con Node.js, consulte [Cómo instalar Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).
    * [Maven 3.6 o posterior](https://maven.apache.org/download.cgi). Si no tiene experiencia previa con Maven, consulte [Instalación de Apache Maven](https://maven.apache.org/install.html?lang=es).
 
