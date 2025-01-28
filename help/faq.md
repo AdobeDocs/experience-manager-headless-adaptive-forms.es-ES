@@ -9,7 +9,7 @@ level: Beginner, Intermediate
 keywords: sin encabezado, formulario adaptable, preguntas frecuentes
 hide: false
 exl-id: 5bfc307d-96a3-4007-b65f-32176ecdb710
-source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
+source-git-commit: c46ac28e490a09d6f563c4b5673d30a53c277a69
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 100%
@@ -46,7 +46,7 @@ Puede utilizar la aplicación de inicio para procesar y previsualizar un formula
 
 ## ¿Es posible usar formularios adaptables sin encabezado con marcos personalizados?
 
-Los formularios adaptables sin encabezado se basan en la [especificación estándar](/help/assets/Headless-Adaptive-Form-Specification.pdf). Puede ampliar la especificación para utilizarla para crear componentes personalizados. Por ejemplo, componentes para Chakra UI, Vue.js y más.
+Los formularios adaptables sin encabezado se basan en la [especificación estándar](/help/assets/headless-adaptive-forms-specification.pdf). Puede ampliar la especificación para utilizarla para crear componentes personalizados. Por ejemplo, componentes para Chakra UI, Vue.js y más.
 
 ## ¿Los formularios adaptables sin encabezado admiten campos en cascada?
 

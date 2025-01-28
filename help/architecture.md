@@ -9,10 +9,10 @@ level: Beginner, Intermediate
 keywords: sin encabezado, formulario adaptable, arquitectura
 hide: false
 exl-id: ee7096d8-89e2-41e0-85e7-b26457df96fb
-source-git-commit: 56ad9d8fefc4933847061ba6007ad367984bd2e0
+source-git-commit: c46ac28e490a09d6f563c4b5673d30a53c277a69
 workflow-type: tm+mt
-source-wordcount: '893'
-ht-degree: 100%
+source-wordcount: '918'
+ht-degree: 97%
 
 ---
 
@@ -76,6 +76,8 @@ Además de proporcionar las API para validar las restricciones aplicadas a vario
 
 Todos estos componentes se incluyen en el Arquetipo de AEM. Cuando se crea un proyecto basado en el arquetipo AEM 37 o posterior para formularios adaptables sin encabezado, se incluye en el proyecto la versión más reciente de las bibliotecas incluidas anteriormente.
 
+* **Área de reproducción de código**: [Área de reproducción de código](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en) es un entorno interactivo diseñado para que los desarrolladores experimenten, aprendan y prueben las capacidades de Forms adaptable sin encabezado.
+
 **Aplicación iniciada**: Adobe también ha lanzado una aplicación para ayudarle a comenzar rápidamente con los formularios adaptables sin encabezado.
 
 <!-- **View Library (UI Layer)**: A custom form application built in a front-end language. You can use react, Angular, Flutter, NPM, Vue.js, Ionic, BootStrap, or any other language to built front end. You can also use the Headless adaptive forms Super Component, provided out-of-the-box, inside a react application to render a Headless adaptive form. Headless adaptive forms super component makes use of OOTB react spectrum -based form components to render the Headless adaptive form. 
@@ -86,8 +88,9 @@ Core-Components: It enables use to render an Adaptive Form using JSON structure.
 
 **Extensión de código de Visual Studio**: [extensión de código de Visual Studio](visual-studio-code-extension-for-headless-adaptive-forms.md) para crear una estructura JSON válida. Proporciona soporte y validación de IntelliSense para la estructura JSON de formularios junto con funciones comunes como añadir, eliminar o cambiar el nombre de componentes de una estructura JSON.
 
-**Especificaciones de Formularios adaptables sin encabezado versión 2.0** la especificación de Formularios adaptables versión 2.0 proporciona información detallada sobre todos los componentes, restricciones y métodos disponibles para definir formularios adaptables sin encabezado. La especificación está disponible en formato [PDF](/help/assets/Headless-Adaptive-Form-Specification.pdf).
-
 **API de HTTP y Java Script**: las [API de HTTP](https://opensource.adobe.com/aem-forms-af-runtime/api/) le permiten enumerar, recuperar, validar, enviar y seguir el estado de envío de los formularios sin encabezado. Las [API de JS](https://opensource.adobe.com/aem-forms-af-runtime/jsdocs/) le ayuda a utilizar formularios adaptables sin encabezado con cualquier marco de IU basado en JavaScript.
 
 **Fórmula JSON**: es una implementación de la gramática de la expresión de formularios para que le ayude a consultar la estructura JSON y a crear reglas para formularios adaptables sin encabezado. La gramática es una combinación de funciones y operadores similares a hojas de cálculo y [JMESPath](https://jmespath.org/) es un lenguaje de consulta JSON. Puede usar el [sitio de pruebas](https://opensource.adobe.com/json-formula/dist/index.html) para explorar la sintaxis y las capacidades de la fórmula JSON.
+
+**Especificaciones de Formularios adaptables sin encabezado versión 2.0** la especificación de Formularios adaptables versión 2.0 proporciona información detallada sobre todos los componentes, restricciones y métodos disponibles para definir formularios adaptables sin encabezado. La especificación está disponible en formato [PDF](/help/assets/headless-adaptive-forms-specification.pdf).
+
