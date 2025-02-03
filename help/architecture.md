@@ -10,9 +10,9 @@ keywords: sin encabezado, formulario adaptable, arquitectura
 hide: false
 exl-id: ee7096d8-89e2-41e0-85e7-b26457df96fb
 source-git-commit: c46ac28e490a09d6f563c4b5673d30a53c277a69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '918'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -76,7 +76,7 @@ Además de proporcionar las API para validar las restricciones aplicadas a vario
 
 Todos estos componentes se incluyen en el Arquetipo de AEM. Cuando se crea un proyecto basado en el arquetipo AEM 37 o posterior para formularios adaptables sin encabezado, se incluye en el proyecto la versión más reciente de las bibliotecas incluidas anteriormente.
 
-* **Área de reproducción de código**: [Área de reproducción de código](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en) es un entorno interactivo diseñado para que los desarrolladores experimenten, aprendan y prueben las capacidades de Forms adaptable sin encabezado.
+* **Sitio de pruebas de código**: [Sitio de pruebas de código](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=es) es un entorno interactivo diseñado para que los desarrolladores experimenten, aprendan y prueben las capacidades de Formularios adaptables sin encabezado.
 
 **Aplicación iniciada**: Adobe también ha lanzado una aplicación para ayudarle a comenzar rápidamente con los formularios adaptables sin encabezado.
 

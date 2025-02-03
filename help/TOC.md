@@ -6,9 +6,9 @@ feature: Adaptive Forms
 role: Developer
 hide: false
 source-git-commit: c46ac28e490a09d6f563c4b5673d30a53c277a69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '144'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -30,8 +30,8 @@ ht-degree: 95%
 + Creación de formularios adaptables sin encabezado {#authoring-headless-adaptive-forms}
    + [Creación de un formulario adaptable sin encabezado con el editor de formularios adaptables](create-a-headless-adaptive-form.md)
 + Referencia del desarrollador {#developer-reference}
-   + [Portal para desarrolladores](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=en)
-   + [Área de reproducción de código](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en)
+   + [Portal para desarrolladores](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=es)
+   + [Sitio de pruebas de código](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=es)
    + [API de formularios adaptables sin encabezado](https://opensource.adobe.com/aem-forms-af-runtime/api/)
 + [Preguntas frecuentes](faq.md)
 + [Solución de problemas](troubleshooting.md)
