@@ -6,10 +6,10 @@ seo-description: Learn how to enable headless adaptive forms on AEM 6.5 Forms wi
 contentOwner: Khushwant Singh
 role: Admin
 exl-id: e1a5e7e0-d445-4cca-b8d7-693d9531f075
-source-git-commit: 999c3d092d03d7a82363bc94ce79ceb33bf0df7e
+source-git-commit: d791daa149d0380b03bb6ba9776db47440feea02
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 100%
+source-wordcount: '724'
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ Al implementar el proyecto basado en el arquetipo 41 o posterior en las instanci
 
 Antes de habilitar formularios adaptables sin encabezado en el entorno de AEM 6.5 Forms,
 
-* [Actualizar al Service Pack 16 de AEM 6.5 Forms (6.5.16.0) o posterior](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=es).
+* [Actualice a AEM 6.5 Forms Service Pack 16 (6.5.16.0) o posterior](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=es).
 
 * Instalar la última versión de [Apache Maven](https://maven.apache.org/download.cgi).
 
@@ -48,7 +48,7 @@ Para crear un proyecto basado en el arquetipo de AEM 41 o [posterior](https://gi
       -D appId="myform" ^
       -D groupId="com.myform" ^
       -D includeFormsenrollment="y" ^
-      -D aemVersion="6.5.15" 
+      -D aemVersion="6.5.23" 
    ```
 
    * Linux o Apple macOS
@@ -62,14 +62,13 @@ Para crear un proyecto basado en el arquetipo de AEM 41 o [posterior](https://gi
       -D appId="myform" \
       -D groupId="com.myform" \
       -D includeFormsenrollment="y" \
-      -D aemVersion="6.5.15" 
+      -D aemVersion="6.5.23" 
    ```
 
-   Cuando ejecute el comando anterior, asegúrese de tener en cuenta los siguientes puntos:
+   Cuando ejecute el comando anterior, asegúrese de tener en cuenta lo siguiente:
 
    * Actualice el comando para reflejar los valores específicos de su entorno, incluidos appTitle, appId y groupId. Además, establezca los valores de includeFormsenrollment en &#39;y&#39;. Si utiliza el Portal de Forms, establezca la opción _includeExamples=y_ para que incluya los componentes principales del Portal de Forms en el proyecto.
 
-   * No cambie “aemVersion” de 6.5.15.0 por nada más.
 
 1. (Solo para proyectos basados en la versión 41 del arquetipo) Una vez creado el proyecto de arquetipo de AEM, habilite las temáticas para formularios adaptables basados en componentes principales. Para habilitar las temáticas, haga lo siguiente:
 
@@ -93,8 +92,6 @@ Para crear un proyecto basado en el arquetipo de AEM 41 o [posterior](https://gi
 
    1. Abra la [Carpeta de proyecto de arquetipo de AEM]/pom.xml para editarla.
    1. Establezca la versión de `core.forms.components.version` y `core.forms.components.af.version` a la versión [Últimos componentes principales de Forms](https://github.com/adobe/aem-core-forms-components/tree/release/650).
-
-      ![Mencione la versión más reciente de los componentes principales de formularios](/help/assets/latest-forms-component-version.png)
 
    1. Guarde y cierre el archivo.
 
