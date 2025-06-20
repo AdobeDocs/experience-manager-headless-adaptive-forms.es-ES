@@ -7,9 +7,9 @@ contentOwner: Khushwant Singh
 role: Admin
 exl-id: e1a5e7e0-d445-4cca-b8d7-693d9531f075
 source-git-commit: d791daa149d0380b03bb6ba9776db47440feea02
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '724'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Al implementar el proyecto basado en el arquetipo 41 o posterior en las instanci
 
 Antes de habilitar formularios adaptables sin encabezado en el entorno de AEM 6.5 Forms,
 
-* [Actualice a AEM 6.5 Forms Service Pack 16 (6.5.16.0) o posterior](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=es).
+* [Actualizar a AEM 6.5 Forms Service Pack 16 (6.5.16.0) o posterior](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=es).
 
 * Instalar la última versión de [Apache Maven](https://maven.apache.org/download.cgi).
 
@@ -65,7 +65,7 @@ Para crear un proyecto basado en el arquetipo de AEM 41 o [posterior](https://gi
       -D aemVersion="6.5.23" 
    ```
 
-   Cuando ejecute el comando anterior, asegúrese de tener en cuenta lo siguiente:
+   Cuando ejecute el comando anterior, asegúrese de tener en cuenta los siguientes puntos:
 
    * Actualice el comando para reflejar los valores específicos de su entorno, incluidos appTitle, appId y groupId. Además, establezca los valores de includeFormsenrollment en &#39;y&#39;. Si utiliza el Portal de Forms, establezca la opción _includeExamples=y_ para que incluya los componentes principales del Portal de Forms en el proyecto.
 
