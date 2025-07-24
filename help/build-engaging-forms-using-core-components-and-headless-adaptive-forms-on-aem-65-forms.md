@@ -1,8 +1,6 @@
 ---
 title: Creación de formularios atractivos con componentes principales y sin encabezado
-seo-title: Build Engaging Forms Using Core Components and Headless
-description: Creación de formularios atractivos con componentes principales y sin encabezado
-seo-description: Build Engaging Forms Using Core Components and Headless
+description: Cree una Forms atractiva con los componentes principales y sin encabezado.
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Headless
@@ -11,20 +9,20 @@ level: Beginner, Intermediate
 topic-tags: develop
 hide: true
 exl-id: 07a71aac-de38-4839-b8d6-b47c3f575eb3
-source-git-commit: 999c3d092d03d7a82363bc94ce79ceb33bf0df7e
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '2130'
-ht-degree: 100%
+source-wordcount: '2134'
+ht-degree: 67%
 
 ---
 
 # Genere formularios atractivos utilizando componentes principales y formularios adaptables sin encabezado en AEM 6.5 Forms {#build-engaging-forms-using-core-components-and-headless}
 
+<!-- This article and many others in this entire repo are completely missing the image ALT tags (descriptions) for each added image asset. That is impacting the CQI score for Experience Manager in a negative way. Be sure you take the time to add the required missing image ALT tags.  -->
+
 ## Información general del laboratorio {#lab-overview}
 
-En este laboratorio práctico, aprenderá lo siguiente:
-
-Utilizar AEM Forms para crear fácilmente formularios adaptables utilizando los componentes principales más recientes que son coherentes con AEM Sites, habilitar experiencias de captura de datos omnicanal al enviar los formularios adaptables como formularios sin encabezado a la web, dispositivos móviles y chat. También aprenderá las prácticas recomendadas sobre el estilo, las personalizaciones y el desarrollo front-end.
+En este laboratorio práctico, aprenderá a utilizar AEM Forms con los componentes principales más recientes (alineados con AEM Sites) para crear formularios adaptables rápidamente. Ofrezca estos formularios como experiencias sin encabezado a canales web, móviles y de chat para una captura de datos omnicanal sin problemas. También aprenderá las prácticas recomendadas sobre el estilo, las personalizaciones y el desarrollo front-end.
 
 ## Puntos clave {#key-takeaways}
 
@@ -36,21 +34,21 @@ Utilizar AEM Forms para crear fácilmente formularios adaptables utilizando los 
 
 ## Antes de comenzar {#pre-requisites}
 
-Para usar este laboratorio práctico:
+Para utilizar este laboratorio práctico:
 
 * Instale la [última versión de Git](https://git-scm.com/downloads). Si es nuevo en Git, consulte [Instalación de Git](https://git-scm.com/book/es/v2/Getting-Started-Installing-Git).
 
-* Instale [Node.js 16.13.0 o posterior](https://nodejs.org/es/download/). Si no tiene experiencia previa con Node.js, consulte [Cómo instalar Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).
+* Instalar [Node.js 16.13.0 o posterior](https://nodejs.org/es/download/). <!-- URL IS 404! If you are new to Node.js, see [How to install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).-->
 
-* [Habilite formularios adaptables sin encabezado](enable-headless-adaptive-forms-and-core-components.md) en el entorno AEM 6.5 Forms.
+* [Habilitar Forms adaptable sin encabezado](enable-headless-adaptive-forms-and-core-components.md) en su entorno de AEM 6.5 Forms.
 
-* Instale [Microsoft Visual Studio Code](https://code.visualstudio.com/download) o cualquier editor de texto sin formato. Los ejemplos del documento utilizan código de Microsoft Visual Studio Code.
+* Instale [Microsoft Visual Studio Code](https://code.visualstudio.com/download) o cualquier editor de texto sin formato. Los ejemplos de este documento utilizan código de Microsoft Visual Studio.
 
 ## Lección 1 {#lesson-1}
 
 ### Objetivo {#lesson-1-objectives}
 
-Familiarícese con el entorno AEM Forms 6.5
+Familiarícese con el entorno de AEM 6.5 Forms.
 
 ### Contexto de la lección {#lesson-1-context}
 
@@ -81,13 +79,13 @@ Cree un formulario adaptable utilizando los componentes principales más recient
 
 ### Contexto de la lección
 
-En esta lección, como usuario empresarial, creará un formulario adaptable para varios canales como web, móvil y chat mediante el editor de formularios adaptables con componentes principales listos para usarse estandarizados para la captura de datos.
+Como usuario empresarial, utilizará el editor de Forms adaptable y sus componentes principales listos para usar para crear un formulario adaptable. A continuación, puede enviar el formulario a los canales web, móvil y de chat para capturar datos.
 
 ### Ejercicio
 
 1. Cree un punto final de envío para el formulario:
 
-   1. Abra <https://requestbin.com/> en una nueva pestaña del explorador.
+   1. Abra <https://pipedream.com/requestbin> en una nueva pestaña del explorador.
       ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
 
    1. Haga clic en **Crear un grupo público** y copie la dirección URL del punto final.
@@ -97,7 +95,7 @@ En esta lección, como usuario empresarial, creará un formulario adaptable para
 
 1. Cree un formulario adaptable:
 
-   1. En la pestaña del explorador empleada en la Lección 1, vaya a la interfaz web de AEM Forms y a **Formularios** > **Formularios y documentos**.
+   1. En la pestaña del explorador que se usa en la lección 1, vaya a la interfaz web de AEM Forms y luego a **Forms** > **Forms y documentos**.
 
    1. Haga clic en **Crear** y seleccione Formulario adaptable.
       ![](/help/assets/creating-adaptive-form-6-5.png){width="50%" align="left"}
@@ -121,15 +119,19 @@ En esta lección, como usuario empresarial, creará un formulario adaptable para
       ![](/help/assets/contact-us-headless-adaptive-form.png){width="50%" align="left"}
 
 
-   1. Abra el Explorador de contenido, haga clic en el icono Propiedades del contenedor de guía y abra la pestaña **Envío**. Seleccione la acción de envío **Enviar al punto final REST**, seleccione la opción **Habilitar petición POST**, especifique el punto final REST creado en la lección 2 en la **URL de la petición POST** y haga clic en el icono **Listo**.
+   1. Abra el Explorador de contenido, haga clic en el icono Propiedades del contenedor de la guía y abra la ficha **Envío**.
+
+   1. Seleccione la acción de envío **Enviar al extremo REST**
+
+   1. Seleccione la opción **Habilitar la solicitud POST** y especifique el extremo REST creado en la lección 2 en el cuadro de texto **URL para la solicitud POST**; a continuación, haga clic en el icono **Listo**.
 
       ![](/help/assets/configure-submit-action.png){width="50%" align="left"}
 
 1. Publique un formulario adaptable:
 
-   1. Abra la interfaz de usuario de AEM, vaya hasta **Formularios** > **Formularios y documentos**. Seleccione el formulario creado en el paso anterior y haga clic en **Publicar**.
+   1. Abra la interfaz de usuario de AEM, vaya hasta **Formularios** > **Formularios y documentos**. Seleccione el formulario creado en el paso anterior y haga clic en **`Publish`**.
 
-   1. En el cuadro de diálogo Publicar archivos, haga clic en **Publicar**. Se muestra el mensaje de éxito.
+   1. En el cuadro de diálogo **Publicar Assets**, haga clic en **Publicar**. Se muestra el mensaje de éxito.
 
 ## Lección 3
 
@@ -143,7 +145,7 @@ En esta lección, como desarrollador front-end, aprenderá a actualizar fácilme
 
 ### Ejercicio
 
-Configure el repositorio local del tema:
+Configure un repositorio local de la temática:
 
 1. Abra el símbolo del sistema o shell con derechos de administrador:
 
@@ -186,7 +188,7 @@ Configure el repositorio local del tema:
 
 1. Establezca los siguientes valores para las variables del archivo .env y guarde el archivo:
 
-   * **AEM_URL**: especifique la URL de una instancia **publicación**. Por ejemplo, `https://localhost:4502/`
+   * **AEM_URL**: especifica la URL de una instancia de **publicación**. Por ejemplo, `https://localhost:4502/`
 
    * **AEM_ADAPTIVE_FORM**: especifique el nombre del formulario. Por ejemplo, `contact-us`.
 
@@ -205,10 +207,10 @@ Configure el repositorio local del tema:
 
    >[!NOTE]
    >
-   > * Si recibe un mensaje pidiendo que actualice npm a través del comando `npm notice Run npm nstall -g npm@9.6.0`, ignore el mensaje.
-   > * No ejecute otros comandos npm a menos que se indique en el libro de trabajo.
+   > * Si recibe un mensaje pidiéndole que actualice `npm` mediante el comando `npm notice Run npm nstall -g npm@9.6.0`, ignore el mensaje.
+   > * A menos que se le indique en el libro, no ejecute otros comandos de `npm`.
 
-1. Ejecute el siguiente comando para obtener una vista previa del formulario.
+1. Ahora, ejecute el siguiente comando para obtener una vista previa del formulario.
 
    ```Shell
    npm run live
@@ -220,7 +222,7 @@ Configure el repositorio local del tema:
 
    >[!NOTE]
    >
-   >Si aparece una pantalla en blanco en el explorador después de ejecutar el comando `npm run live` durante más de tres o cuatro minutos, cambie `localhost` en la dirección URL del explorador a 127.0.0.1 y pulse **Intro**.
+   >Si aparece una pantalla en blanco en el explorador después de ejecutar el comando `npm run live` durante más de 3 a 4 minutos, cambie `localhost` en la dirección URL del explorador a 127.0.0.1 y pulse **Intro**.
 
 
    ![](/help/assets/contact-us-headless-adaptive-form-with-canvas-theme.png){width="50%" align="left"}
@@ -236,26 +238,26 @@ Configure el repositorio local del tema:
 
 1. Configure el color del **$error** en **#5736eb**, y guarde el archivo.
 
-1. Actualice el explorador y envíe el formulario. El color del error del aviso en el campo de nombre ha cambiado como corresponde.
+1. Actualice el explorador y envíe el formulario. Observe que el color del error en el campo de nombre ha cambiado en consecuencia.
 
    ![](/help/assets/error-color-after.png)
 
-1. En el símbolo del sistema, presione **CTRL+C**, escriba **Y**, y pulse la tecla **Intro** para finalizar el proceso de npm. Es importante detener el servidor npm para que no entre en conflicto con el siguiente conjunto de ejercicios.
+1. En el símbolo del sistema, presione **CTRL+C**, escriba **Y** y presione la tecla **Intro** para finalizar el proceso npm. Es importante detener el servidor npm para que no entre en conflicto con el siguiente conjunto de ejercicios.
 1. Cierre las ventanas de Visual Studio Code y del símbolo del sistema.
 
 ## Lección 4
 
 ### Objetivo
 
-Procese el formulario en web/móvil y otras interfaces como un formulario sin encabezado.
+Procese el formulario en interfaces web/móviles y de otro tipo como un formulario sin encabezado.
 
 ### Contexto de la lección
 
-En esta lección, como desarrollador de front-end, aprenderá a procesar el formulario adaptable creado anteriormente como un formulario sin encabezado mediante el marco de trabajo de diseño del espectro React.
+En esta lección, como desarrollador de front-end, aprenderá a procesar el formulario adaptable creado anteriormente como un formulario sin encabezado mediante un marco de trabajo de diseño de React spectrum.
 
 ### Ejercicio
 
-Configure el repositorio local mediante el proyecto de inicio de reacción:
+Configure un repositorio local con el proyecto de inicio React:
 
 1. Abra el símbolo del sistema con derechos de administrador.
 
@@ -292,7 +294,7 @@ Configure el repositorio local mediante el proyecto de inicio de reacción:
 
 Para procesar el formulario alojado en su entorno de publicación:
 
-1. Cambie el nombre del archivo env_template a .env. Para cambiar el nombre, haga clic con el botón derecho en el archivo **env_template** y seleccione la opción **Cambiar nombre**.
+1. Cambie el nombre del archivo env_template al archivo .env. Para cambiar el nombre, haga clic con el botón derecho en el archivo **env_template** y seleccione la opción **Cambiar nombre**.
 
    ![](/help/assets/screenshot2028117629.png){width="30%" align="left"}
 
@@ -330,7 +332,7 @@ Para procesar el formulario alojado en su entorno de publicación:
    >[!NOTE]
    >
    > 
-   > Si aparece una pantalla en blanco en el explorador después de ejecutar el comando `npm start` durante más de tres o cuatro minutos, cambie `localhost` en la dirección URL del explorador a 127.0.0.1 y pulse **Intro**.
+   > Si aparece una pantalla en blanco en el explorador después de ejecutar el comando `npm start` durante más de 3 a 4 minutos, cambie `localhost` en la dirección URL del explorador a 127.0.0.1 y pulse **Intro**.
 
    ![](/help/assets/headless-adaptive-form-lab.png)
 
@@ -341,13 +343,13 @@ Haga cambios en el formulario del servidor como usuario empresarial y vea los ca
 1. Seleccione el formulario **Contáctenos** y haga clic en **Editar.** Abre el formulario en el editor de formularios adaptables.
 
 
-1. Seleccione el campo **Número de contacto** y haga clic en el **icono Editar (icono de lápiz)** en la barra de herramientas. Si no puede ver la barra de herramientas emergente, cambie al modo de edición haciendo clic en el botón **Editar** en la parte superior derecha, a la izquierda del botón **Vista previa**.
+1. Seleccione el campo **Número de contacto** y haga clic en el **icono Editar (icono de lápiz)** en la barra de herramientas. Si no puede ver la barra de herramientas emergente, cambie al modo Editar. Haga clic en el botón **Editar** en la parte superior derecha e izquierda del botón **Vista previa**.
 
    ![](/help/assets/change-field-title.png){width="50%" align="left"}
 
 1. Cambie la etiqueta a **Número de móvil**. Haga clic en cualquier espacio vacío del formulario y se guardarán los cambios realizados en él.
 
-Publique el formulario actualizado para propagar los cambios al entorno de publicación.
+Vamos a publicar el formulario actualizado para propagar los cambios en el entorno publicado.
 
 1. En la pestaña de la interfaz de administración de AEM Forms, seleccione el formulario de contacto y haga clic en **Cancelar la publicación**. Si no ve el botón **Cancelar la publicación**, vaya al paso 3 para publicar los cambios directamente.
 
@@ -363,7 +365,7 @@ Publique el formulario actualizado para propagar los cambios al entorno de publi
 
    ![](/help/assets/headless-adaptive-form.png)
 
-1. Abra la ventana del símbolo del sistema que se utiliza para iniciar el proyecto **react-starter-kit-aem-headless-forms**, pulse **CTRL+C** y, a continuación, introduzca **Y** y pulse la tecla Intro para finalizar el proceso de npm. Es importante detener el servidor npm para que no entre en conflicto con el siguiente conjunto de ejercicios.
+1. Abra la ventana del símbolo del sistema que se utiliza para iniciar el proyecto **react-starter-kit-aem-headless-forms**, pulse **CTRL+C** y, a continuación, introduzca **Y** y pulse la tecla Intro para terminar el proceso de npm. Es importante detener el servidor npm para que no entre en conflicto con el siguiente conjunto de ejercicios.
 
 1. Cierre las ventanas de Visual Studio Code y del símbolo del sistema.
 
@@ -380,7 +382,7 @@ En esta lección, como desarrollador de front-end, aprenderá a procesar el form
 
 ### Ejercicio
 
-Configure el repositorio local mediante el proyecto de inicio de la IU de Material:
+Configure un repositorio local con el proyecto de inicio de la interfaz de usuario de Material:
 
 1. Abra el símbolo del sistema con derechos de administrador.
 
@@ -392,7 +394,7 @@ Configure el repositorio local mediante el proyecto de inicio de la IU de Materi
    cd git
    ```
 
-1. Ejecute los siguientes comandos en el orden indicado para crear una carpeta denominada mui y vaya a esta utilizando los siguientes comandos:
+1. Ejecute los siguientes comandos en el orden indicado para crear una carpeta denominada `mui` y desplazarse a la carpeta `mui` mediante los siguientes comandos:
 
    ```Shell
    mkdir mui
@@ -420,7 +422,7 @@ Configure el repositorio local mediante el proyecto de inicio de la IU de Materi
 
 Para procesar el formulario alojado en su entorno de publicación:
 
-1. Cambie el nombre del archivo **env_template** a **.env**. Para cambiar el nombre, haga clic con el botón derecho en el archivo **env_template** y seleccione **Cambiar nombre**.
+1. Cambie el nombre del archivo **env_template** al archivo **.env**. Para cambiar el nombre, haga clic con el botón derecho en el archivo **env_template** y seleccione **Cambiar nombre**.
 
    ![](/help/assets/screenshot2028126629.png){width="30%" align="left"}
 
@@ -451,7 +453,7 @@ Para procesar el formulario alojado en su entorno de publicación:
 
    >[!NOTE]
    >
-   >Si aparece una pantalla en blanco en el explorador después de ejecutar el comando `npm start` durante más de tres o cuatro minutos, cambie `localhost` en la dirección URL del explorador a 127.0.0.1 y pulse **Intro**.
+   >Si aparece una pantalla en blanco en el explorador después de ejecutar el comando `npm start` durante más de 3 a 4 minutos, cambie `localhost` en la dirección URL del explorador a 127.0.0.1 y pulse **Intro**.
 
    ![](/help/assets/google-mui-form.png)
 
@@ -463,7 +465,7 @@ Crear una apariencia alternativa del formulario sin encabezado mediante las vari
 
 ### Contexto de la lección
 
-En esta lección, como desarrollador front-end, aprenderá a crear una representación alternativa de diferentes componentes mediante la IU de Material para el formulario adaptable creado anteriormente por el usuario empresarial.
+Como desarrollador front-end, aprenderá a crear versiones alternativas de la interfaz de usuario de Material de varios componentes en esta lección. También las aplicará al formulario adaptable que el usuario empresarial creó anteriormente.
 
 ### Ejercicio
 
@@ -477,7 +479,7 @@ Actualice la variación de los componentes en el proyecto sin encabezado. Cambia
    //const Cmp = \'outlined\' === appliedCssClassNames ? OutlinedInput: Input;
    ```
 
-1. Agregue lo siguiente en la línea 105 para utilizar una variante diferente de componente y guardar el archivo. Utilice la combinación de teclas **CTRL + S** para guardar el archivo.
+1. Agregue lo siguiente en la línea 105 para utilizar una variante diferente del componente y guardar el archivo. Utilice la combinación de teclas **CTRL + S** para guardar el archivo.
 
    ```Shell
    const Cmp = OutlinedInput;
@@ -485,18 +487,18 @@ Actualice la variación de los componentes en el proyecto sin encabezado. Cambia
 
    ![](/help/assets/aem65-lab-code-update.png)
 
-   Es esencial utilizar correctamente las mayúsculas y minúsculas para la variante “OutinedInput”, de lo contrario la compilación fallaría. La compilación del entorno de desarrollo local comienza automáticamente con el símbolo del sistema. Espere hasta que vea el siguiente mensaje
+   Es esencial utilizar mayúsculas correctas para la variante &#39;OutinedInput&#39;; de lo contrario, la compilación fallaría. La compilación del entorno de desarrollo local comienza automáticamente con el símbolo del sistema. Espere hasta que vea el siguiente mensaje
 
    `webpack 5.75.0 compiled with 3 warnings in 6659 ms`
    `inside proxy req`
    `setting new origin header`
 
-1. Actualice el navegador, si no se actualiza automáticamente, para ver que el componente de entrada de texto utiliza una variante diferente.
+1. Actualice el explorador, si no se actualiza automáticamente, para ver cómo el componente de entrada de texto utiliza una variante diferente.
 
    ![](/help/assets/screenshot2028127729.png){width="50%" align="left"}
 
 
-   Este cambio se produce para usuarios finales sin ningún cambio en la definición del formulario en el servidor de AEM Forms y es específico para el canal sin encabezado que se está considerando. Por ejemplo, el canal web en este laboratorio.
+   Este cambio se produce para usuarios finales sin ningún cambio en la definición del formulario en el servidor de AEM Forms y es específico para el canal sin encabezado que se está considerando. Por ejemplo, un canal web en este laboratorio.
 
    ![](/help/assets/aem65-lab-mui-style-update.png)
 
@@ -522,16 +524,16 @@ No, los formularios sin encabezado utilizan la misma métrica de valor de licenc
 
 ## Pasos siguientes
 
-Ahora que ha aprendido a crear formularios adaptables y distribuirlos en varios canales mediante formularios sin encabezado, intente poner en práctica sus nuevas habilidades. Diviértase y siga creando y ofreciendo experiencias de captura de datos excepcionales a sus usuarios finales, donde estén, a mayor escala.
+Ahora sabe cómo crear formularios adaptables y entregarlos en varios canales con formularios sin encabezado. Utilice esas habilidades para crear experiencias de captura de datos escalables y de alta calidad independientemente de dónde se encuentren los usuarios.
 
 ## Recursos
 
-* [Introducción a los componentes principales del formulario adaptable](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es)
+* [Introducción a los componentes principales del formulario adaptable](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/introduction)
 
-* [Creación de formularios adaptables con componentes principales](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=es)
+* [Creación de formularios adaptables con componentes principales](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
 
-* [Actualización del estilo para el AF basado en componentes principales](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=es)
+* [Actualización del estilo para el AF basado en componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
 
-* [Formularios adaptables sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=es)
+* [Formularios adaptables sin encabezado](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/overview)
 
-* [Uso del kit de inicio React sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form.html?lang=es)
+* [Uso de un kit de inicio React sin encabezado](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)

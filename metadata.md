@@ -8,10 +8,10 @@ git-repo: https://github.com/AdobeDocs/experience-manager-headless-adaptive-form
 feature-set: Experience Manager Forms
 hide: true
 recommendations: noDisplay
-source-git-commit: 0d411963ac2f191e104144deb882eac9d089aa50
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '53'
-ht-degree: 98%
+source-wordcount: '51'
+ht-degree: 74%
 
 ---
 
@@ -20,4 +20,4 @@ ht-degree: 98%
 
 El archivo metadata.md incluye metadatos de repositorios que pasan a los archivos TOC.md de la guía del usuario en el repositorio. Si desea cambiar el contenido de metadata.md para cualquier guía de usuario, hágalo en cualquier archivo TOC.md.
 
-Consulte [Metadatos](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/editing/user-guide-setup/metadata.html?lang=es) para una lista de valores válidos para **solución**, **producto** y **tipo**.
+Vea `https://experienceleague.corp.adobe.com/docs/authoring-guide-exl/using/authoring/using-metadata.html` para obtener una lista de valores válidos para **solución**, **producto** y **tipo**.

@@ -1,15 +1,14 @@
 ---
 title: Habilitación de formularios adaptables sin encabezado en AEM 6.5 Forms
 seo-title: Step-by-Step Guide for enabling Headless Adaptive Forms on AEM 6.5 Forms
-description: Aprenda a habilitar formularios adaptables sin encabezado en AEM 6.5 Forms con nuestra guía paso a paso. Nuestro tutorial le guiará por el proceso, lo que facilita la integración de esta potente función en su sitio web y la mejora de su experiencia de usuario.
-seo-description: Learn how to enable headless adaptive forms on AEM 6.5 Forms with our step-by-step guide. Our tutorial walks you through the process, making it easy to integrate this powerful feature into your website and improve your user experience.
+description: Aprenda a habilitar formularios adaptables sin encabezado en AEM 6.5 Forms con la guía paso a paso de Adobe. Este tutorial le guiará por el proceso, lo que facilita la integración de esta potente función en su sitio web y la mejora de su experiencia de usuario.
 contentOwner: Khushwant Singh
 role: Admin
 exl-id: e1a5e7e0-d445-4cca-b8d7-693d9531f075
-source-git-commit: d791daa149d0380b03bb6ba9776db47440feea02
-workflow-type: ht
-source-wordcount: '724'
-ht-degree: 100%
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+workflow-type: tm+mt
+source-wordcount: '728'
+ht-degree: 71%
 
 ---
 
@@ -17,25 +16,25 @@ ht-degree: 100%
 
 Para habilitar Formularios adaptables sin encabezado en el entorno de AEM 6.5 Forms configure un proyecto basado en el arquetipo 41 o posterior de AEM e impleméntelo en todas las instancias de autor y publicación.
 
-Al implementar el proyecto basado en el arquetipo 41 o posterior en las instancias de AEM 6.5 Forms, puede tener la posibilidad de [crear formularios adaptables basados en componentes principales](create-a-headless-adaptive-form.md). Estos formularios se representan en formato JSON y se utilizan como formularios adaptables con encabezado y sin encabezado, lo que permite una mayor flexibilidad y personalización en una amplia gama de canales, incluidas aplicaciones móviles, web y nativas.
+Al implementar el proyecto basado en el arquetipo 41 o posterior en las instancias de AEM 6.5 Forms, puede tener la posibilidad de [crear formularios adaptables basados en componentes principales](create-a-headless-adaptive-form.md). Estos formularios se representan en formato JSON y se utilizan como Forms adaptable `Headful` y `Headless`, lo que permite una mayor flexibilidad y personalización en una amplia gama de canales, incluidas las aplicaciones móviles, web y nativas.
 
 ## Requisitos previos {#prerequisites}
 
-Antes de habilitar formularios adaptables sin encabezado en el entorno de AEM 6.5 Forms,
+Antes de habilitar Forms adaptable sin encabezado en el entorno de AEM 6.5 Forms,
 
-* [Actualizar a AEM 6.5 Forms Service Pack 16 (6.5.16.0) o posterior](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=es).
+* [Actualizar a AEM 6.5 Forms Service Pack 16 (6.5.16.0) o posterior](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
 
 * Instalar la última versión de [Apache Maven](https://maven.apache.org/download.cgi).
 
 * Instale un editor de texto sin formato. Por ejemplo, Microsoft Visual Studio Code.
 
-## Crear e implementar el último proyecto basado en el arquetipo de AEM
+## Cree e implemente el último proyecto basado en AEM Archetype
 
 Para crear un proyecto basado en el arquetipo de AEM 41 o [posterior](https://github.com/adobe/aem-project-archetype) e implementarlo en todas las instancias de autor y publicación:
 
 1. Inicie sesión en el equipo, aloje y ejecute la instancia de AEM 6.5 Forms como administrador.
 1. Abra el símbolo de comando o el terminal.
-1. Ejecute el siguiente comando para crear un proyecto basado en el arquetipo 41 de AEM:
+1. Ejecute el siguiente comando para crear un proyecto basado en el tipo de archivo 41 de AEM:
 
    * Microsoft Windows
 
@@ -51,7 +50,7 @@ Para crear un proyecto basado en el arquetipo de AEM 41 o [posterior](https://gi
       -D aemVersion="6.5.23" 
    ```
 
-   * Linux o Apple macOS
+   * Linux® o Apple macOS
 
    ```Shell
       mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate \
@@ -67,7 +66,7 @@ Para crear un proyecto basado en el arquetipo de AEM 41 o [posterior](https://gi
 
    Cuando ejecute el comando anterior, asegúrese de tener en cuenta los siguientes puntos:
 
-   * Actualice el comando para reflejar los valores específicos de su entorno, incluidos appTitle, appId y groupId. Además, establezca los valores de includeFormsenrollment en &#39;y&#39;. Si utiliza el Portal de Forms, establezca la opción _includeExamples=y_ para que incluya los componentes principales del Portal de Forms en el proyecto.
+   * Actualice el comando para reflejar los valores específicos de su entorno, incluidos appTitle, appId y groupId. Además, establezca los valores de includeFormsenrollment en `y`. Si utiliza el Portal de Forms, establezca la opción _includeExamples=y_ para que incluya los componentes principales del Portal de Forms en el proyecto.
 
 
 1. (Solo para proyectos basados en la versión 41 del arquetipo) Una vez creado el proyecto de arquetipo de AEM, habilite las temáticas para formularios adaptables basados en componentes principales. Para habilitar las temáticas, haga lo siguiente:
@@ -88,7 +87,7 @@ Para crear un proyecto basado en el arquetipo de AEM 41 o [posterior](https://gi
 
    1. Guarde y cierre el archivo.
 
-1. Actualizar el proyecto para que incluya la última versión de los componentes principales de Forms:
+1. Actualice el proyecto para incluir la versión más reciente de los componentes principales de Forms:
 
    1. Abra la [Carpeta de proyecto de arquetipo de AEM]/pom.xml para editarla.
    1. Establezca la versión de `core.forms.components.version` y `core.forms.components.af.version` a la versión [Últimos componentes principales de Forms](https://github.com/adobe/aem-core-forms-components/tree/release/650).
@@ -112,22 +111,22 @@ Para crear un proyecto basado en el arquetipo de AEM 41 o [posterior](https://gi
 
    Una vez que el proyecto de arquetipo de AEM se haya compilado correctamente, se generará un paquete de AEM. Puede encontrar el paquete en [Carpeta de proyecto de arquetipo de AEM]\all\target\[appid].all-[versión].zip
 
-1. Utilice el [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=es) para implementar la [Carpeta de proyecto de arquetipo de AEM]\all\target\[appid].all-[versión].zip en el entorno de instancias de autor y publicación.
+1. Utilice el [Administrador de paquetes](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager) para implementar la [Carpeta de proyecto de arquetipo de AEM]\all\target\[appid].all-[versión].zip en el entorno de instancias de autor y publicación.
 
 >[!NOTE]
 >
 >
 >
->Si tiene dificultades para acceder al cuadro de diálogo de inicio de sesión en una instancia de publicación para instalar el paquete a través del Administrador de paquetes, intente iniciar sesión a través de la siguiente URL: http://[URL del servidor de publicación]:[PUERTO]/system/console. Esto le permite acceder al inicio de sesión en la instancia de publicación, lo que le permite continuar con el proceso de instalación.
+>Si tiene dificultades para acceder al cuadro de diálogo de inicio de sesión en una instancia de publicación para instalar el paquete a través del Administrador de paquetes, intente iniciar sesión a través de la siguiente URL: `http://[Publish Server URL]`:[PUERTO]/sistema/consola. Este proceso le permite acceder para iniciar sesión en la instancia de publicación y continuar con el proceso de instalación.
 
 
 Los componentes principales están habilitados para su entorno. Se implementan una plantilla de formularios adaptables basados en componentes principales en blanco y una temática de Lienzo 3.0 que le permiten [crear formularios adaptables basados en los componentes principales](create-a-headless-adaptive-form.md).
 
 ## Preguntas frecuentes
 
-### ¿Qué son los componentes principales?
+### ¿Cuáles son los componentes principales?
 
-Los [componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) son un conjunto de componentes estandarizados de la administración de contenido web (WCM) para AEM con el objetivo de acelerar el tiempo de desarrollo y reducir el coste de mantenimiento de sus sitios web.
+Los [componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/introduction) son un conjunto de componentes estandarizados de administración de contenido web (WCM) para AEM a fin de acelerar el tiempo de desarrollo y reducir el costo de mantenimiento de los sitios web.
 
 ### ¿Qué funcionalidades completas se añaden al habilitar los componentes principales?
 

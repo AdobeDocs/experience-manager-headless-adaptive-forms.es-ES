@@ -1,8 +1,8 @@
 ---
-source-git-commit: 103a0312291d4831249d32e5fea7d20e0fc99d10
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 100%
+source-wordcount: '276'
+ht-degree: 47%
 
 ---
 # Contribución
@@ -18,7 +18,7 @@ Este proyecto se adhiere al [código de conducta](code-of-conduct.md) de Adobe. 
 
 ## Documentación de la Guía de colaborador
 
-Consulte la [Guía de colaborador](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=es).
+Consulte la [Guía de colaborador](https://experienceleague.adobe.com/es/docs/contributor/contributor-guide/introduction).
 
 ## ¿Tiene alguna pregunta?
 
@@ -28,13 +28,11 @@ un consenso sobre la dirección del proyecto y solución de problemas dentro de 
 
 ## Contrato de licencia de colaborador
 
-Todas las contribuciones de terceros a este proyecto deben ir acompañadas por un contrato de licencia de colaborador firmado. Esto otorga permiso a Adobe para redistribuir sus contribuciones como parte del proyecto. [Firme nuestro contrato de licencia de colaborador](http://opensource.adobe.com/cla.html). Solo
-debe mandar un CLA de Adobe, así que si ya mandó uno en el pasado,
-con ese es suficiente.
+Los colaboradores deben firmar un acuerdo de licencia de colaborador antes de enviar cualquier contribución de terceros a este proyecto. Este acuerdo otorga permiso a Adobe para redistribuir las contribuciones como parte del proyecto. [Firmar el CLA de Adobe](https://opensource.adobe.com/cla.html). Solo debe mandar un CLA de Adobe, así que si ya mandó uno en el pasado, con ese es suficiente.
 
 ## Revisiones de código
 
-Todas las solicitudes deben llegar en forma de solicitudes “pull” y el comité de proyectos deberá revisarlas. Consulte la [documentación de las solicitudes “pull”](https://help.github.com/es/github/collaborating-with-issues-and-pull-requests/about-pull-requests) para obtener más información sobre cómo enviar solicitudes “pull”.
+Envíe todas las contribuciones como solicitudes de extracción y los supervisores del proyecto deben revisarlas. Consulte la [documentación de las solicitudes “pull”](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) para obtener más información sobre cómo enviar solicitudes “pull”.
 
 <!--
 Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when
@@ -43,13 +41,8 @@ submitting a pull request!
 
 ## De Colaborador a Miembro del comité
 
-¡Nos encantan las contribuciones de nuestra comunidad! Si desea ir un paso más allá del colaborador
-y convertirse en un Miembro del comité con acceso completo de escritura y voz en el proyecto, se le debe 
-invitar al proyecto. Los Miembros del comité actuales utilizan un método de candidatura interna
-que debe alcanzar un consenso básico (el silencio equivale a una aprobación) antes de emitir cualquier
-invitación. Si cree que está cualificado y desea participar en mayor profundidad,
-contacte con los Miembros del comité para hablar sobre eso.
+Adobe está encantado de recibir cualquier contribución y revisa su contribución. Si desea convertirse en un supervisor con acceso de escritura completo y tener voz en el proyecto, se le debe invitar al proyecto. Los supervisores existentes emplean un proceso de nominación interna que debe alcanzar un consenso diferido (el silencio es aprobación) antes de que se envíen invitaciones. Si cree que está cualificado y está interesado en participar de forma más activa, póngase en contacto con uno de los supervisores actuales para discutir los siguientes pasos.
 
 ## Problemas de seguridad
 
-Los problemas de seguridad no deben notificarse en este rastreador de problemas. En su lugar, [presente un problema a nuestros expertos en seguridad](https://helpx.adobe.com/es/security/alertus.html)
+Los problemas de seguridad no deben notificarse en este rastreador de problemas. En su lugar, [presente un problema a los expertos en seguridad de Adobe](https://helpx.adobe.com/es/security/alertus.html)

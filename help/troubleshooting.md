@@ -9,10 +9,10 @@ role: Admin, Developer
 level: Beginner, Intermediate
 hide: false
 exl-id: bfb7e688-d2be-4aaa-ac9b-147cbd74b516
-source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 100%
+source-wordcount: '127'
+ht-degree: 58%
 
 ---
 
@@ -22,17 +22,17 @@ ht-degree: 100%
 
 ### Problema
 
-Cuando se usa `mvn -PautoInstallPackage clean install` o comandos similares para implementar un proyecto de arquetipo AEM, el proyecto no consigue implementarse.
+Cuando se usan los comandos `mvn -PautoInstallPackage clean install` o similares para implementar un proyecto de tipo de archivo de AEM, el proyecto no se puede implementar.
 
 ### Motivo
 
-Puede deberse a una versión no compatible o a una instalación dañada de node.js o NPM.
+Puede deberse a una versión no compatible o a una instalación dañada de `node.js` o `NPM`.
 
 ### Solución
 
 1. [Quite completamente las instalaciones actuales de Node.JS](https://khushwantsehgal.wordpress.com/2022/06/28/how-to-remove-node-js-completely-from-windows-10/) de su entorno.
 
-1. Instale Node.JS 16.13.0 o posterior con NPM.
+1. Instale `node.JS 16.13.0` o posterior con `NPM`.
 
 1. Reinicie su equipo.
 
@@ -41,7 +41,7 @@ Puede deberse a una versión no compatible o a una instalación dañada de node.
 
 ### Problema
 
-Cuando se usa `mvn clean install` o comandos similares para implementar un proyecto de arquetipo AEM, el comando no se puede ejecutar.
+Cuando se usan los comandos `mvn clean install` o similares para implementar un proyecto de tipo de archivo AEM, el comando no se ejecuta.
 
 ### Motivo
 

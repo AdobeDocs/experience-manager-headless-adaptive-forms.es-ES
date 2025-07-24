@@ -8,10 +8,10 @@ role: Admin, Developer
 level: Beginner, Intermediate
 hide: false
 exl-id: cd7c7972-376c-489f-a684-f479d92c37e7
-source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '1004'
-ht-degree: 100%
+source-wordcount: '990'
+ht-degree: 46%
 
 ---
 
@@ -19,9 +19,11 @@ ht-degree: 100%
 
 # Creación y previsualización de un formulario sin encabezado mediante una aplicación React {#introduction}
 
-El kit de inicio le ayuda a empezar rápidamente mediante una aplicación React. Puede desarrollar y utilizar formularios adaptables sin encabezado en un entorno Angular, Vanilla JS y otros entornos de desarrollo de su elección.
+<!-- Missing image ALT image tags -->
 
-Comenzar con formularios adaptables sin encabezado es bastante fácil y rápido. Clone el proyecto React ya creado, instale las dependencias y ejecute el proyecto. Ya tiene en funcionamiento un formulario adaptable sin encabezado integrado en una aplicación React. Puede utilizar el proyecto React de ejemplo para crear y probar formularios adaptables sin encabezado antes de implementarlo en un entorno de producción.
+El kit de inicio le ayuda a empezar rápidamente mediante una aplicación React. Puede desarrollar y utilizar formularios adaptables sin encabezado en un Angular, Vanilla JS y otros entornos de desarrollo de su elección.
+
+Comenzar con formularios adaptables sin encabezado es bastante fácil y rápido. Clone el proyecto React ya creado, instale las dependencias y ejecute el proyecto. Tiene un formulario adaptable sin encabezado integrado en una aplicación de React en ejecución. Puede utilizar el proyecto react de ejemplo para crear y probar formularios adaptables sin encabezado antes de implementarlos en un entorno de producción.
 
 Vamos a empezar:
 
@@ -36,7 +38,7 @@ Para crear y ejecutar una aplicación React, debe tener instalado lo siguiente e
 
 * Instale la [última versión de Git](https://git-scm.com/downloads). Si es nuevo en Git, consulte [Instalación de Git](https://git-scm.com/book/es/v2/Getting-Started-Installing-Git).
 
-* Instale [Node.js 16.13.0 o posterior](https://nodejs.org/es/download/). Si no tiene experiencia previa con Node.js, consulte [Cómo instalar Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).
+* Instalar [Node.js 16.13.0 o posterior](https://nodejs.org/es/download/). <!-- URL is 404!! If you are new to Node.js, see [How to install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs). -->
 
 ## Introducción
 
@@ -44,15 +46,15 @@ Una vez que cumpla los requisitos, realice los siguientes pasos para empezar:
 
 1. [Configuración del kit de inicio de formularios adaptables sin encabezado](#setup)
 
-1. [Vista previa del formulario adaptable sin encabezado incluido en el kit de inicio](#preview)
+1. [Vista previa del formulario adaptable sin encabezado incluido en el Starter Kit](#preview)
 
 1. [Crear y procesar su propio formulario adaptable sin encabezado](#custom)
 
 
 
-## 1. Configurar el kit de inicio de formularios adaptables sin encabezado {#install}
+## &#x200B;1. Configurar el kit de inicio de formularios adaptables sin encabezado {#install}
 
-El kit de inicio es una aplicación React con un formulario adaptable sin encabezado de ejemplo y las bibliotecas correspondientes. Utilice el kit para desarrollar y probar sus formularios adaptables sin encabezado y los componentes de React correspondientes. Ejecute los siguientes comandos para configurar el kit de inicio de formularios adaptables sin encabezado:
+El Starter Kit es una aplicación de React con un formulario adaptable sin encabezado de ejemplo y las bibliotecas correspondientes. Utilice el kit para desarrollar y probar sus formularios adaptables sin encabezado y los componentes de React correspondientes. Ejecute los siguientes comandos para configurar el Starter Kit de formularios adaptables sin encabezado:
 
 1. Abra el símbolo del sistema y ejecute el siguiente comando:
 
@@ -60,11 +62,11 @@ El kit de inicio es una aplicación React con un formulario adaptable sin encabe
    git clone https://github.com/adobe/react-starter-kit-aem-headless-forms
    ```
 
-   El comando crea un directorio llamado **react-starter-kit-aem-headless-forms** en su ubicación actual y clona en él la aplicación de inicio React de formularios adaptables sin encabezado. Junto con las configuraciones y la lista de dependencias necesarias para procesar el formulario, el directorio incluye el siguiente contenido importante:
+   El comando crea un directorio llamado **react-starter-kit-aem-headless-forms** en su ubicación actual y clona la aplicación de inicio React de formularios adaptables sin encabezado en él. Junto con las configuraciones y la lista de dependencias necesarias para procesar el formulario, el directorio incluye el siguiente contenido importante:
 
    * **Formulario de ejemplo**: el kit de inicio incluye un formulario de solicitud de préstamo de ejemplo. Para ver el formulario (definición de formulario) incluido con la aplicación, abra el archivo `/react-starter-kit-aem-headless-forms/form-definations/form-model.json`.
-   * **Componentes de React de ejemplo**: el kit de inicio incluye componentes de React de ejemplo para Texto enriquecido y Regulador. Esta guía le ayuda a crear sus propios componentes personalizados con estos componentes Texto enriquecido y Regulador.
-   * **Mappings.ts**: el archivo mappings.ts le ayuda a asignar componentes personalizados con campos de formulario. Por ejemplo, asigne un campo de salto numérico con el componente de clasificaciones.
+   * **Componentes de React de muestra**: el Starter Kit incluye componentes React de muestra para texto enriquecido y Slider. Esta guía le ayuda a crear sus propios componentes personalizados con estos componentes Texto enriquecido y Regulador.
+   * **Mappings.ts**: el archivo mappings.ts le ayuda a asignar componentes personalizados con campos de formulario. Por ejemplo, asigne un campo de salto numérico con un componente de clasificación.
    * **Configuraciones del entorno**: las configuraciones de entorno le permiten elegir y procesar un formulario incluido en el kit de inicio o recuperar un formulario de un servidor de AEM Forms.
 
    ![](/help/assets/getting-started-starter-kit-content.png)
@@ -81,15 +83,15 @@ El kit de inicio es una aplicación React con un formulario adaptable sin encabe
    npm install
    ```
 
-   El comando descarga todos los paquetes y bibliotecas necesarios para ejecutar y crear la aplicación, como, por ejemplo, los formularios adaptables sin encabezado
-(@aemforms/af-react-renderer, @aemforms/af-react-components, @adobe/react-spectrum), ejecuta validaciones y conserva los datos para las instancias del formulario.
+   El comando descarga todos los paquetes y bibliotecas necesarios para crear y ejecutar la aplicación, incluidas las bibliotecas de formularios adaptables sin encabezado (@aemforms/af-react-renderer, @aemforms/af-react-components, @adobe/react-spectrum). A continuación, ejecuta validaciones y conserva los datos de cada instancia de formulario.
+
 
    ![](/help/assets/install-react-app-starter-kit.png)
 
 
-## 2. Vista previa del formulario adaptable sin encabezado {#preview}
+## &#x200B;2. Previsualizar el formulario adaptable sin encabezado {#preview}
 
-Después de configurar el kit de inicio, puede obtener una vista previa del formulario adaptable sin encabezado de ejemplo y reemplazarlo por su propio formulario personalizado. También puede configurar el kit de inicio para recuperar un formulario de un servidor de AEM Forms. Para obtener una vista previa del formulario
+Después de configurar el Starter Kit, puede obtener una vista previa del formulario adaptable sin encabezado de ejemplo y reemplazarlo por su propio formulario personalizado. También puede configurar el kit de inicio para recuperar un formulario de un servidor de AEM Forms. Para obtener una vista previa del formulario
 
 1. Cambie el nombre del archivo `env_template` a `.env`. Asegúrese también de que la opción USE_LOCAL_JSON esté establecida en true.
 
@@ -110,15 +112,15 @@ Después de configurar el kit de inicio, puede obtener una vista previa del form
 
    ![Formulario sin encabezado de muestra](assets/sample-headless-adaptive-form.png)
 
-   Listo. Ya está listo para empezar a desarrollar un formulario adaptable sin encabezado personalizado.
+   ¡Todo listo! Está listo para empezar a desarrollar un formulario adaptable personalizado sin encabezado.
 
-   <!--  As you know, in a headless form the form data and logic are separate from the presentation layer and can be used by any client that can make HTTP requests, such as a mobile app, a static site, or a different web application. The form is often managed and stored on a server, which serves as the backend for the form. The client sends requests to the server to retrieve the form, submit data, and receive updated form data. This allows for greater flexibility and integration with different technologies. You can store and retrive a Headless adaptive form on an AEM Server  -->
+   <!--  As you know, in a headless form the form data and logic are separate from the presentation layer and can be used by any client that can make HTTP requests, such as a mobile app, a static site, or a different web application. The form is often managed and stored on a server, which serves as the backend for the form. The client sends requests to the server to retrieve the form, submit data, and receive updated form data. This allows for greater flexibility and integration with different technologies. You can store and retrive a Headless Adaptive form on an AEM Server  -->
 
-## 3. Crear y procesar su propio formulario adaptable sin encabezado{#custom}
+## &#x200B;3. Crear y procesar su propio formulario adaptable sin encabezado{#custom}
 
-Un formulario adaptable sin encabezado representa el formulario y sus componentes, como campos y botones, en formato JSON (notación de objetos JavaScript). La ventaja de utilizar el formato JSON es que puede analizarse y utilizarse fácilmente en varios lenguajes de programación, lo que lo convierte en una forma cómoda de intercambiar datos de formulario entre sistemas. Para ver el formulario adaptable sin encabezado de muestra incluido con la aplicación, abra el archivo `/react-starter-kit-aem-headless-forms/form-definations/form-model.json`.
+Un formulario adaptable sin encabezado representa el formulario y sus componentes, como campos y botones, en formato JSON (Notación de objetos de JavaScript). La ventaja de utilizar el formato JSON es que puede analizarse y utilizarse fácilmente en varios lenguajes de programación, lo que lo convierte en una forma cómoda de intercambiar datos de formulario entre sistemas. Para ver el formulario adaptable sin encabezado de ejemplo incluido en la aplicación, abra el archivo `/react-starter-kit-aem-headless-forms/form-definations/form-model.json`.
 
-Crearemos un formulario de contacto con cuatro campos: “Nombre”, “Correo electrónico”, “Número de contacto” y “Mensaje”. Los campos se definen como objetos (elementos) dentro del JSON, y cada objeto (elemento) tiene propiedades como tipo, etiqueta, nombre y obligatorio. El formulario también tiene un botón de tipo “Enviar”. Aquí está el JSON del formulario.
+Vamos a crear un formulario `Contact Us` con cuatro campos: &quot;Nombre&quot;, &quot;Correo electrónico&quot;, &quot;Número de contacto&quot; y &quot;Mensaje&quot;. Los campos se definen como objetos (elementos) dentro del JSON, y cada objeto (elemento) tiene propiedades como tipo, etiqueta, nombre y obligatorio. El formulario también tiene un botón de tipo &quot;enviar&quot;. Este es el JSON del formulario.
 
 
 ```JSON
@@ -183,12 +185,12 @@ Crearemos un formulario de contacto con cuatro campos: “Nombre”, “Correo e
 >
 > * El atributo “afModelDefinition” solo es necesario para las aplicaciones de React y no forma parte de la definición del formulario.
 > * Puede crear a mano el formulario JSON o utilizar el [editor de formularios adaptables de AEM (editor WYSIWYG de formularios adaptables)](create-a-headless-adaptive-form.md) para crear y enviar el formulario JSON. En un entorno de producción, se utiliza AEM Forms para enviar el formulario JSON, que se ampliará más adelante.
-> * El tutorial utiliza https://pipedream.com/ para probar los envíos de formularios. Se utilizan puntos finales propios o de terceros aprobados por su organización para recibir los datos de un formulario adaptable sin encabezado.
+> * El tutorial utiliza https://pipedream.com/ para probar los envíos de formularios. Utiliza puntos de conexión propios o de terceros aprobados por su organización para recibir los datos de un formulario adaptable sin encabezado.
 
 
-Para procesar el formulario, reemplace el formulario adaptable de ejemplo JSON `/react-starter-kit-aem-headless-forms/form-definations/form-model.json` por el JSON anterior, guarde el archivo, espere a que el kit de inicio se compile y actualice el formulario.
+Para procesar el formulario, reemplace el formulario adaptable sin encabezado JSON de ejemplo `/react-starter-kit-aem-headless-forms/form-definations/form-model.json` por el JSON anterior, guarde el archivo, espere a que el starter-kit se compile y actualice el formulario.
 
-![Reemplace el JSON del formulario adaptable sin encabezado de muestra `/react-starter-kit-aem-headless-forms/form-definations/form-model.json` por el JSON del formulario adaptable sin encabezado personalizado](assets/render-custom-headless-adaptive-form.png)
+![Reemplace el formulario adaptable de ejemplo sin encabezado JSON `/react-starter-kit-aem-headless-forms/form-definations/form-model.json` por el formulario adaptable personalizado sin encabezado JSON](assets/render-custom-headless-adaptive-form.png)
 
 <!-- Your form is ready. Let's add some validations and make "Name", "Email", and "Message" fields mandatory. -->
 
@@ -204,9 +206,9 @@ Definamos el título de la página web que aloja el formulario en `Contact Us | 
 
 ## Siguiente paso
 
-De forma predeterminada, el kit de inicio utiliza los componentes de la [gama de Adobe](https://spectrum.adobe.com/) para procesar el formulario. Puede utilizar crear y utilizar sus propios componentes o de terceros. Por ejemplo, utilizando la IU de Google Material o la IU de Chakra.
+De forma predeterminada, el kit de inicio utiliza los componentes de la [gama de Adobe](https://spectrum.adobe.com/) para procesar el formulario. Puede crear y utilizar sus propios componentes o componentes de terceros. Por ejemplo, utilizando la IU de Google Material o la IU de Chakra.
 
-Vamos a... [utilizar la IU de Google Material](use-google-material-ui-react-components-to-render-a-headless-form.md) para procesar nuestro formulario de contacto.
+Vamos a [usar la interfaz de usuario de Google Material](use-google-material-ui-react-components-to-render-a-headless-form.md) para procesar el formulario `Contact Us`.
 
 
 

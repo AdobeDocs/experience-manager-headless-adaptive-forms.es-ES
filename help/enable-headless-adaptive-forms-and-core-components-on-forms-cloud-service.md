@@ -1,8 +1,6 @@
 ---
 title: Habilitación de formularios adaptables sin encabezado en AEM Forms as a Cloud Service
-seo-title: Step-by-Step Guide for enabling Headless Adaptive Forms on AEM Forms as a Cloud Service
-description: Obtenga información sobre cómo habilitar los formularios adaptables sin encabezado en AEM Forms as a Cloud Service con nuestra guía paso a paso. Nuestro tutorial le guiará por el proceso, lo que facilita habilitar esta potente función para su entorno de AEM Forms.
-seo-description: Learn how to enable headless adaptive forms on AEM Forms as a Cloud Service with our step-by-step guide. Our tutorial walks you through the process, making it easy to enable this powerful feature for your AEM Forms environment.
+description: Una guía paso a paso para habilitar formularios adaptables sin encabezado en AEM Forms as a Cloud Service, lo que simplifica la configuración y la activación en su entorno.
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Headless
@@ -13,10 +11,10 @@ docset: CloudService
 hide: true
 hidefromtoc: true
 exl-id: 7afff771-1296-4162-84c5-c8266b94af2f
-source-git-commit: 999c3d092d03d7a82363bc94ce79ceb33bf0df7e
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 100%
+source-wordcount: '886'
+ht-degree: 74%
 
 ---
 
@@ -28,29 +26,30 @@ Al habilitar formularios adaptables sin encabezado en AEM Forms as a Cloud Servi
 
 * Cuando se crea un nuevo programa as a Cloud Service de AEM Forms, [los formularios adaptables sin encabezado ya están habilitados para su entorno](#are-adaptive-forms-core-components-enabled-for-my-environment).
 
-* Si tiene un programa as a Cloud Service de formularios anterior en el que los componentes principales estén [sin habilitar](#enable-components), puede [añadir dependencias de componentes principales de formularios adaptables](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment) a su repositorio de AEM as a Cloud Service e implementar el repositorio en los entornos de su Cloud Service para habilitar formularios adaptables sin encabezado.
+* Si está ejecutando un programa as a Cloud Service de Forms anterior en el que los componentes principales están [no habilitados](#enable-components), primero [agregue las dependencias de los componentes principales de Forms adaptable](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment) a su repositorio de Cloud Service. Implemente el repositorio actualizado en cada entorno para habilitar los formularios adaptables sin encabezado.
 
-* Si el entorno de Cloud Service existente ofrece la posibilidad de [crear formularios adaptables basados en componentes principales](create-a-headless-adaptive-form.md), los formularios adaptables sin encabezado ya están habilitados para su entorno y pueden ofrecer formularios adaptables basados en componentes principales como formularios sin encabezado para canales como dispositivos móviles, web, aplicaciones nativas y servicios que requieren una representación sin encabezado de formularios adaptables.
-
+* Si su entorno de Cloud Service ya le permite [crear formularios adaptables basados en componentes principales](create-a-headless-adaptive-form.md), los formularios adaptables sin encabezado se habilitan automáticamente. A continuación, puede enviar estos formularios como experiencias sin encabezado a dispositivos móviles, web, aplicaciones nativas o cualquier servicio que los requiera.
 
 >[!NOTE]
 >
 >
-> Adobe proporciona el [kit de inicio (aplicación React)](create-and-publish-a-headless-form.md) de los formularios adaptables para ayudar a los desarrolladores a empezar rápidamente con el desarrollo de Formularios adaptables sin encabezado, sin habilitar los formularios adaptables sin encabezado en el entorno as a Cloud Service de AEM Forms. Puede habilitar los formularios adaptables sin encabezado en un entorno Forms as a Cloud Service más tarde después de un [rápido tutorial práctico con el desarrollo de formularios sin encabezado](create-and-publish-a-headless-form.md).
+> Adobe proporciona un Starter Kit [de Forms adaptable (aplicación React)](create-and-publish-a-headless-form.md) para ayudar a los desarrolladores a empezar rápidamente con el desarrollo de Forms adaptable sin encabezado, sin habilitar Forms adaptable sin encabezado en el entorno de AEM Forms as a Cloud Service. Puede habilitar los formularios adaptables sin encabezado en un entorno Forms as a Cloud Service más tarde después de un [rápido tutorial práctico con el desarrollo de formularios sin encabezado](create-and-publish-a-headless-form.md).
 
 ## Habilitación de formularios adaptables sin encabezado para un entorno AEM Forms as a Cloud Service
 
 Realice los siguientes pasos, en el orden indicado, para habilitar los formularios adaptables sin encabezado para un entorno AEM Forms as a Cloud Service
 
-
+<!-- Missing image ALT tag -->
 ![](/help/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
 
 
-## 1. Clone su repositorio de Git de AEM Forms as a Cloud Service {#clone-git-repository}
+## &#x200B;1. Clone su repositorio de Git de AEM Forms as a Cloud Service {#clone-git-repository}
 
 1. Inicie sesión en [Cloud Manager](https://my.cloudmanager.adobe.com/) y seleccione su organización y programa.
 
-1. Vaya a la tarjeta **Canalizaciones** de la página **Información general del programa** y pulse el botón **Acceder a la info del repositorio** para acceder y administrar su repositorio de Git. La página incluye la siguiente información:
+1. Vaya a la tarjeta de **Canalizaciones** desde la página **Información general del programa**.
+
+1. Haga clic en el botón **Acceder a la info del repositorio** para acceder y administrar su repositorio Git. La página incluye la siguiente información:
 
    * La dirección URL del repositorio de Git de Cloud Manager.
    * Credenciales del nombre de usuario del repositorio de Git (nombre de usuario y contraseña).
@@ -66,7 +65,7 @@ Realice los siguientes pasos, en el orden indicado, para habilitar los formulari
    Cuando se le solicite, proporcione las credenciales. El repositorio se clona en su ordenador local.
 
 
-## 2. Añadir dependencias de componentes principales de formularios adaptables al repositorio de Git {#add-adaptive-forms-core-components-dependencies}
+## &#x200B;2. Añadir dependencias de componentes principales de formularios adaptables al repositorio de Git {#add-adaptive-forms-core-components-dependencies}
 
 1. Abra la carpeta del repositorio de Git en un editor de código de texto sin formato. Por ejemplo, VS Code.
 1. Abra el archivo `[AEM Repository Folder]\pom.xml` para editarlo.
@@ -283,14 +282,14 @@ Realice los siguientes pasos, en el orden indicado, para habilitar los formulari
 
 1. Guarde y cierre el archivo.
 
-## 3. Actualice el proyecto para incluir la versión más reciente de los componentes principales de los formularios:
+## &#x200B;3. Actualice el proyecto para incluir la versión más reciente de los componentes principales de Forms:
 
 1. Abra la [carpeta de proyecto de arquetipo de EAM]/pom.xml para su edición.
 
 
 1. Guarde y cierre el archivo.
 
-## 4. Confirme las actualizaciones en el repositorio de Git y ejecute la canalización para desplegar el repositorio {#Commit-the-updates-to-your-git-repository}
+## &#x200B;4. Confirme las actualizaciones en el repositorio de Git y ejecute una canalización para desplegar el repositorio {#Commit-the-updates-to-your-git-repository}
 
 1. Para confirmar el código en el repositorio de Git:
    1. Abra el terminal o el símbolo del comando.
@@ -304,16 +303,16 @@ Realice los siguientes pasos, en el orden indicado, para habilitar los formulari
       git push origin
       ```
 
-1. Una vez que los archivos se hayan confirmado en el repositorio de Git, [Ejecute la canalización](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=es).
+1. Una vez que los archivos se hayan confirmado en el repositorio de Git, [Ejecute la canalización](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/using/code-deployment).
 
-   Una vez que la ejecución de la canalización se haya realizado correctamente, los componentes principales de formularios adaptables se habilitan para el entorno correspondiente. Además, se añade una plantilla de formularios adaptables (componentes principales) y una temática de Canvas 3.0 al entorno as a Cloud Service de formularios, lo que le proporciona opciones para personalizar y crear componentes principales basados en formularios adaptables.
+   Una vez que la ejecución de la canalización se haya realizado correctamente, los componentes principales de Forms adaptable se habilitan para el entorno correspondiente. Además, se añade una plantilla de formularios adaptables (componentes principales) y una temática de Canvas 3.0 al entorno as a Cloud Service de formularios, lo que le proporciona opciones para personalizar y crear componentes principales basados en formularios adaptables.
 
 
 ## Preguntas frecuentes {#faq}
 
-### ¿Qué son los componentes principales? {#core-components}
+### ¿Cuáles son los componentes principales? {#core-components}
 
-Los [componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) son un conjunto de componentes estandarizados de la administración de contenido web (WCM) para AEM con el objetivo de acelerar el tiempo de desarrollo y reducir el coste de mantenimiento de sus sitios web.
+Los [componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/introduction) son un conjunto de componentes estandarizados de administración de contenido web (WCM) para AEM a fin de acelerar el tiempo de desarrollo y reducir el costo de mantenimiento de los sitios web.
 
 ### ¿Qué capacidades completas se añaden al habilitar los componentes principales? {#core-components-capabilities}
 

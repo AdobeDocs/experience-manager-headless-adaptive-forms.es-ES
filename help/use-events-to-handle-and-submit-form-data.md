@@ -1,11 +1,11 @@
 ---
 title: Utilización de sucesos para gestionar y enviar datos de formularios adaptables sin encabezado
-description: Utilización de sucesos para gestionar y enviar datos de formularios adaptables sin encabezado
+description: Utilice eventos para gestionar y enviar datos de formularios adaptables sin encabezado.
 hide: false
-source-git-commit: ddd353329dfe5b47734d904b9a5e684051becc5b
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
 source-wordcount: '113'
-ht-degree: 100%
+ht-degree: 71%
 
 ---
 
@@ -16,10 +16,10 @@ Hasta ahora, ha aprendido a [crear un formulario adaptable sin encabezado person
 
 En este artículo se muestra el envío de datos a un punto final Rest. Puede configurar el formulario para enviar los datos a cualquier fuente de datos
 
-## Explicación del modelo de datos
+## Comprensión del modelo de datos
 
 
 
-## Uso de sucesos para comunicarse con el modelo de datos
+## Utilice eventos para comunicarse con el modelo de datos
 
-## Uso de sucesos para enviar datos a una fuente de datos
+## Uso de eventos para enviar datos a una fuente de datos
