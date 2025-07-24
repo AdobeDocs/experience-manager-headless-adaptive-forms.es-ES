@@ -86,6 +86,7 @@ En esta lección, como usuario empresarial, creará un formulario adaptable para
 
    1. Abra <https://pipedream.com/requestbin> en una nueva pestaña del explorador.
    1. Haga clic en **Crear un grupo público** y copie la dirección URL del punto final.
+
       ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
 
       ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
@@ -93,23 +94,29 @@ En esta lección, como usuario empresarial, creará un formulario adaptable para
 1. Cree un formulario adaptable mediante la interfaz del asistente:
 
    1. En la pestaña del explorador utilizada en la Lección 1, vaya a la interfaz web de AEM Forms as Cloud Service y a Formularios y documentos.
+
       ![](/help/assets/screenshot2028114029.png)
 
    1. Haga clic en **Crear** > **Formulario adaptable**.
+
       ![](/help/assets/screenshot2028114629.png)
 
    1. Seleccione la plantilla **En blanco con componentes principales** de la pantalla de selección de plantillas como se muestra a continuación:
+
       ![](/help/assets/screenshot202023-03-0120at206.09.1520pm.png)
 
    1. Haga clic en la pestaña **Estilo** y seleccione **wknd-theme** como se muestra a continuación:
+
       ![](/help/assets/screenshot202023-03-0120at206.09.2320pm.png)
 
    1. Haga clic en la pestaña **Envío** y seleccione la tarjeta **Enviar al punto final de REST** y especifique el grupo público en el campo **URL de la petición POST** como se muestra a continuación:
+
       ![](/help/assets/screenshot202023-03-0120at206.09.5320pm.png)
 
    1. Haga clic en **Crear**. Especifique un nombre y un título en el formulario. Por ejemplo, **registro**. Haga clic en **Crear**.
 
    1. Se abre el editor de formularios adaptables. Descarte cualquier ventana emergente o diálogo para obtener preferencias o información. Haga clic en el explorador de componentes en el carril izquierdo y agregue los componentes **Encabezado** y **Pie de página** respectivamente a la parte superior e inferior del formulario en blanco.
+
       ![](/help/assets/screenshot2028121929.png)
 
    1. Arrastre y suelte los componentes desde el Explorador de componentes para crear un formulario, de forma similar a lo siguiente:
@@ -121,6 +128,7 @@ En esta lección, como usuario empresarial, creará un formulario adaptable para
    1. Haga clic en el componente **Número de teléfono** para que se muestre el menú emergente. Haga clic en el componente **icono de llave inglesa** en el menú para configurar el campo.
 
    1. Abra la **pestaña Validaciones**, marque el campo **Requerido** y haga clic en **Listo**. Se muestra el mensaje de éxito.
+
       ![](/help/assets/screenshot2028123529.png){width="50%" align="left"}
 
       ![](/help/assets/screenshot2028123629.png){width="50%" align="left"}
@@ -132,9 +140,11 @@ En esta lección, como usuario empresarial, creará un formulario adaptable para
    1. Rellene el formulario con datos ficticios.
 
    1. Enviar el formulario.
+
       ![](/help/assets/screenshot2028125729.png)
 
    1. En la pestaña Grupo de solicitudes, compruebe los datos enviados.
+
       ![](/help/assets/screenshot2028125829.png)
 
 1. Agregue interactividad al formulario con reglas:

@@ -40,6 +40,7 @@ Para habilitar formularios adaptables sin encabezado en la zona protegida de For
 <tr>
   <td>
   1. Inicie sesión en <a href="https://experience.adobe.com/" > https://experience.adobe.com/ </a> y seleccione la opción <b> Experience Manager </b>.
+
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -50,7 +51,7 @@ Para habilitar formularios adaptables sin encabezado en la zona protegida de For
 </tr>
 <tr>
   <td>
-  2. Para la opción <b>Cloud Manager</b>, haga clic en <b>Iniciar. </b> Aparecerá una lista de programas para su organización.
+  &#x200B;2. Para la opción <b>Cloud Manager</b>, haga clic en <b>Iniciar. </b> Aparecerá una lista de programas para su organización.
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -61,7 +62,7 @@ Para habilitar formularios adaptables sin encabezado en la zona protegida de For
 </tr>
 <tr>
   <td>
-    3. Para su programa, pulse el icono ... y seleccione la opción <b>Editar programa.</b>. Aparecerá un cuadro de diálogo. 
+    &#x200B;3. Para su programa, pulse el icono ... y seleccione la opción <b>Editar programa.</b>. Aparecerá un cuadro de diálogo. 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -72,7 +73,7 @@ Para habilitar formularios adaptables sin encabezado en la zona protegida de For
 </tr>
 <tr>
   <td>
-    4. En el cuadro de diálogo Editar programa, vaya a la <b>pestaña Soluciones y complementos</b>, seleccione la opción <b>Forms - Inscripción digital</b> y pulse <b>Actualizar</b>. 
+    &#x200B;4. En el cuadro de diálogo Editar programa, vaya a la <b>pestaña Soluciones y complementos</b>, seleccione la opción <b>Forms - Inscripción digital</b> y pulse <b>Actualizar</b>. 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -98,6 +99,7 @@ Para clonar el repositorio, haga lo siguiente:
 <tr>
   <td>
   1. En el cuadro Canalización del programa, pulse <b> Acceder a la info del repositorio. </b> Aparecerá un cuadro de diálogo con información del repositorio 
+
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -108,7 +110,7 @@ Para clonar el repositorio, haga lo siguiente:
 </tr>
 <tr>
   <td>
-  2. Pulse <b>Generar contraseña</b> y copie la <b>URL del repositorio. </b> 
+  &#x200B;2. Pulse <b>Generar contraseña</b> y copie la <b>URL del repositorio. </b> 
   </td>
   <td>
       <img alt="Programas de AEM as a Cloud Service" src="assets/repository-info.png">
@@ -117,7 +119,7 @@ Para clonar el repositorio, haga lo siguiente:
 </tr>
 <tr>
   <td>
-    3. En su equipo local, abra el símbolo del sistema, cree una carpeta, ejecute el siguiente comando y proporcione las credenciales del repositorio, tal y como se solicita:
+    &#x200B;3. En su equipo local, abra el símbolo del sistema, cree una carpeta, ejecute el siguiente comando y proporcione las credenciales del repositorio, tal y como se solicita:
  </br>
  <code> git clone [Repository URL] </code> </br></br>
  Por ejemplo, </br> 
@@ -220,6 +222,7 @@ Al finalizar correctamente el comando, se creará una carpeta de proyecto con el
 <tr>
   <td>
   1. Inicie sesión en <a href="https://experience.adobe.com/" > https://experience.adobe.com/ </a> y seleccione la opción <b> Experience Manager </b>.
+
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -230,7 +233,7 @@ Al finalizar correctamente el comando, se creará una carpeta de proyecto con el
 </tr>
 <tr>
   <td>
-  2. Para la opción <b> Cloud Manager </b>, haga clic <b> Iniciar. </b> Aparecerá una lista de programas para su organización. Abra el programa. 
+  &#x200B;2. Para la opción <b> Cloud Manager </b>, haga clic <b> Iniciar. </b> Aparecerá una lista de programas para su organización. Abra el programa. 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -241,7 +244,7 @@ Al finalizar correctamente el comando, se creará una carpeta de proyecto con el
 </tr>
 <tr>
   <td>
-    3. Para la canalización, pulse el icono ... y seleccione la opción <b> Ejecutar </b>. Si se le solicita que ejecute la canalización, pulse <b> Ejecutar </b> y espere a que el estado <b> de la canalización </b> cambie a <b> Completado </b>.  
+    &#x200B;3. Para la canalización, pulse el icono ... y seleccione la opción <b> Ejecutar </b>. Si se le solicita que ejecute la canalización, pulse <b> Ejecutar </b> y espere a que el estado <b> de la canalización </b> cambie a <b> Completado </b>.  
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">

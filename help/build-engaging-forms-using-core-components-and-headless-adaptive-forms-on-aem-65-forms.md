@@ -86,9 +86,11 @@ Como usuario empresarial, utilizará el editor de Forms adaptable y sus componen
 1. Cree un punto final de envío para el formulario:
 
    1. Abra <https://pipedream.com/requestbin> en una nueva pestaña del explorador.
+
       ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
 
    1. Haga clic en **Crear un grupo público** y copie la dirección URL del punto final.
+
       ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
 
    Este punto final en particular sirve como ejemplo para enviar y ver datos. En la producción real, se utiliza un punto final propio o fuentes de datos para almacenar los datos capturados.
@@ -98,12 +100,15 @@ Como usuario empresarial, utilizará el editor de Forms adaptable y sus componen
    1. En la pestaña del explorador que se usa en la lección 1, vaya a la interfaz web de AEM Forms y luego a **Forms** > **Forms y documentos**.
 
    1. Haga clic en **Crear** y seleccione Formulario adaptable.
+
       ![](/help/assets/creating-adaptive-form-6-5.png){width="50%" align="left"}
 
    1. Seleccione la plantilla **En blanco con componentes principales** en la pantalla de selección de plantillas como se muestra a continuación y pulse **Siguiente**.
+
       ![](/help/assets/creating-adaptive-form-6-5-select-blank-template.png){width="50%" align="left"}
 
    1. Especifique `Contact us` como **Título** del formulario. Asegúrese de que la variable **Nombre** del formulario es `contact-us`.
+
       ![](/help/assets/creating-adaptive-form-65-specify-title.png){width="50%" align="left"}
 
    1. Haga clic en **Crear**. Se muestra un cuadro de diálogo.
