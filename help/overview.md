@@ -27,7 +27,7 @@ Los formularios adaptables sin encabezado le ayudan a hacer lo siguiente:
 * Cree formularios multicanal de alta calidad en el lenguaje de programación que prefiera.
 * Integre de forma nativa los formularios en sus aplicaciones de escritorio y móviles, sitios web y aplicaciones de chat.
 * Reutilice los componentes de la interfaz de usuario propietarios con aplicaciones de formularios.
-* Aproveche la [potencia de Adobe Experience Manager Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms).
+* Aproveche la [potencia de Adobe Experience Manager Forms](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms).
 
 Además, tiene la libertad de desarrollar sus propios componentes para procesar un formulario con cualquier marco de trabajo de IU y lenguaje de programación de su elección. También puede utilizar los componentes de React disponibles de forma predeterminada para procesar un formulario adaptable sin encabezado.
 

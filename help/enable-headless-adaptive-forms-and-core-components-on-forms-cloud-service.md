@@ -303,7 +303,7 @@ Realice los siguientes pasos, en el orden indicado, para habilitar los formulari
       git push origin
       ```
 
-1. Una vez que los archivos se hayan confirmado en el repositorio de Git, [Ejecute la canalización](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/using/code-deployment).
+1. Una vez que los archivos se hayan confirmado en el repositorio de Git, [Ejecute la canalización](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-manager/content/using/code-deployment).
 
    Una vez que la ejecución de la canalización se haya realizado correctamente, los componentes principales de Forms adaptable se habilitan para el entorno correspondiente. Además, se añade una plantilla de formularios adaptables (componentes principales) y una temática de Canvas 3.0 al entorno as a Cloud Service de formularios, lo que le proporciona opciones para personalizar y crear componentes principales basados en formularios adaptables.
 

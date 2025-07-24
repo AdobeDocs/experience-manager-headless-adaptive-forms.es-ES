@@ -75,7 +75,7 @@ Está en formato .zip. La versión compatible es aem-sdk-2022.7.8085.20220725T14
 
    >[!NOTE]
    >
-   > No haga doble clic en el archivo .jar para iniciarlo. Esto da como resultado un [error](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#troubleshooting-double-click).
+   > No haga doble clic en el archivo .jar para iniciarlo. Esto da como resultado un [error](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#troubleshooting-double-click).
 
 1. Abra el símbolo del sistema:
    * En Windows, use la opción **Ejecutar como administrador** para abrir el símbolo del sistema en modo elevado.

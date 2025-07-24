@@ -24,9 +24,9 @@ ht-degree: 60%
 * Instale [Node.js 16.13.0 o posterior](https://nodejs.org/es/download/) en su equipo local. <!-- URL IS 404! If you are new to Node.js, see [How to install Node.js](https://nodejs.org/en/learn/how-to-install-nodejs). -->
 
 
-* Cree un programa AEM as a Cloud Service: siga los pasos del 1 al 7 del artículo [Crear un programa](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program) para crear un programa para su organización.
+* Cree un programa AEM as a Cloud Service: siga los pasos del 1 al 7 del artículo [Crear un programa](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program) para crear un programa para su organización.
 
-* Habilite el [canal de prelanzamiento para su programa de Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/prerelease#cloud-environments).
+* Habilite el [canal de prelanzamiento para su programa de Cloud Service](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/release-notes/prerelease#cloud-environments).
 
 ## Configuración del flujo de trabajo
 
@@ -43,7 +43,7 @@ Para habilitar formularios adaptables sin encabezado en la zona protegida de For
 
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="Programas de AEM as a Cloud Service" src="assets/cloud-manager-experience-manager.png">
     </a>
     <br>
@@ -54,7 +54,7 @@ Para habilitar formularios adaptables sin encabezado en la zona protegida de For
   &#x200B;2. Para la opción <b>Cloud Manager</b>, haga clic en <b>Iniciar. </b> Aparecerá una lista de programas para su organización.
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="Programas de AEM as a Cloud Service" src="assets/cloud-manager-experience-manager-launch.png">
     </a>
     <br>
@@ -65,7 +65,7 @@ Para habilitar formularios adaptables sin encabezado en la zona protegida de For
     &#x200B;3. Para su programa, pulse el icono ... y seleccione la opción <b>Editar programa.</b>. Aparecerá un cuadro de diálogo. 
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="Programas de AEM as a Cloud Service" src="assets/edit-program.png">
     </a>
     <br>
@@ -76,7 +76,7 @@ Para habilitar formularios adaptables sin encabezado en la zona protegida de For
     &#x200B;4. En el cuadro de diálogo Editar programa, vaya a la <b>pestaña Soluciones y complementos</b>, seleccione la opción <b>Forms - Inscripción digital</b> y pulse <b>Actualizar</b>. 
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="Programas de AEM as a Cloud Service" src="assets/program-solution-addons.png">
     </a>
     <br>
@@ -102,7 +102,7 @@ Para clonar el repositorio, haga lo siguiente:
 
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="Programas de AEM as a Cloud Service" src="assets/git-repo.png">
     </a>
     <br>
@@ -225,7 +225,7 @@ Al finalizar correctamente el comando, se creará una carpeta de proyecto con el
 
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="Programas de AEM as a Cloud Service" src="assets/cloud-manager-experience-manager.png">
     </a>
     <br>
@@ -236,7 +236,7 @@ Al finalizar correctamente el comando, se creará una carpeta de proyecto con el
   &#x200B;2. Para la opción <b> Cloud Manager </b>, haga clic <b> Iniciar. </b> Aparecerá una lista de programas para su organización. Abra el programa. 
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="Programas de AEM as a Cloud Service" src="assets/cloud-manager-experience-manager-launch.png">
     </a>
     <br>
@@ -247,7 +247,7 @@ Al finalizar correctamente el comando, se creará una carpeta de proyecto con el
     &#x200B;3. Para la canalización, pulse el icono ... y seleccione la opción <b> Ejecutar </b>. Si se le solicita que ejecute la canalización, pulse <b> Ejecutar </b> y espere a que el estado <b> de la canalización </b> cambie a <b> Completado </b>.  
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="Programas de AEM as a Cloud Service" src="assets/run-build-pipeline.png">
     </a>
     <br>

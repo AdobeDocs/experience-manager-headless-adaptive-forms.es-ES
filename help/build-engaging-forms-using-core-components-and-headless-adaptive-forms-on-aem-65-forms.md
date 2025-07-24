@@ -535,10 +535,10 @@ Ahora sabe cómo crear formularios adaptables y entregarlos en varios canales co
 
 * [Introducción a los componentes principales del formulario adaptable](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/introduction)
 
-* [Creación de formularios adaptables con componentes principales](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
+* [Creación de formularios adaptables con componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
 
 * [Actualización del estilo para el AF basado en componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
 
-* [Formularios adaptables sin encabezado](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/overview)
+* [Formularios adaptables sin encabezado](https://experienceleague.adobe.com/es/docs/experience-manager-headless-adaptive-forms/using/overview)
 
-* [Uso de un kit de inicio React sin encabezado](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)
+* [Uso de un kit de inicio React sin encabezado](https://experienceleague.adobe.com/es/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)
