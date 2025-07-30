@@ -5,19 +5,19 @@ keywords: formulario adaptable sin encabezado
 hide: true
 exl-id: 99985fed-4a34-47d6-bb6f-79f81e1cd71b
 source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1492'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
 # Crear su primer formulario adaptable sin encabezado
 
-Utilice formularios adaptables sin encabezado de Adobe Experience Manager para crear aplicaciones de formularios utilizando la interfaz de usuario front-end como React y utilice Forms Web SDK para funciones como administración de estado, validación e integraciones con otros puntos de contacto.
+Puede utilizar formularios adaptables sin encabezado de Adobe Experience Manager para crear aplicaciones de formularios utilizando interfaces de usuario front-end como React y emplear el SDK web de formularios para funcionalidades como la administración de estado, la validación e integraciones con otros puntos de contacto.
 
 Por ejemplo, la organización We.Org quiere digitalizar su recorrido de inscripción de clientes. Sus desarrolladores son expertos en el uso de Angular para generar soluciones front-end. Buscan la creación de un front-end personalizado al descargar la validación de formularios y las firmas electrónicas a soluciones especializadas.
 
-Los formularios adaptables sin encabezado de Adobe Experience Manager proporcionan a estas organizaciones la libertad de crear formularios utilizando su experiencia existente en lenguajes de front-end, a la vez que proporcionan asistencia para utilizar funciones back-end para crear experiencias de formularios de clase empresarial.
+Los formularios adaptables sin encabezado de Adobe Experience Manager proporcionan a estas organizaciones la libertad de crear formularios utilizando su experiencia existente en lenguajes de front-end, a la vez que proporcionan asistencia para utilizar funciones de back-end para crear experiencias de formularios de clase empresarial.
 
 <!-- >>[!VIDEO](https://video.tv.adobe.com/v/341011/) -->
 
@@ -29,19 +29,19 @@ Los formularios adaptables sin encabezado de Adobe Experience Manager proporcion
 * El software siguiente debe estar instalado en el equipo de desarrollo local:
    * [Kit de desarrollo de Java 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&fulltext=Oracle%7E+JDK%7E+11%7E&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=14)
    * [Última versión de Git](https://git-scm.com/downloads). Si no tiene experiencia previa con Git, consulte [Instalación de Git](https://git-scm.com/book/es/v2/Getting-Started-Installing-Git).
-   * [Node.js 16.13.0 o posterior](https://nodejs.org/es/download/). <!-- URL is 404! If you are new to Node.js, see [How to install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs). -->
+   * [Node.js 16.13.0 o posterior](https://nodejs.org/es/download/). <!-- URL is 404! If you are new to Node.js, see [How to install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs). -->. 
    * [Maven 3.6 o posterior](https://maven.apache.org/download.cgi). Si no tiene experiencia previa con Maven, consulte [Instalación de Apache Maven](https://maven.apache.org/install.html?lang=es).
 
 
 ## Utilizar el proyecto de arquetipo para crear un formulario adaptable sin encabezado
 
-El tipo de archivo del proyecto es una plantilla basada en Maven. Crea un proyecto mínimo basado en las prácticas recomendadas para empezar a utilizar formularios adaptables sin encabezado. También incluye la funcionalidad de formularios adaptables sin encabezado para Forms as a Cloud Service y los entornos de desarrollo local. Es obligatorio crear e implementar el proyecto basado en el arquetipo 37 o posterior durante la fase beta. Después de la versión beta, el proyecto solo es necesario para las personalizaciones.
+El tipo de archivo del proyecto es una plantilla basada en Maven. Crea un proyecto mínimo basado en las prácticas recomendadas para empezar a utilizar formularios adaptables sin encabezado. También incluye la funcionalidad de formularios adaptables sin encabezado para Forms as a Cloud Service y entornos de desarrollo locales. Es obligatorio crear e implementar el proyecto basado en el arquetipo 37 o posterior durante la fase beta. Después de la versión beta, el proyecto solo es necesario para las personalizaciones.
 
 Siga estos pasos para crear y procesar su primer formulario adaptable sin encabezado:
 
-1. [Creación e implementación de un proyecto basado en AEM Archetype](#create-an-archetype-based-project)
+1. [Crear e implementar un proyecto basado en un arquetipo de AEM](#create-an-archetype-based-project)
 1. [Implementar el proyecto en el SDK de AEM](#deploy-the-project-to-a-local-development-environment)
-1. [Cree un esquema JSON de formulario adaptable sin encabezado y cárguelo en la instancia de AEM SDK](#create-add-json-representation-of-headless-adaptive-forms)
+1. [Crear el esquema JSON de un formulario adaptable sin encabezado y cargarlo en la instancia del SDK de AEM](#create-add-json-representation-of-headless-adaptive-forms)
 1. [Crear un formulario adaptable basado en la plantilla En blanco con componentes principales](#create-adaptive-form-with-blank-with-core-components-template)
 
 
@@ -72,10 +72,10 @@ Según el sistema operativo, ejecute el siguiente comando para crear un proyecto
    * Utilice la opción `includeFormsenrollment=y` para incluir configuraciones, temáticas, plantillas, componentes principales y dependencias específicos para formularios, que son necesarios para crear formularios adaptables.
    * Utilice la opción `includeFormsheadless=y` para incluir los componentes principales y las dependencias de Forms necesarios para incluir la funcionalidad de Formularios adaptables sin encabezado. Al habilitar esta opción, se incluyen las siguientes opciones:
       * La plantilla **En blanco con componentes principales** con [componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/introduction).
-      * Un módulo de React de front-end, `ui.frontend.react.forms.af`. Le ayuda a procesar un formulario adaptable sin encabezado en una aplicación de react.
+      * Un módulo de React de front-end, `ui.frontend.react.forms.af`. Le ayuda a procesar formularios adaptables sin encabezado en una aplicación de React.
 
 
-**Apple macOS o Linux{®}:**
+**Apple macOS o Linux®**:
 
 1. Abra el terminal como usuario raíz. Permite ejecutar comandos con privilegios administrativos. También puede utilizar `sudo root` después de abrir la ventana de terminal para ejecutar comandos con privilegios administrativos.
 1. Ejecute el siguiente comando:
@@ -98,7 +98,7 @@ Según el sistema operativo, ejecute el siguiente comando para crear un proyecto
    * Utilice la opción `includeFormsenrollment=y` para incluir configuraciones, temáticas, plantillas, componentes principales y dependencias específicos para formularios, que son necesarios para crear formularios adaptables.
    * Utilice la opción `includeFormsheadless=y` para incluir los componentes principales y las dependencias de Forms necesarios para incluir la funcionalidad de Formularios adaptables sin encabezado. Al habilitar esta opción, se incluyen las siguientes opciones:
       * La plantilla **En blanco con componentes principales** con [componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/introduction).
-      * Un módulo reacts de front-end, `ui.frontend.react.forms.af`. Le ayuda a procesar un formulario adaptable sin encabezado en una aplicación de react.
+      * Un módulo reacts de front-end, `ui.frontend.react.forms.af`. Le ayuda a procesar formularios adaptables sin encabezado en una aplicación de React.
 
 Al finalizar correctamente el comando, se creará una carpeta de proyecto con el nombre especificado en el `appID`. Por ejemplo, si utiliza `appID` con el valor `myheadlessform`, se creará una carpeta denominada `myheadlessform`. Contiene el proyecto basado en el arquetipo.
 
@@ -122,15 +122,15 @@ Al implementar el proyecto en la instancia del SDK de AEM, se agrega la funciona
    Espere al mensaje “Generar éxito”.
    ![El proyecto se ha implementado correctamente](assets/project-deployed-successfully.png)
 
-   Puede llevar mucho tiempo resolver las dependencias e implementar el proyecto. Si se produce un error en la implementación del proyecto, consulte el artículo [solución de problemas](troubleshooting.md) para ver los problemas comunes y su resolución.
+   Puede llevar mucho tiempo resolver las dependencias e implementar el proyecto. Si se produce un error al implementar el proyecto, consulte el artículo [Solución de problemas](troubleshooting.md) para problemas comunes y su resolución.
 
 
-<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=es#coding-against-the-right-aem-version) article : -->
+<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=en#coding-against-the-right-aem-version) article : -->
 
 
 ### &#x200B;3. Crear el esquema JSON de un formulario adaptable sin encabezado y cargarlo en la instancia del SDK de AEM {#create-add-json-representation-of-headless-adaptive-forms}
 
-Los formularios adaptables sin encabezado se representan como un archivo JSON. Puede obtener un formulario de ejemplo de [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--contact) o usar el formulario de ejemplo incluido en el proyecto de tipo de archivo en `[Archetype Project]\ui.content\src\main\content\jcr_root\content\dam\myheadlessform\af_model_sample.json`. Este documento utiliza el formulario [introducción](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--introduction) de Storybook. Es un formulario de un solo campo para ayudarle a empezar rápidamente con Formularios adaptables sin encabezado. <!-- The [specifications](/help/assets/Headless-Adaptive-Form-Specification.pdf) document provides detailed information about various components, rules, and constraints for Headless Adaptive Forms -->
+Los formularios adaptables sin encabezado se representan como un archivo JSON. Puede obtener un formulario de muestra del [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--contact) o utilizar el formulario de muestra que se incluye en el proyecto de arquetipo en `[Archetype Project]\ui.content\src\main\content\jcr_root\content\dam\myheadlessform\af_model_sample.json`. Este documento utiliza el formulario [introducción](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--introduction) de Storybook. Es un formulario de un solo campo para ayudarle a empezar rápidamente con Formularios adaptables sin encabezado. <!-- The [specifications](/help/assets/Headless-Adaptive-Form-Specification.pdf) document provides detailed information about various components, rules, and constraints for Headless Adaptive Forms -->
 
 Para crear y cargar el esquema, haga lo siguiente:
 
@@ -162,7 +162,7 @@ Para crear y cargar el esquema, haga lo siguiente:
 
 1. Inicie sesión en su [instancia del SDK de AEM local](setup-development-environment.md#setup-author-instance)
 1. Vaya a Adobe Experience Manager > Formularios > Formularios y documentos. Pulse Crear > Cargar archivo.
-1. Seleccione `.json` creado en el paso 2 y cárguelo. Está listo para crear el formulario adaptable sin encabezado. Si guarda el archivo .json en el proyecto basado en el arquetipo de AEM en `\<project-name>\ui.content\src\main\content\jcr_root\content\dam\myheadlessform\<formname>.json`. Puede utilizar `mvn -PautoInstallPackage clean install` para implementar el proyecto en el SDK de AEM y `<formname>.json` junto con él.
+1. Seleccione `.json` creado en el paso 2 y cárguelo. Ya está listo para crear el formulario adaptable sin encabezado. Si guarda el archivo .json en el proyecto basado en el arquetipo de AEM en `\<project-name>\ui.content\src\main\content\jcr_root\content\dam\myheadlessform\<formname>.json`. Puede utilizar `mvn -PautoInstallPackage clean install` para implementar el proyecto en el SDK de AEM y `<formname>.json` junto con él.
 
 Si se produce un error al cargar `.json`, asegúrese de que el [proyecto de arquetipo de AEM se haya implementado correctamente](#deploy-the-project-to-a-local-development-environment).
 
@@ -180,9 +180,9 @@ You can deploy the project to local development environment. It adds Headless Ad
 
     `mvn -PautoInstallPackage clean install`
 
-If you are on Windows, run the above with Administrative privileges (Run command prompt or [bash shell as an administrator](https://khushwantsehgal.wordpress.com/2022/06/29/check-if-git-bash-is-running-in-administrator-mode/)). For the complete list of commands, see [Building and Installing](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=es#building-and-installing).
+If you are on Windows, run the above with Administrative privileges (Run command prompt or [bash shell as an administrator](https://khushwantsehgal.wordpress.com/2022/06/29/check-if-git-bash-is-running-in-administrator-mode/)). For the complete list of commands, see [Building and Installing](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#building-and-installing).
     
-<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=es#coding-against-the-right-aem-version) article : -->
+<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=en#coding-against-the-right-aem-version) article : -->
 
 ### &#x200B;4. Crear un formulario adaptable basado en la plantilla En blanco con componentes principales {#create-adaptive-form-with-blank-with-core-components-template}
 
@@ -213,9 +213,9 @@ El formulario adaptable creado en el paso anterior está en blanco. Configure el
 
 1. Pulse el componente Contenedor de formularios adaptables y luego pulse Propiedades. Muestra las propiedades del explorador en la barra lateral.
 
-1. En el explorador de propiedades, expanda el acordeón BÁSICO y especifique la ruta del esquema JSON cargado en un paso anterior para la opción Ruta del documento de Forms en tiempo de ejecución. El componente del contenedor muestra una representación del formulario.
+1. En el explorador de propiedades, expanda el acordeón BASIC (básico) y especifique la ruta del esquema JSON cargado en un paso anterior para la opción Ruta del documento del tiempo de ejecución de formularios. El componente del contenedor muestra una representación del formulario.
 
-1. En el explorador de propiedades, expanda el acordeón ENVÍO y establezca una acción de envío para el formulario adaptable. El formulario está listo para utilizarse en una aplicación de React.
+1. En el explorador de propiedades, expanda el acordeón SUBMISSION (envío) y establezca una acción de envío para el formulario adaptable. El formulario está listo para utilizarse en una aplicación de React.
 
 1. Para procesar el formulario, alojado en el equipo de desarrollo local, haga lo siguiente:
 
@@ -228,4 +228,4 @@ El formulario adaptable creado en el paso anterior está en blanco. Configure el
    1. Una vez finalizado, abra localhost:3000 en la ventana del explorador para ver un formulario adaptable sin encabezado procesado.
    1. Para probar la funcionalidad del envío, inicie sesión en su servidor de AEM Forms y utilice la opción **Vista previa del formulario en HTML** para abrir el formulario en el modo de vista previa.
 
-El [Libro de historias](https://opensource.adobe.com/aem-forms-af-runtime/storybook/) proporciona una lista de componentes y reglas que se pueden establecer en varios Forms adaptables sin encabezado junto con algún ejemplo del esquema JSON de Forms adaptable sin encabezado. También puede consultar el documento [especificaciones](/help/assets/Headless-Adaptive-Form-Specification.pdf) para conocer varias reglas y propiedades relacionadas con Forms adaptable sin encabezado.
+El [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/) proporciona una lista de los componentes y reglas que se pueden establecer en varios formularios adaptables sin encabezado junto con algún ejemplo del esquema JSON de formularios adaptables sin encabezado. También puede consultar el documento [Especificaciones](/help/assets/Headless-Adaptive-Form-Specification.pdf) para obtener más información sobre las distintas reglas y propiedades relacionadas con los formularios adaptables sin encabezado.

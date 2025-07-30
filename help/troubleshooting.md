@@ -10,9 +10,9 @@ level: Beginner, Intermediate
 hide: false
 exl-id: bfb7e688-d2be-4aaa-ac9b-147cbd74b516
 source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '127'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
@@ -22,11 +22,11 @@ ht-degree: 58%
 
 ### Problema
 
-Cuando se usan los comandos `mvn -PautoInstallPackage clean install` o similares para implementar un proyecto de tipo de archivo de AEM, el proyecto no se puede implementar.
+Cuando se usa `mvn -PautoInstallPackage clean install` o comandos similares para implementar un proyecto de arquetipo de AEM, el proyecto no consigue implementarse.
 
 ### Motivo
 
-Puede deberse a una versión no compatible o a una instalación dañada de `node.js` o `NPM`.
+Puede deberse a una versión no compatible o a una instalación dañada de `node.js` o `NPM`.
 
 ### Solución
 
@@ -41,7 +41,7 @@ Puede deberse a una versión no compatible o a una instalación dañada de `node
 
 ### Problema
 
-Cuando se usan los comandos `mvn clean install` o similares para implementar un proyecto de tipo de archivo AEM, el comando no se ejecuta.
+Cuando se usa `mvn clean install` o comandos similares para implementar un proyecto de arquetipo de AEM, el comando no consigue ejecutarse.
 
 ### Motivo
 

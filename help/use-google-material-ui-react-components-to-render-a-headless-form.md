@@ -1,6 +1,6 @@
 ---
 title: Utilice los componentes React de la IU de Google Material para procesar un formulario sin encabezado
-description: Obtenga información sobre cómo utilizar los componentes React de la IU de Google Material para procesar un formulario sin encabezado. Esta guía completa le explica el proceso paso a paso para crear componentes personalizados de Forms adaptable sin encabezado para asignar y utilizar componentes de React de la interfaz de usuario y material de Google para aplicar estilo a un formulario adaptable sin encabezado.
+description: Obtenga información sobre cómo utilizar los componentes React de la IU de Google Material para procesar un formulario sin encabezado. Esta guía exhaustiva le guía por el proceso paso a paso para crear componentes personalizados de formularios adaptables sin encabezado para asignar y utilizar los componentes React de la IU de Google Material para aplicar estilo a un formulario adaptable sin encabezado.
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Headless
@@ -9,24 +9,24 @@ level: Beginner, Intermediate
 hide: false
 exl-id: 476509d5-f4c1-4d1c-b124-4c278f67b1ef
 source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '870'
-ht-degree: 51%
+ht-degree: 100%
 
 ---
 
 
-# Utilice una biblioteca de React personalizada para representar un formulario sin encabezado
+# Utilice una biblioteca de React personalizada para procesar un formulario sin encabezado
 
 <!-- This article is completely missing the image ALT tags (descriptions) for each added image asset. That is impacting the CQI score for Experience Manager in a negative way. Be sure you add the required missing image ALT tags.  -->
 
 Puede crear e implementar componentes personalizados para personalizar el aspecto y la funcionalidad (comportamiento) de los formularios adaptables sin encabezado según los requisitos y las directrices de su organización.
 
-Estos componentes tienen dos propósitos principales: controlar el aspecto o el estilo de los campos de formulario y almacenar los datos recopilados a través de estos campos en la instancia del modelo de formulario. Si esto suena confuso, no se preocupe: va a explorar estos propósitos con más detalle en breve. Por ahora, vamos a centrarnos en los pasos iniciales de la creación de componentes personalizados, el procesamiento del formulario mediante estos componentes y el uso de eventos para guardar y enviar datos a un extremo REST.
+Estos componentes tienen dos propósitos principales: controlar el aspecto o el estilo de los campos de formulario y almacenar los datos recopilados a través de estos campos en la instancia del modelo de formulario. Si esto suena confuso, no se preocupe. En breve explorará estos propósitos con más detalle. Por ahora, vamos a centrarnos en los pasos iniciales de la creación de componentes personalizados, el procesamiento del formulario mediante estos componentes y la utilización de eventos para guardar y enviar datos a un punto final REST.
 
-En este tutorial, los componentes de la interfaz de usuario de Google Material se emplean para mostrar cómo procesar un formulario adaptable sin encabezado mediante componentes React personalizados. Sin embargo, no está limitado a esta biblioteca y es libre de utilizar cualquier biblioteca de componentes de React o desarrollar sus propios componentes personalizados.
+En este tutorial, los componentes de la IU de Google Material se emplean para mostrar cómo procesar un formulario adaptable sin encabezado utilizando componentes React personalizados. Sin embargo, no está limitado a esta biblioteca y puede utilizar cualquier biblioteca de componentes React o desarrollar sus propios componentes personalizados.
 
-Al final de este artículo, el formulario _Contáctenos_ creado en [Crear y publicar un formulario sin encabezado usando el Starter Kit](create-and-publish-a-headless-form.md) se transforma en lo siguiente:
+Al concluir este artículo, el formulario _Contact Us_ (contáctenos) creado en el artículo [Creación y publicación de un formulario sin encabezado con el kit de inicio](create-and-publish-a-headless-form.md) se transformará en lo siguiente:
 
 ![](assets/headless-adaptive-form-with-google-material-ui-components.png)
 
@@ -39,7 +39,7 @@ Los pasos principales que hay que seguir al utilizar los componentes de IU de Go
 
 De forma predeterminada, el kit de inicio utiliza los componentes [Espectro de Adobe](https://spectrum.adobe.com/). Vamos a definirlo para utilizar la [IU de materiales de Google](https://mui.com/):
 
-1. Asegúrese de que el kit de inicio no está en funcionamiento. Para detener el Starter Kit, abre tu terminal, navega a **react-starter-kit-aem-headless-forms** y presiona Ctrl-C (es lo mismo en Windows, Mac y Linux®).
+1. Asegúrese de que el kit de inicio no está en funcionamiento. Para detener el kit de inicio, abra el terminal, vaya a **react-starter-kit-aem-headless-forms** y pulse Ctrl-C (es lo mismo en Windows, Mac y Linux®).
 
    No intente cerrar el terminal. El cierre del terminal no detiene el kit de arranque.
 
@@ -56,12 +56,12 @@ Instala las bibliotecas npm de la IU de Google Material y las añade a las depen
 
 ## &#x200B;2. Crear componentes React personalizados
 
-Vamos a crear un componente personalizado que reemplace el componente predeterminado [entrada de texto](https://spectrum.adobe.com/page/text-field/) por el componente [Campo de texto de la interfaz de usuario de Google Material](https://mui.com/material-ui/react-text-field/).
+Vamos a crear un componente personalizado que reemplace el componente [entrada de texto](https://spectrum.adobe.com/page/text-field/) predeterminado por el componente [Campo de texto de IU de Google Material](https://mui.com/material-ui/react-text-field/).
 
-Se requiere un componente independiente para cada tipo de componente ([fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input) o `:type`) utilizado en una definición de formulario sin encabezado. Por ejemplo, en el formulario Contáctenos que creó en la sección anterior, los campos Nombre, Correo electrónico y Teléfono son de tipo `text-input` ([fieldType: &quot;text-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def)) y el campo de mensaje es de tipo `multiline-input` ([&quot;fieldType&quot;: &quot;multiline-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/reference-json-properties-fieldtype--multiline-input)).
+Se requiere un componente independiente para cada tipo de componente ([fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input) o `:type`) utilizado en una definición de formulario sin encabezado. Por ejemplo, en el formulario Contáctenos que creó en la sección anterior, los campos Nombre, Correo electrónico y Teléfono son de tipo `text-input` ([fieldType: &quot;text-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def)) y el campo de mensaje es de tipo `multiline-input` ([&quot;fieldType&quot;: &quot;multiline-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/reference-json-properties-fieldtype--multiline-input)).
 
 
-Vamos a crear un componente personalizado para superponer todos los campos de formulario que usan la propiedad [fieldType: &quot;text-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def) con el componente [Campo de texto de interfaz de usuario de material](https://mui.com/material-ui/react-text-field/).
+Vamos a crear un componente personalizado para superponer todos los campos de formulario que utilizan la propiedad [fieldType: &quot;text-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def) con el componente [Campo de texto de IU de Material](https://mui.com/material-ui/react-text-field/).
 
 
 Para crear el componente personalizado y asignar el componente personalizado con la propiedad [fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def):
@@ -69,7 +69,7 @@ Para crear el componente personalizado y asignar el componente personalizado con
 1. Abra el directorio **react-starter-kit-aem-headless-forms** en un editor de códigos y vaya a `\react-starter-kit-aem-headless-forms\src\components`.
 
 
-1. Cree una copia de la carpeta **`slider`** o **`richtext`** y cambie el nombre de la carpeta copiada a **materialtextfield**. `slider` y `richtext` son dos componentes personalizados de ejemplo disponibles en la aplicación inicial. Puede utilizar estos componentes para crear sus propios componentes personalizados.
+1. Cree una copia de la carpeta **`slider`** o **`richtext`** y cambie el nombre de la capeta copiada por **materialtextfield**. `slider` y `richtext` son dos componentes personalizados de muestra disponibles en la aplicación de inicio. Puede utilizarlos para crear sus propios componentes personalizados.
 
    ![El componente personalizado materialtextfield en VSCode](/help/assets/richtext-custom-component-in-vscode.png)
 
@@ -113,9 +113,9 @@ Su componente personalizado `materialtextfield` está listo. Vamos a configurar 
 
 ## &#x200B;3. Asignar un componente personalizado con campos de formulario sin encabezado
 
-El proceso de utilizar componentes de una biblioteca de terceros para procesar campos de formulario se conoce como asignación. Cada ([fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input)) se asigna a un componente correspondiente de una biblioteca de terceros.
+El proceso de utilizar componentes de una biblioteca de terceros para procesar campos de formulario se conoce como asignación. Debe asignar cada ([fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input)) a un componente correspondiente de una biblioteca de terceros.
 
-Toda la información relacionada con la asignación se añade al archivo `mappings.ts`. La instrucción `...mappings` del archivo `mappings.ts` hace referencia a las asignaciones predeterminadas, que se superponen a ([fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input) o `:type`) con [componentes de Adobe Spectrum](https://spectrum.adobe.com/page/text-field/).
+Toda la información relacionada con la asignación se añade al archivo `mappings.ts`. La instrucción `...mappings` del archivo `mappings.ts` hace referencia a las asignaciones predeterminadas, que se superponen a los componentes ([fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input) o `:type`) con [Adobe Spectrum](https://spectrum.adobe.com/page/text-field/).
 
 Para añadir la asignación para el componente `materialtextfield`, creado en el último paso:
 
@@ -154,14 +154,14 @@ Para añadir la asignación para el componente `materialtextfield`, creado en el
    ![](assets/material-text-field-form-rendetion.png)
 
 
-   Del mismo modo, puede crear componentes personalizados para los campos de mensaje (&quot;fieldType&quot;: &quot;multiline-input&quot;) y clasificación del servicio (&quot;fieldType&quot;:&quot;number-input&quot;). Puede clonar el siguiente repositorio Git para los componentes personalizados del mensaje y clasificar los campos de servicio:
+   Del mismo modo, puede crear componentes personalizados para los campos de mensaje (&quot;fieldType&quot;: &quot;multiline-input&quot;) y clasificación del servicio (&quot;fieldType&quot;:&quot;number-input&quot;). Puede clonar el siguiente repositorio Git para los componentes personalizados de los campos de mensaje y clasificación del servicio:
 
    [https://github.com/singhkh/react-starter-kit-aem-headless-forms](https://github.com/singhkh/react-starter-kit-aem-headless-forms)
 
 ## Siguiente paso
 
-Ha procesado correctamente el formulario con componentes personalizados que utilizan la IU de Google Material. ¿Ha intentado enviar el formulario haciendo clic en el botón Enviar (asignado con el componente de interfaz de usuario de Google Material correspondiente)? Si no, adelante. Inténtelo.
+Ha procesado correctamente el formulario con componentes personalizados que utilizan la IU de Google Material. ¿Ha intentado enviar el formulario haciendo clic en el botón Enviar (asignado con el componente de IU de Google Material correspondiente)? Si no, adelante. Inténtelo.
 
-¿El formulario envía los datos a alguna fuente de datos? No? No se preocupe. El motivo es que el formulario no está configurado para comunicarse con la biblioteca de tiempo de ejecución.
+¿El formulario envía los datos a alguna fuente de datos? No? No se preocupe. Esto se debe a que el formulario no está configurado para comunicarse con la biblioteca en tiempo de ejecución.
 
-¿Cómo puede configurar el formulario para comunicarse con ella? Próximamente habrá un artículo que lo explica todo en detalle. Permanezca atento.
+¿Cómo puede configurar el formulario para comunicarse con ella? Próximamente se publicará un artículo que lo explica todo en detalle. Permanezca atento.

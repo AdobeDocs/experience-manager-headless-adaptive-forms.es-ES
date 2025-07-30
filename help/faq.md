@@ -1,5 +1,5 @@
 ---
-title: Preguntas más frecuentes sobre Forms adaptable sin encabezado
+title: Preguntas frecuentes sobre los formularios adaptables sin encabezado
 description: Preguntas frecuentes
 solution: Experience Manager Forms
 feature: Adaptive Forms
@@ -10,9 +10,9 @@ keywords: sin encabezado, formulario adaptable, preguntas frecuentes
 hide: false
 exl-id: 5bfc307d-96a3-4007-b65f-32176ecdb710
 source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '431'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 69%
 
 ## ¿Debo saber React.js para usar formularios adaptativos sin encabezado?
 
-Puede utilizar cualquier marco de trabajo, biblioteca o lenguaje para procesar formularios adaptables sin encabezado y utilizar las API de REST de Adobe para validar y enviar los formularios. La biblioteca principal de AF, que se proporciona de forma predeterminada, es independiente del marco de trabajo. Las bibliotecas React-Render y React-component, que también se proporcionan de forma predeterminada, son para su comodidad. Puede crear sus propios componentes; no se limitan a los que se proporcionan.
+Puede usar cualquier marco de trabajo, biblioteca o lenguaje para procesar los formularios adaptables sin encabezado y utilizar las API REST de Adobe para validarlos y enviarlos. La biblioteca -core de AF, que se proporciona de forma predeterminada, es independiente del marco de trabajo. Las bibliotecas React-Render y React-Component, que también se suministran de forma predeterminada están pensadas para su comodidad. Puede desarrollar sus propios componentes y no tendrá que limitarse a los que se facilitan.
 
 
 <!-- 
@@ -51,7 +51,7 @@ Los formularios adaptables sin encabezado se basan en la [especificación están
 
 ## ¿Los formularios adaptables sin encabezado admiten campos en cascada?
 
-En los campos en cascada, el contenido del segundo campo depende del contenido elegido en el primer campo. [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/adaptive-form-dynamic-behaviour--options&args=formJson.items[0].fieldType:drop-down;formJson.items[0].minimum:!undefined;formJson.items[0].maximum:!undefined;formJson.items[0].label.value:Choose+number+of+options;formJson.items[0].enum[0]:1;formJson.items[0].enum[1]:2;formJson.items[0].enum[2]:3;formJson.items[1].fieldType:drop-down) proporciona un ejemplo de campos en cascada.
+En los campos en cascada, el contenido del segundo campo depende del contenido elegido en el primero. [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/adaptive-form-dynamic-behaviour--options&args=formJson.items[0].fieldType:drop-down;formJson.items[0].minimum:!undefined;formJson.items[0].maximum:!undefined;formJson.items[0].label.value:Choose+number+of+options;formJson.items[0].enum[0]:1;formJson.items[0].enum[1]:2;formJson.items[0].enum[2]:3;formJson.items[1].fieldType:drop-down) proporciona un ejemplo de campos en cascada.
 
 ## ¿Los formularios adaptables sin encabezado permiten rellenar previamente los formularios con datos personalizados?
 
@@ -64,7 +64,7 @@ At this moment, you use the Adaptive Form Editor to specify the JSON structure a
 
 ## ¿Puedo utilizar formularios adaptables sin encabezado con la SPA de Angular?
 
-Puede utilizar el SDK web para integrar formularios adaptables sin encabezado con la SPA de Angular. Es independiente de cualquier marco. Se puede utilizar el SDK de React como referencia.
+Puede utilizar el SDK web para integrar formularios adaptables sin encabezado con la SPA de Angular. Es independiente de cualquier marco. Puede utilizar el SDK de React como referencia.
 
 <!-- ## Should the `-r prerelease` switch be used every time to start the AEM SDK instance or only for the first time?
 
@@ -83,7 +83,7 @@ You do not require a license.properties file to run AEM Cloud Service SDK.
 
 ## ¿Existe algún complemento para facilitar el desarrollo de formularios adaptables sin encabezado?
 
-Sí: una extensión de código de Visual Studio le permite crear manualmente formularios adaptables sin encabezado en JSON.
+Sí, una extensión de Visual Studio Code le permite crear manualmente formularios adaptables sin encabezado en JSON.
 
 ## ¿Puede un formulario adaptable sin encabezado conectarse a cualquier CRM para leer o escribir datos?
 

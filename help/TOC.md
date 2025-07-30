@@ -6,9 +6,9 @@ feature: Adaptive Forms
 role: Developer
 hide: false
 source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '146'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -18,18 +18,18 @@ ht-degree: 77%
 + [Información general](overview.md)
 + [Pruebas generales](overview-testing.md)
 + [Arquitectura](architecture.md)
-+ Configuración rápida {#quick-setup}
++ Configuración rápida  {#quick-setup}
    + [Habilitación de formularios adaptables sin encabezado en AEM 6.5 Forms](enable-headless-adaptive-forms-and-core-components.md)
    + [Habilitación de formularios adaptables sin encabezado en AEM Forms as a Cloud Service](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md)
 + Tutorial {#tutorial}
    + [Genere formularios atractivos utilizando componentes principales y formularios adaptables sin encabezado en AEM Forms as a Cloud Service](build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service.md)
    + [Genere formularios atractivos utilizando componentes principales y formularios adaptables sin encabezado en AEM 6.5 Forms](build-engaging-forms-using-core-components-and-headless-adaptive-forms-on-aem-65-forms.md)
-+ Introducción a Starter Kit{#get-started}
-   + [Crear y publicar un formulario sin encabezado con un Starter Kit](create-and-publish-a-headless-form.md)
-   + [Utilice una biblioteca de React personalizada para representar un formulario sin encabezado](use-google-material-ui-react-components-to-render-a-headless-form.md)
-+ Crear formularios adaptables sin encabezado {#authoring-headless-adaptive-forms}
-   + [Crear un formulario adaptable sin encabezado mediante el editor de Forms adaptable](create-a-headless-adaptive-form.md)
-+ Referencia del desarrollador {#developer-reference}
++ Introducción al kit de inicio{#get-started}
+   + [Creación y publicación de un formulario sin encabezado con el kit de inicio](create-and-publish-a-headless-form.md)
+   + [Utilice una biblioteca de React personalizada para procesar un formulario sin encabezado](use-google-material-ui-react-components-to-render-a-headless-form.md)
++ Creación de formularios adaptables sin encabezado  {#authoring-headless-adaptive-forms}
+   + [Creación de un formulario adaptable sin encabezado mediante el editor de formularios adaptables](create-a-headless-adaptive-form.md)
++ Referencia para desarrolladores  {#developer-reference}
    + [Portal para desarrolladores](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=es)
    + [Sitio de pruebas de código](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=es)
    + [API de formularios adaptables sin encabezado](https://opensource.adobe.com/aem-forms-af-runtime/api/)

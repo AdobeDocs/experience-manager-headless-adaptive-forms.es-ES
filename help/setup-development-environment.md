@@ -4,16 +4,16 @@ description: Configurar el entorno de desarrollo para formularios adaptables sin
 hide: true
 exl-id: fd92f057-1217-42f8-a454-1bc7e3827e01
 source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '684'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
 
 # Configuración de un entorno de desarrollo local {#headless-adaptive-forms-setup-development-environment}
 
-Puede configurar un entorno de desarrollo local para crear y probar formularios adaptables sin encabezado en el equipo local. El entorno de desarrollo consiste en AEM SDK y el archivo de características de AEM Forms instalado en AEM SDK.
+Puede configurar un entorno de desarrollo local para crear y probar formularios adaptables sin encabezado en el equipo local. El entorno de desarrollo consta del SDK de AEM y el archivo de funciones de AEM Forms instalado en el SDK de AEM.
 <!--
  After a Headless adaptive form or related assets are ready on the local development environment, you can deploy the Headless adaptive form application to your publishing environment. -- >
 
@@ -42,7 +42,7 @@ Para instalar el SDK de AEM, el equipo local debe cumplir estos requisitos míni
 
 * [Kit de desarrollo de Java 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&fulltext=Oracle%7E+JDK%7E+11%7E&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=14)
 * [Última versión de Git](https://git-scm.com/downloads). Si no tiene experiencia previa con Git, consulte [Instalación de Git](https://git-scm.com/book/es/v2/Getting-Started-Installing-Git).
-* [Node.js 16.13.0 o posterior](https://nodejs.org/es/download/). <!-- URL is 404! If you are new to Node.js, see [How to install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs). -->
+* [Node.js 16.13.0 o posterior](https://nodejs.org/es/download/). <!-- URL is 404! If you are new to Node.js, see [How to install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs). -->
 * [Maven 3.6 o posterior](https://maven.apache.org/download.cgi). Si no tiene experiencia previa con Maven, consulte [Instalación de Apache Maven](https://maven.apache.org/install.html?lang=es).
 
 ## Configurar el entorno de desarrollo {#headless-adaptive-forms-procedure-to-setup-development-environment}
@@ -50,7 +50,7 @@ Para instalar el SDK de AEM, el equipo local debe cumplir estos requisitos míni
 Para configurar un nuevo entorno de desarrollo local y utilizarlo para desarrollar y probar formularios adaptables sin encabezado:
 
 1. [Configurar el SDK de AEM as a Cloud Service](#setup-author-instance).
-1. [Agregar archivo de AEM Forms (complemento de AEM Forms Cloud Service) al SDK de AEM](#add-forms-archive).
+1. [Añada el archivo de AEM Forms (complemento de AEM Forms as Cloud Service) al SDK de AEM](#add-forms-archive)..
 
 <!--
 
@@ -78,19 +78,19 @@ Está en formato .zip. La versión compatible es aem-sdk-2022.7.8085.20220725T14
    > No haga doble clic en el archivo .jar para iniciarlo. Esto da como resultado un [error](https://experienceleague.adobe.com/es/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#troubleshooting-double-click).
 
 1. Abra el símbolo del sistema:
-   * En Windows, use la opción **Ejecutar como administrador** para abrir el símbolo del sistema en modo elevado.
+   * En Windows, utilice la opción **Ejecutar como administrador** para abrir el símbolo del sistema en modo elevado.
    * En Linux®, asegúrese de abrir la ventana de terminal como usuario raíz.
 
-1. Vaya a la ubicación de instalación que contiene el archivo .jar copiado y ejecute el siguiente comando:
+1. Vaya a la ubicación de la instalación que contiene el archivo .jar copiado y ejecute el siguiente comando:
 
    `java -jar aem-author-p4502.jar -r prerelease`
 
    ![Descargar el SDK de AEM Cloud Service desde el portal de distribución de software](assets/install-sdk.png)
 
-   * El modificador `-r prerelease` habilita las características disponibles solamente en los programas de prelanzamiento y de versión limitada.
+   * El conmutador `-r prerelease` activa las funciones disponibles solo en los programas de versión preliminar y de versión limitada.
    * Puede utilizar `admin` como nombre de usuario y contraseña para el desarrollo local con el fin de reducir la carga cognitiva.
 
-   Una vez iniciado AEM, la página de inicio de sesión se abre en el explorador web. También puede abrir la página de inicio de sesión de la instancia de SDK de AEM en la dirección de correo electrónico `http://localhost:<port>` en el explorador web. Por ejemplo, [http://localhost:4502](http://localhost:4502).
+   Una vez iniciado AEM, se abre la página de inicio de sesión en el explorador web. También puede abrir la página de inicio de sesión de la instancia de SDK de AEM en la dirección de correo electrónico `http://localhost:<port>` en el explorador web. Por ejemplo, [http://localhost:4502](http://localhost:4502)..
 
 1. Inicie sesión en la instancia de autor. Pulse el icono ![ayuda](/help/assets/Help-icon.svg), pulse Acerca de Adobe Experience Manager y asegúrese de que el número de versión incluya el sufijo Versión preliminar.
 
@@ -100,12 +100,12 @@ Si no ve el sufijo Versión preliminar, detenga el servidor, elimine `[AEM SDK i
 
 ### &#x200B;2. Agregar el archivo de AEM Forms (complemento de AEM Forms Cloud Service) al SDK de AEM {#add-forms-archive}
 
-El archivo de características de AEM Forms as a Cloud Service (complemento de AEM Forms Cloud Service) proporciona herramientas para crear formularios adaptables sin encabezado en un entorno de desarrollo local. Para instalar el archivo de características, haga lo siguiente:
+El archivo de funciones de AEM Forms as a Cloud Service (complemento de AEM Forms Cloud Service) proporciona herramientas para crear formularios adaptables sin encabezado en un entorno de desarrollo local. Para instalar el archivo de características, haga lo siguiente:
 
 1. Descargue y extraiga el último archivo de características [!DNL AEM Forms] (complemento de AEM Forms) en [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=AEM*+Forms*+add*+on*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=20). Utilice la columna Fecha de publicación para ordenar y localizar fácilmente el SDK más reciente. La versión compatible es aem-forms-addon-2022.07.06.02-220600 y posterior.
 
 1. Navegue hasta el directorio crx-quickstart/install. Si la carpeta no existe, créela.
-1. Detenga la instancia de SDK de AEM. Puede finalizar la ventana del símbolo del sistema que ejecuta una instancia de AEM SDK para detener AEM.
+1. Detenga la instancia de SDK de AEM. Puede terminar la ventana del símbolo del sistema que ejecuta una instancia del SDK de AEM para detener AEM.
 1. Copie el [!DNL AEM Forms]archivo de características de complementos del archivo, `aem-forms-addon-<version>.far`, que se ha extraído en el paso 1 a la carpeta de instalación.
 1. Utilice el siguiente comando para reiniciar la instancia del SDK de AEM:
 

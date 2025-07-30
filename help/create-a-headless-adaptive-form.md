@@ -1,6 +1,6 @@
 ---
-title: Crear un formulario adaptable sin encabezado mediante el editor de Forms adaptable
-description: Cree un formulario adaptable sin encabezado mediante el editor de Forms adaptable.
+title: Creación de un formulario adaptable sin encabezado mediante el editor de formularios adaptables
+description: Cree un formulario adaptable sin encabezado mediante el editor de formularios adaptables.
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Headless
@@ -9,9 +9,9 @@ level: Beginner, Intermediate
 hide: false
 exl-id: 0214dc2e-52ce-40e9-bef3-f4f4a7ff266f
 source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1187'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -21,18 +21,18 @@ AEM Forms as a Cloud Service ofrece un editor fácil de usar para crear formular
 
 >[!NOTE]
 >
->Si es nuevo en los formularios adaptables sin encabezado, comience con el tutorial [Cree y publique un formulario sin encabezado con el Starter Kit](create-and-publish-a-headless-form.md). Explica los conceptos básicos y le explica cómo crear manualmente un formulario antes de pasar al editor de Forms adaptable para formularios sin encabezado.
+>Si es la primera vez que utiliza los formularios adaptables sin encabezado, comience con el tutorial [Creación y publicación de un formulario sin encabezado con el kit de inicio](create-and-publish-a-headless-form.md). Abarca los conceptos básicos y le guía a través de la creación manual de un formulario antes de pasar al editor de formularios adaptables para formularios sin encabezado.
 
 
-Realice los siguientes pasos para crear un formulario adaptable sin encabezado mediante el editor de Forms adaptable:
+Realice los siguientes pasos para crear un formulario adaptable sin encabezado mediante el editor de formularios adaptables:
 
 ## Antes de comenzar
 
-Para crear un formulario adaptable mediante el editor de Forms adaptable, es necesario lo siguiente:
+Para crear un formulario adaptable mediante el editor de formularios adaptables, se requiere lo siguiente:
 
 **Para AEM 6.5 Forms:**
 
-* Acceso a una instancia de autor de AEM Forms 6.5.16.0 o posterior.
+* Acceso a una instancia de autor de formularios de AEM 6.5.16.0 o posterior.
 
 * Componentes principales de Formularios adaptables
 
@@ -40,21 +40,21 @@ Para crear un formulario adaptable mediante el editor de Forms adaptable, es nec
 
 * Una temática de formulario adaptable para la plantilla basada en componentes principales
 
-* Agregue los usuarios al grupo [!DNL forms-users]. Los miembros del grupo [!DNL forms-users] tienen permisos para crear un formulario adaptable.
+* Añadir sus usuarios al grupo [!DNL forms-users]. Los miembros del grupo [!DNL forms-users] tienen permisos para crear un formulario adaptable.
 
 
-**Para AEM Forms as a Cloud Service**
+**Para AEM Forms as a Cloud Service:**
 
 * Acceso a una [instancia de autor AEM Forms as a Cloud Service](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service) o a un entorno de [SDK local de AEM Forms as a Cloud Service](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-local-development-environment).
 
-* **Una plantilla de formulario adaptable**: una plantilla proporciona una estructura básica y define el aspecto (diseños y estilos) de un formulario adaptable. Tiene componentes con formato previo que contienen determinadas propiedades y estructura de contenido. También proporciona las opciones para definir una temática y enviar una acción. La temática define la apariencia, y la acción de envío define la acción que debe realizarse al enviar un Formulario adaptable. Por ejemplo, enviar los datos recopilados a una fuente de datos. El servicio en la nube proporciona una plantilla OOTB, denominada en blanco:
+* **Una plantilla de formulario adaptable**: una plantilla ofrece una estructura básica y define el aspecto (diseños y estilos) de un formulario adaptable. Tiene componentes con formato previo que contienen determinadas propiedades y estructura de contenido. También ofrece las opciones para definir una temática y enviar una acción. La temática define la apariencia, y la acción de envío define la acción que debe realizarse al enviar un Formulario adaptable. Por ejemplo, enviar los datos recopilados a una fuente de datos. El servicio en la nube proporciona una plantilla OOTB, denominada en blanco:
 
    * La plantilla `blank Adaptive Forms (Core Components)` se incluye con cada nuevo programa as a Cloud Service de AEM Forms.
    * También puede [crear una nueva plantilla de formularios adaptables (componentes principales)](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor) desde cero.
 
 * **Una temática de formulario adaptable**: Una temática contiene detalles de estilo para los componentes y paneles. Los estilos incluyen propiedades como colores de fondo, colores de estado, transparencia, alineación y tamaño. Al aplicar una temática, el estilo especificado se refleja en los componentes correspondientes.  La plantilla `Canvas` se incluye con cada nuevo programa as a Cloud Service de AEM Forms.
 
-* **Permisos**: Agregue sus usuarios al grupo [!DNL forms-users]. Los miembros del grupo [!DNL forms-users] tienen permisos para crear un formulario adaptable. Para obtener una lista detallada de formularios para grupos de usuarios específicos, consulte [Grupos y permisos](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks).
+* **Permisos**: añada sus usuarios al grupo [!DNL forms-users]. Los miembros del grupo [!DNL forms-users] tienen permisos para crear un formulario adaptable. Para obtener una lista detallada de los formularios para grupos de usuarios específicos, consulte [Grupos y permisos](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks).
 
 
 ## Crear un formulario adaptable {#create-an-adaptive-form-components}
@@ -67,7 +67,7 @@ Para crear un formulario adaptable mediante el editor de Forms adaptable, es nec
 
    ![Plantilla](/help/assets/core-components-template.png)
 
-   Al seleccionar una plantilla, se selecciona automáticamente un tema y una acción de envío especificados en la plantilla, y se habilita el botón **[!UICONTROL Crear]**. Puede ir a las pestañas **[!UICONTROL Estilo]** o **[!UICONTROL Envío]** para seleccionar un tema diferente o enviar una acción. Si la plantilla seleccionada no especifica ninguna temática, el botón Crear permanece desactivado. Puede ir a la ficha **[!UICONTROL Estilos]** para seleccionar un tema manualmente.
+   Al seleccionar una plantilla, se selecciona automáticamente un tema y una acción de envío especificados en la plantilla, y se habilita el botón **[!UICONTROL Crear]**. Puede ir a las pestañas **[!UICONTROL Estilo]** o **[!UICONTROL Envío]** para seleccionar una temática diferente o enviar una acción. Si la plantilla seleccionada no especifica ninguna temática, el botón Crear permanece desactivado. Puede ir a la pestaña **[!UICONTROL Estilos]** para seleccionar manualmente una temática.
 
 1. En la pestaña **[!UICONTROL Estilo]**, seleccione una temática:
 
@@ -79,9 +79,9 @@ Para crear un formulario adaptable mediante el editor de Forms adaptable, es nec
 
    * **Modelo de datos de formulario**: A [El modelo de datos de formulario](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration) permite integrar entidades y servicios de distintas fuentes de datos en un formulario adaptable. Elija modelo de datos de formulario si el formulario adaptable que está creando implica recuperar y escribir datos desde y hacia varias fuentes de datos.
 
-   * **Esquema JSON**: [Esquema JSON](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model) El Forms adaptable permite una integración perfecta con el sistema back-end de su organización al proporcionar la capacidad de asociar un esquema JSON, que representa la estructura de los datos que se producen o consumen. Esta asociación permite a los autores añadir contenido dinámicamente al formulario adaptable mediante los elementos del esquema. Durante la creación, puede acceder rápidamente a los elementos de esquema en la pestaña Objetos del modelo de datos del explorador de contenido. Al crear un nuevo formulario adaptable, el editor agrega automáticamente todos los campos.
+   * **Esquema JSON**: los formularios adaptables del [esquema JSON](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model) permiten una integración perfecta con el sistema back-end de su organización al proporcionar la posibilidad de asociar un esquema JSON, que representa la estructura de los datos que se producen o consumen. Esta asociación permite a los autores añadir contenido de forma dinámica al formulario adaptable utilizando los elementos del esquema. Durante la creación, puede acceder rápidamente a los elementos del esquema en la pestaña Objetos del modelo de datos del explorador de contenido. Cuando se crea un nuevo formulario adaptable, el editor añade automáticamente todos los campos.
 
-   De forma predeterminada, todos los campos del esquema JSON asociado se seleccionan automáticamente y se convierten en los correspondientes componentes de formulario adaptable, lo que optimiza el proceso de creación. El asistente ofrece la comodidad añadida de permitirle elegir selectivamente qué campos deben incluirse en el formulario adaptable mediante el uso de casillas de verificación.
+   De forma predeterminada, todos los campos del esquema JSON asociado se seleccionan automáticamente y se convierten en los correspondientes componentes de formulario adaptable, lo que optimiza el proceso de creación. El asistente ofrece la comodidad añadida de permitirle elegir selectivamente qué campos se deben incluir en el formulario adaptable mediante el uso de casillas de verificación.
 
 1. En la pestaña **[!UICONTROL Envío]**, seleccione una acción de envío:
 
@@ -99,12 +99,12 @@ Para crear un formulario adaptable mediante el editor de Forms adaptable, es nec
 
 1. Pulse **[!UICONTROL Crear]**. Se crea un formulario adaptable que se abre en el editor de formularios adaptables. El editor muestra el contenido disponible en la plantilla.  En base al tipo de formulario adaptable, los elementos del formulario presentes en el <!--XFA form template, XML schema or --> esquema JSON o el modelo de datos de formulario asociado se muestran en la pestaña **[!UICONTROL Objetos del modelo de datos]** del **[!UICONTROL Explorador de contenido]** en la barra lateral. También puede arrastrar y soltar estos elementos para crear su formulario adaptable.
 
-Ahora puede arrastrar y soltar los componentes de Forms adaptable en el contenedor de Forms adaptable para diseñar y crear el formulario.
+Ahora, puede arrastrar y soltar los componentes de formularios adaptables en el contenedor de formularios adaptables para diseñar y crear el formulario.
 
 
 ## Vista de la representación JSON de un formulario adaptable {#preview-form}
 
-Seleccione el formulario adaptable y pulse **Vista previa**. Aparecerá la vista previa del formulario. Para ver la definición del formulario (JSON), sustituya la extensión .html de la URL por .model.json
+Seleccione el formulario adaptable y pulse **Vista previa**. Aparecerá la vista previa del formulario. Para ver la definición de formulario (JSON) del formulario, reemplace la extensión .html en la URL por .model.json
 
 Por ejemplo, http://[author-server]:[port]/editor.html/content/forms/af/contact-us.model.json
 
