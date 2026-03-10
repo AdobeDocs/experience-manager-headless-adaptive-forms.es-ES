@@ -1,9 +1,10 @@
 ---
 title: Utilización de eventos para gestionar y enviar datos de formularios adaptables sin encabezado
 description: Utilice eventos para gestionar y enviar datos de formularios adaptables sin encabezado.
-hide: false
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
-workflow-type: ht
+hide: true
+hidefromtoc: true
+source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
+workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 100%
 

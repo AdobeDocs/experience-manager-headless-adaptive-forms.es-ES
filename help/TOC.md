@@ -5,10 +5,10 @@ user-guide-description: Documentación de formularios adaptables sin encabezado 
 feature: Adaptive Forms
 role: Developer
 hide: false
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
-workflow-type: ht
-source-wordcount: '146'
-ht-degree: 100%
+source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
+workflow-type: tm+mt
+source-wordcount: '195'
+ht-degree: 82%
 
 ---
 
@@ -18,7 +18,8 @@ ht-degree: 100%
 + [Información general](overview.md)
 + [Pruebas generales](overview-testing.md)
 + [Arquitectura](architecture.md)
-+ Configuración rápida  {#quick-setup}
++ [Explicación de los formularios sin encabezado: conceptos y preguntas frecuentes](understanding-headless-forms.md)
++ Configuración rápida {#quick-setup}
    + [Habilitación de formularios adaptables sin encabezado en AEM 6.5 Forms](enable-headless-adaptive-forms-and-core-components.md)
    + [Habilitación de formularios adaptables sin encabezado en AEM Forms as a Cloud Service](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md)
 + Tutorial {#tutorial}
@@ -27,11 +28,14 @@ ht-degree: 100%
 + Introducción al kit de inicio{#get-started}
    + [Creación y publicación de un formulario sin encabezado con el kit de inicio](create-and-publish-a-headless-form.md)
    + [Utilice una biblioteca de React personalizada para procesar un formulario sin encabezado](use-google-material-ui-react-components-to-render-a-headless-form.md)
-+ Creación de formularios adaptables sin encabezado  {#authoring-headless-adaptive-forms}
+   + [Uso de componentes personalizados para procesar un formulario sin encabezado](developing-for-headless-forms-using-your-own-components.md)
+   + [Usar eventos para gestionar y enviar datos de formulario](use-events-to-handle-and-submit-form-data.md)
+   + [Prácticas recomendadas de Mobile Forms](mobile-forms-best-practices.md)
++ Creación de formularios adaptables sin encabezado {#authoring-headless-adaptive-forms}
    + [Creación de un formulario adaptable sin encabezado mediante el editor de formularios adaptables](create-a-headless-adaptive-form.md)
-+ Referencia para desarrolladores  {#developer-reference}
++ Referencia para desarrolladores {#developer-reference}
    + [Portal para desarrolladores](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=es)
-   + [Sitio de pruebas de código](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=es)
+   + [Zona de juegos de códigos](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=es)
    + [API de formularios adaptables sin encabezado](https://opensource.adobe.com/aem-forms-af-runtime/api/)
 + [Preguntas frecuentes](faq.md)
 + [Solución de problemas](troubleshooting.md)

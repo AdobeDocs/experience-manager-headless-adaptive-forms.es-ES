@@ -9,10 +9,10 @@ level: Beginner, Intermediate
 keywords: sin encabezado, formulario adaptable, preguntas frecuentes
 hide: false
 exl-id: 5bfc307d-96a3-4007-b65f-32176ecdb710
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
-workflow-type: ht
-source-wordcount: '431'
-ht-degree: 100%
+source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
+workflow-type: tm+mt
+source-wordcount: '837'
+ht-degree: 58%
 
 ---
 
@@ -84,6 +84,29 @@ You do not require a license.properties file to run AEM Cloud Service SDK.
 ## ¿Existe algún complemento para facilitar el desarrollo de formularios adaptables sin encabezado?
 
 Sí, una extensión de Visual Studio Code le permite crear manualmente formularios adaptables sin encabezado en JSON.
+
+## ¿Cuál es el enfoque recomendado para formularios móviles o sin conexión? {#mobile-offline-forms}
+
+Cree su propia aplicación nativa y recupere definiciones de formularios a través de la API de Forms adaptable sin encabezado. Si lo desea, puede implementar la compatibilidad sin conexión (por ejemplo, almacenamiento local y sincronización). Consulte [Prácticas recomendadas de formularios móviles](mobile-forms-best-practices.md) para ver el método recomendado y los vínculos a las API.
+
+## ¿Cómo se utilizan las API de GraphQL o sin encabezado con AEM Forms?
+
+AEM sin encabezado para Forms adaptable usa **API HTTP/REST**, no GraphQL. La aplicación llama a estas API para enumerar formularios, obtener una definición de formulario (JSON), validar, enviar y rastrear el estado de envío. Use las [API HTTP de formularios adaptables sin encabezado](https://opensource.adobe.com/aem-forms-af-runtime/api/) para obtener la referencia completa. Para saber cómo se recuperan y procesan los formularios, consulte [Arquitectura](architecture.md) y [Explicación de los formularios sin encabezado](understanding-headless-forms.md).
+
+## ¿Cómo puedo implementar y aplicar estilo a los formularios sin encabezado mediante los componentes de React en Adobe AEM Forms?
+
+Implemente y aplique estilo a los formularios sin encabezado mediante sus propios componentes de React y CSS (o una biblioteca de interfaz de usuario como la interfaz de usuario de Material). La lógica de formulario (estado, validación y reglas) proviene de Forms Web SDK y del formulario JSON; su aplicación proporciona la interfaz de usuario que lo procesa.
+
+* Para aplicar estilo a un formulario sin encabezado con una biblioteca de la interfaz de usuario de React, consulte [Usar una biblioteca de React personalizada para procesar un formulario sin encabezado](use-google-material-ui-react-components-to-render-a-headless-form.md).
+* Para generar y asignar componentes de React personalizados a campos de formulario, consulte [Usar componentes personalizados para procesar un formulario sin encabezado](developing-for-headless-forms-using-your-own-components.md).
+
+Para conocer conceptos como cuándo usar formularios sin encabezado, administración de estado y validación, consulte [Explicación de los formularios sin encabezado](understanding-headless-forms.md).
+
+## ¿Cómo puedo implementar y personalizar AEM Forms con CSS, temáticas, editores de reglas y formularios sin encabezado personalizados?
+
+**Formularios sin encabezado:** El estilo y el aspecto están totalmente bajo su control. Utiliza sus propios componentes de React (u otros) y su propio CSS; no hay temáticas integradas. Vea [Usar una biblioteca de React personalizada para procesar un formulario sin encabezado](use-google-material-ui-react-components-to-render-a-headless-form.md) y [Usar componentes personalizados para procesar un formulario sin encabezado](developing-for-headless-forms-using-your-own-components.md) para implementar y aplicar estilo a formularios sin encabezado.
+
+**AEM Forms clásico (temáticas, editor de reglas, editor visual):** CSS personalizado, el editor de temáticas y el editor de reglas se aplican a la experiencia de creación de Forms adaptable clásica (sin encabezado). Para ver esos temas, consulte la [documentación de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-forms.html) en Experience League.
 
 ## ¿Puede un formulario adaptable sin encabezado conectarse a cualquier CRM para leer o escribir datos?
 

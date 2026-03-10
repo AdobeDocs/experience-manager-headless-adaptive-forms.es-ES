@@ -9,10 +9,10 @@ level: Beginner, Intermediate
 keywords: sin encabezado, formulario adaptable, arquitectura
 hide: false
 exl-id: ee7096d8-89e2-41e0-85e7-b26457df96fb
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
-workflow-type: ht
-source-wordcount: '904'
-ht-degree: 100%
+source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
+workflow-type: tm+mt
+source-wordcount: '994'
+ht-degree: 94%
 
 ---
 
@@ -50,7 +50,7 @@ A typical Headless adaptive forms architecture constitutes an Adobe Experience M
 
 **Formularios adaptables sin encabezado**: un formulario adaptable sin encabezado se representa como un archivo .json. La estructura JSON define los componentes, las restricciones y la estructura de un formulario.
 
-**Aplicaciones front-end**: las aplicaciones de front-end como SPA (aplicaciones de una sola página), aplicaciones móviles, aplicaciones JavaScript, consumen formularios adaptables sin encabezado (la representación de formulario JSON) y procesan el formulario en un cliente. Puede utilizar el componente del procesador de React que se suministra con los formularios adaptables sin encabezado para procesar un formulario adaptable o crear su propio componente personalizado para procesar de forma nativa formularios adaptables sin encabezado.
+**Aplicaciones front-end**: las aplicaciones de front-end como SPA (aplicaciones de una sola página), aplicaciones móviles, aplicaciones JavaScript, consumen formularios adaptables sin encabezado (la representación de formulario JSON) y procesan el formulario en un cliente. Puede utilizar el componente de procesamiento React enviado con formularios adaptables sin encabezado para procesar un formulario adaptable o crear su propio componente personalizado para procesar de forma nativa formularios adaptables sin encabezado. En los casos de uso de formularios nativos móviles y sin conexión, el método recomendado es crear su propia aplicación y recuperar las definiciones de los formularios mediante la API; consulte las [prácticas recomendadas de los formularios móviles](mobile-forms-best-practices.md).
 
 <!-- ### Understanding Headless adaptive forms definition -->
 

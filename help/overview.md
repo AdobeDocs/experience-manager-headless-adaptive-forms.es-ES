@@ -9,10 +9,10 @@ level: Beginner, Intermediate
 keywords: CMS sin encabezado, formularios adaptables, IU sin encabezado, CMS con encabezado, asistentes de voz, Alexa, bots de chat, arquitectura de WhatsApp
 hide: false
 exl-id: 3b5b955b-d59c-43d9-9cc4-3244a08f80dc
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
-workflow-type: ht
-source-wordcount: '306'
-ht-degree: 100%
+source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
+workflow-type: tm+mt
+source-wordcount: '361'
+ht-degree: 90%
 
 ---
 
@@ -28,6 +28,8 @@ Los formularios adaptables sin encabezado le ayudan a hacer lo siguiente:
 * Integrar formularios de forma nativa en sus aplicaciones de escritorio, móviles, sitios web y aplicaciones de chat.
 * Reutilizar sus propios componentes de IU con aplicaciones de formularios.
 * Aprovechar la [potencia de Adobe Experience Manager Forms](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms).
+
+En los casos de uso de formularios móviles y sin conexión, el método recomendado es crear su propia aplicación nativa y recuperar las definiciones de formulario mediante la API de Forms adaptable sin encabezado. Consulte [Prácticas recomendadas de formularios móviles](mobile-forms-best-practices.md) para obtener más información.
 
 Además, tiene la libertad de desarrollar sus propios componentes para procesar un formulario con cualquier marco de trabajo de IU y lenguaje de programación de su elección. También puede utilizar los componentes de React disponibles de forma predeterminada para procesar un formulario adaptable sin encabezado.
 
