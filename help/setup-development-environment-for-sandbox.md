@@ -61,7 +61,7 @@ Para habilitar formularios adaptables sin encabezado en la zona protegida de For
 </tr>
 <tr>
   <td>
-    3. Para su programa, pulse el icono ... y seleccione la opción <b> Editar programa </b>. Aparecerá un cuadro de diálogo. 
+    &#x200B;3. Para su programa, pulse el icono ... y seleccione la opción <b> Editar programa </b>. Aparecerá un cuadro de diálogo. 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -72,7 +72,7 @@ Para habilitar formularios adaptables sin encabezado en la zona protegida de For
 </tr>
 <tr>
   <td>
-    4. En el cuadro de diálogo Editar programa, vaya a la pestaña </b> Soluciones y complementos de <b>, seleccione la opción <b> Forms - Inscripción digital </b> y pulse <b> actualizar </b>. 
+    &#x200B;4. En el cuadro de diálogo Editar programa, vaya a la pestaña </b> Soluciones y complementos de <b>, seleccione la opción <b> Forms - Inscripción digital </b> y pulse <b> actualizar </b>. 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -117,7 +117,7 @@ Para clonar el repositorio, haga lo siguiente:
 </tr>
 <tr>
   <td>
-    3. En el equipo local, abra el símbolo del sistema, cree una carpeta, ejecute el siguiente comando y proporcione las credenciales del repositorio, tal y como se solicita:
+    &#x200B;3. En el equipo local, abra el símbolo del sistema, cree una carpeta, ejecute el siguiente comando y proporcione las credenciales del repositorio, tal y como se solicita:
     </br>
     <code> git clone [Repository URL] </code> </br></br>
     Por ejemplo, </br> 
@@ -243,7 +243,7 @@ Al finalizar correctamente el comando, se creará una carpeta de proyecto con el
 </tr>
 <tr>
   <td>
-    3. Para su canalización, pulse el icono ... y seleccione la opción <b> Ejecutar </b>. Si se le solicita que ejecute la canalización, pulse <b> Ejecutar </b> y espere a que cambie el <b> estado </b> de la canalización a <b> Completado</b>.  
+    &#x200B;3. Para su canalización, pulse el icono ... y seleccione la opción <b> Ejecutar </b>. Si se le solicita que ejecute la canalización, pulse <b> Ejecutar </b> y espere a que cambie el <b> estado </b> de la canalización a <b> Completado</b>.  
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
