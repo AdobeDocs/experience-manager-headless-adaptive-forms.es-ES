@@ -3,9 +3,9 @@ title: Problemas conocidos con los formularios adaptables sin encabezado
 description: Problemas conocidos con los formularios adaptables sin encabezado.
 keywords: sin encabezado, formulario adaptable, problemas conocidos
 hide: true
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
-workflow-type: ht
-source-wordcount: '118'
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+workflow-type: tm+mt
+source-wordcount: '119'
 ht-degree: 100%
 
 ---

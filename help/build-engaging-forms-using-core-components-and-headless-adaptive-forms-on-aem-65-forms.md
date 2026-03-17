@@ -9,10 +9,10 @@ level: Beginner, Intermediate
 topic-tags: develop
 hide: true
 exl-id: 07a71aac-de38-4839-b8d6-b47c3f575eb3
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
-workflow-type: ht
-source-wordcount: '2134'
-ht-degree: 100%
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+workflow-type: tm+mt
+source-wordcount: '2311'
+ht-degree: 98%
 
 ---
 
@@ -38,7 +38,7 @@ Para usar este laboratorio práctico:
 
 * Instale la [última versión de Git](https://git-scm.com/downloads). Si es nuevo en Git, consulte [Instalación de Git](https://git-scm.com/book/es/v2/Getting-Started-Installing-Git).
 
-* Instale [Node.js 16.13.0 o posterior](https://nodejs.org/es/download/). <!-- URL IS 404! If you are new to Node.js, see [How to install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).--> 
+* Instale [Node.js 16.13.0 o posterior](https://nodejs.org/es/download/). <!-- URL IS 404! If you are new to Node.js, see [How to install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).-->.
 
 * [Habilite formularios adaptables sin encabezado](enable-headless-adaptive-forms-and-core-components.md) en el entorno de AEM 6.5 Forms.
 
@@ -100,7 +100,7 @@ Como usuario empresarial, va a utilizar el editor de formularios adaptables y su
    1. Haga clic en **Crear** y seleccione Formulario adaptable.
       ![](/help/assets/creating-adaptive-form-6-5.png){width="50%" align="left"}
 
-   1. Seleccione la plantilla **En blanco con componentes principales** en la pantalla de selección de plantillas como se muestra a continuación y pulse **Siguiente**.
+   1. Seleccione la plantilla **En blanco con componentes principales** en la pantalla de selección de plantillas como se muestra a continuación y haga clic en **Siguiente**.
       ![](/help/assets/creating-adaptive-form-6-5-select-blank-template.png){width="50%" align="left"}
 
    1. Especifique `Contact us` como **Título** del formulario. Asegúrese de que la variable **Nombre** del formulario es `contact-us`.
@@ -119,7 +119,7 @@ Como usuario empresarial, va a utilizar el editor de formularios adaptables y su
       ![](/help/assets/contact-us-headless-adaptive-form.png){width="50%" align="left"}
 
 
-   1. Abra el explorador de contenido, haga clic en el icono de propiedades del contenedor de la guía y abra la pestaña **Envío**. 
+   1. Abra el explorador de contenido, haga clic en el icono de propiedades del contenedor de la guía y abra la pestaña **Envío**.
 
    1. Seleccione la acción de envío **Enviar al punto final REST**
 
@@ -340,7 +340,7 @@ Haga cambios en el formulario del servidor como usuario empresarial y vea los ca
 
 1. Abra la interfaz de administración de AEM Forms en el explorador. Por ejemplo, [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
 
-1. Seleccione el formulario **Contáctenos** y haga clic en **Editar.** Abre el formulario en el editor de formularios adaptables.
+1. Seleccione el formulario **Contáctenos** y haga clic en **Editar.** Se abrirá el formulario en el editor de Forms adaptable.
 
 
 1. Seleccione el campo **Número de contacto** y haga clic en el **icono Editar (icono de lápiz)** en la barra de herramientas. Si no puede ver la barra de herramientas emergente, cambie al modo Editar. Haga clic en el botón **Editar** en la parte superior derecha, a la izquierda del botón **Vista previa**.
@@ -508,13 +508,13 @@ en cuestión. Por ejemplo, un canal web en este laboratorio.
 
 ## Preguntas frecuentes (FAQ)
 
-+++ ¿Los componentes principales están disponibles públicamente?
++++ ¿Los componentes principales están disponibles públicamente?  
 
 Sí, los componentes principales de formularios adaptables están disponibles con AEM 6.5 Forms as Cloud Service. Necesita el Service Pack 16 o posterior de AEM Forms 6.5 para utilizar los componentes principales de formularios adaptables.
 
 +++
 
-+++ ¿Los formularios sin encabezado requieren una licencia independiente?
++++ ¿Los formularios sin encabezado requieren una licencia independiente?  
 
 No, los formularios sin encabezado utilizan la misma métrica de valor de licencia y el mismo número de envíos de formularios.
 
@@ -529,12 +529,12 @@ Ahora ya ha aprendido a crear formularios adaptables y distribuirlos en varios c
 
 ## Recursos
 
-* [Introducción a los componentes principales del formulario adaptable](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/introduction)
+* [Introducción a los componentes principales de formulario adaptable](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/introduction)
 
-* [Creación de formularios adaptables con componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
+* [Crear formularios adaptables mediante componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
 
-* [Actualización del estilo para el AF basado en componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
+* [Actualizar el estilo para AF basado en componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
 
 * [Formularios adaptables sin encabezado](https://experienceleague.adobe.com/es/docs/experience-manager-headless-adaptive-forms/using/overview)
 
-* [Uso del kit de inicio de React sin encabezado](https://experienceleague.adobe.com/es/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)
+* [Uso de un kit de inicio React sin encabezado](https://experienceleague.adobe.com/es/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)

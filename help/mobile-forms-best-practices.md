@@ -7,9 +7,9 @@ topic: Headless
 role: Admin, Developer
 level: Beginner, Intermediate
 keywords: formularios móviles, aplicación nativa, formularios sin conexión, API sin encabezado
-hide: false
-exl-id: b8e2f1a4-5c6d-4e2a-9f3b-1d4e5a6c7b8d
-source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
+index: true
+exl-id: 6f25039f-61fc-4366-9e17-6b2809162c58
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 7%

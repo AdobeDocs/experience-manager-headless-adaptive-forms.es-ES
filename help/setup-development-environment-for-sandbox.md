@@ -3,10 +3,10 @@ title: Configuración de un entorno de desarrollo para una zona protegida de For
 description: Configure un entorno de desarrollo para una zona protegida de Forms as a Cloud Service.
 hide: true
 exl-id: befac9ad-d2c4-4705-96fc-f0ea0ef823b8
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
-workflow-type: ht
-source-wordcount: '1152'
-ht-degree: 100%
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+workflow-type: tm+mt
+source-wordcount: '1369'
+ht-degree: 86%
 
 ---
 
@@ -50,7 +50,7 @@ Para habilitar formularios adaptables sin encabezado en la zona protegida de For
 </tr>
 <tr>
   <td>
-  2. Para la opción <b>Cloud Manager</b>, haga clic en <b>Iniciar. </b> Aparecerá una lista de programas para su organización.
+  2. Para la opción <b> Cloud Manager </b>, haga clic en <b> Iniciar. </b> Aparecerá una lista de programas para su organización.
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -61,7 +61,7 @@ Para habilitar formularios adaptables sin encabezado en la zona protegida de For
 </tr>
 <tr>
   <td>
-    3. Para su programa, pulse el icono ... y seleccione la opción <b>Editar programa.</b>. Aparecerá un cuadro de diálogo. 
+    3. Para su programa, pulse el icono ... y seleccione la opción <b> Editar programa </b>. Aparecerá un cuadro de diálogo. 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -72,7 +72,7 @@ Para habilitar formularios adaptables sin encabezado en la zona protegida de For
 </tr>
 <tr>
   <td>
-    4. En el cuadro de diálogo Editar programa, vaya a la <b>pestaña Soluciones y complementos</b>, seleccione la opción <b>Forms - Inscripción digital</b> y pulse <b>Actualizar</b>. 
+    4. En el cuadro de diálogo Editar programa, vaya a la pestaña </b> Soluciones y complementos de <b>, seleccione la opción <b> Forms - Inscripción digital </b> y pulse <b> actualizar </b>. 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -83,7 +83,7 @@ Para habilitar formularios adaptables sin encabezado en la zona protegida de For
 </tr>
 </table>
 
-### &#x200B;2. Clonar el repositorio Git del programa en su equipo local
+### &#x200B;2. Clone el repositorio Git del programa en el equipo local
 
 Cada programa de AEM as a Cloud Service contiene un repositorio Git. Le permite cargar código personalizado y recursos desde el equipo local en su entorno de Cloud Service. Durante la configuración, Adobe utiliza el repositorio Git para llevar el código relacionado con los formularios adaptables sin encabezado, las plantillas y otra información a su programa Cloud Service desde el equipo local. Clonar el repositorio Git de Cloud Service en su equipo local es el primer paso para llevar el código y el contenido personalizados desde su equipo local a Cloud Service.
 
@@ -97,7 +97,7 @@ Para clonar el repositorio, haga lo siguiente:
 <table style="table-layout:fixed">
 <tr>
   <td>
-  1. En el cuadro de canalización del programa, pulse <b>Acceder a la información del repositorio. </b> Aparecerá un cuadro de diálogo con información del repositorio 
+  1. En el cuadro Canalización del programa, pulse <b> Acceder a la info del repositorio. </b> Aparecerá un cuadro de diálogo con información del repositorio 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -108,7 +108,7 @@ Para clonar el repositorio, haga lo siguiente:
 </tr>
 <tr>
   <td>
-  2. Pulse <b>Generar contraseña</b> y copie la <b>URL del repositorio. </b> 
+  2. Pulse <b> Generar contraseña </b> y copie la URL del repositorio <b>. </b> 
   </td>
   <td>
       <img alt="Programas de AEM as a Cloud Service" src="assets/repository-info.png">
@@ -117,10 +117,10 @@ Para clonar el repositorio, haga lo siguiente:
 </tr>
 <tr>
   <td>
-    3. En su equipo local, abra el símbolo del sistema, cree una carpeta, ejecute el siguiente comando y proporcione las credenciales del repositorio, tal y como se solicita:
- </br>
- <code> git clone [Repository URL] </code> </br></br>
- Por ejemplo, </br> 
+    3. En el equipo local, abra el símbolo del sistema, cree una carpeta, ejecute el siguiente comando y proporcione las credenciales del repositorio, tal y como se solicita:
+    </br>
+    <code> git clone [Repository URL] </code> </br></br>
+    Por ejemplo, </br> 
     <code> git clone https://git.cloudmanager.adobe.com/stage-aemformsdev/khushwantsingh-p45413-uk89613/ </code>
 
 </br> Cuando se le pregunte, consiga el <b>Nombre de usuario</b> y la <b>Contraseña</b> desde la pantalla <b>Información del repositorio</b>.
@@ -132,7 +132,7 @@ Para clonar el repositorio, haga lo siguiente:
 </table>
 
 
-### &#x200B;3. Crear un proyecto basado en el arquetipo de AEM
+### &#x200B;3. Creación de un proyecto basado en AEM Archetype
 
 El tipo de archivo del proyecto es una plantilla basada en Maven. Crea un proyecto mínimo basado en las prácticas recomendadas para empezar a utilizar formularios adaptables sin encabezado. También incluye la funcionalidad principal de formularios adaptables sin encabezado para Forms as a Cloud Service. Es obligatorio crear e implementar el proyecto basado en el arquetipo 37 o posterior.
 ®®®
@@ -165,8 +165,9 @@ Según el sistema operativo, ejecute el comando de Maven para crear un proyecto 
    * La plantilla **En blanco con componentes principales** con [componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/introduction).
    * Un módulo de React de front-end, `ui.frontend.react.forms.af`. Le ayuda a procesar formularios adaptables sin encabezado en una aplicación de react.
 
-+++®®®
++++
 
+<!-- Note to author: `&reg;&reg;&reg;` after `+++` prevents the accordion from working properly -->
 
 +++ Apple macOS o Linux®
 
@@ -186,6 +187,7 @@ Según el sistema operativo, ejecute el comando de Maven para crear un proyecto 
    ```
 
 ™™™
+
 * Establezca `appTitle` para definir el título y los grupos de componentes.
 * Establezca `appId` para definir el artifactId de Maven, los nombres de carpetas de componentes, configuración y contenido, y los nombres de bibliotecas de cliente.
 * Establezca `groupId` para definir el groupId de Maven y el paquete fuente de Java™.
@@ -198,7 +200,7 @@ Según el sistema operativo, ejecute el comando de Maven para crear un proyecto 
 
 Al finalizar correctamente el comando, se creará una carpeta de proyecto con el nombre especificado en el `appID`. Por ejemplo, si utiliza `appID` con el valor `myheadlessform`, se creará una carpeta denominada `myheadlessform`. Contiene el proyecto basado en el arquetipo.
 
-### &#x200B;4. Enviar el proyecto basado en el arquetipo de AEM a su entorno de Cloud Service
+### &#x200B;4. Insertar el proyecto basado en el tipo de archivo de AEM en el entorno de Cloud Service.
 
 1. Reemplace el contenido del repositorio Git por contenido de un proyecto basado en el arquetipo.
 
@@ -212,7 +214,7 @@ Al finalizar correctamente el comando, se creará una carpeta de proyecto con el
       git push origin
    ```
 
-### &#x200B;5. Ejecutar una canalización de compilación para su programa
+### &#x200B;5. Ejecute una canalización de compilación para su programa
 
 
 
@@ -230,7 +232,7 @@ Al finalizar correctamente el comando, se creará una carpeta de proyecto con el
 </tr>
 <tr>
   <td>
-  2. Para la opción <b> Cloud Manager </b>, haga clic <b> Iniciar. </b> Aparecerá una lista de programas para su organización. Abra el programa. 
+  2. Para la opción <b> Cloud Manager </b>, haga clic en <b> Iniciar. </b> Aparecerá una lista de programas para su organización. Abra el programa. 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -241,7 +243,7 @@ Al finalizar correctamente el comando, se creará una carpeta de proyecto con el
 </tr>
 <tr>
   <td>
-    3. Para la canalización, pulse el icono ... y seleccione la opción <b> Ejecutar </b>. Si se le solicita que ejecute la canalización, pulse <b> Ejecutar </b> y espere a que cambie el <b> estado </b> de la canalización a <b> Completado</b>.  
+    3. Para su canalización, pulse el icono ... y seleccione la opción <b> Ejecutar </b>. Si se le solicita que ejecute la canalización, pulse <b> Ejecutar </b> y espere a que cambie el <b> estado </b> de la canalización a <b> Completado</b>.  
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">

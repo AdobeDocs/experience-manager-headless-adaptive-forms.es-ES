@@ -7,9 +7,9 @@ topic: Headless
 role: Admin, Developer
 level: Beginner, Intermediate
 keywords: CMS sin encabezado, formularios adaptables, IU sin encabezado, CMS con encabezado, asistentes de voz, Alexa, bots de chat, arquitectura de WhatsApp
-hide: false
+index: true
 exl-id: 3b5b955b-d59c-43d9-9cc4-3244a08f80dc
-source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 90%

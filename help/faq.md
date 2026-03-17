@@ -7,9 +7,9 @@ topic: Headless
 role: Admin, Developer
 level: Beginner, Intermediate
 keywords: sin encabezado, formulario adaptable, preguntas frecuentes
-hide: false
+index: true
 exl-id: 5bfc307d-96a3-4007-b65f-32176ecdb710
-source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 58%
@@ -34,10 +34,12 @@ You can use Archetype 37 with flag `includeFormsheadless` or later flag to creat
 
 Puede utilizar la aplicación de inicio para comenzar a desarrollar y diseñar sus formularios adaptables sin encabezado. Necesita Forms as a Cloud Service para alojar y ofrecer formularios adaptables sin encabezado junto con capacidades de formularios backend.
 
-<!-- ## Do I need an archetype project to develop Headless adaptive forms?
+<!-- 
+## Do I need an archetype project to develop Headless adaptive forms?
 
 You can use the starter app to start developing and styling your Headless adaptive forms. Later on, you can use the 
-archetype project to deploy the finished Headless adaptive forms and corresponding custom code, created using starter app, to Forms as a Cloud Service environment. The Forms as a Cloud Service environment helps you test and productionize the forms. -->
+archetype project to deploy the finished Headless adaptive forms and corresponding custom code, created using starter app, to Forms as a Cloud Service environment. The Forms as a Cloud Service environment helps you test and productionize the forms. 
+-->
 
 ## ¿Dónde puedo obtener una vista previa de un formulario adaptable sin encabezado? {#storybook-example}
 
@@ -57,16 +59,18 @@ En los campos en cascada, el contenido del segundo campo depende del contenido e
 
 Los formularios adaptables sin encabezado permiten rellenar previamente formularios con datos personalizados. [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--prefill-form-with-personalised-data) proporciona un ejemplo de cómo rellenar previamente un formulario adaptable sin encabezado.
 
-<!-- >
+<!--
 ## Can I use existing Adaptive Forms editor to create a Headless adaptive form?
 
-At this moment, you use the Adaptive Form Editor to specify the JSON structure and set submit action for the forms. Support for drag-and-drop components, applying rules using editor, and more editor-related options would be available later in the beta phase. Keep a watch on release notes.  -->
+At this moment, you use the Adaptive Form Editor to specify the JSON structure and set submit action for the forms. Support for drag-and-drop components, applying rules using editor, and more editor-related options would be available later in the beta phase. Keep a watch on release notes.  
+-->
 
 ## ¿Puedo utilizar formularios adaptables sin encabezado con la SPA de Angular?
 
 Puede utilizar el SDK web para integrar formularios adaptables sin encabezado con la SPA de Angular. Es independiente de cualquier marco. Puede utilizar el SDK de React como referencia.
 
-<!-- ## Should the `-r prerelease` switch be used every time to start the AEM SDK instance or only for the first time?
+<!--
+## Should the `-r prerelease` switch be used every time to start the AEM SDK instance or only for the first time?
 
 During the limited release program, use the `-r prerelease` switch every time you start the AEM SDK instance. 
 
@@ -74,11 +78,9 @@ During the limited release program, use the `-r prerelease` switch every time yo
 
 Adobe Experience Manager Forms as a Cloud Service feature archive provides tools to create Headless adaptive forms on the local development environment. To install the feature archive, see [Setup development environment](setup-development-environment.md).
 
-<!-- 
 ## Where do one get the license.properties file from?
 
 You do not require a license.properties file to run AEM Cloud Service SDK. 
-
 -->
 
 ## ¿Existe algún complemento para facilitar el desarrollo de formularios adaptables sin encabezado?

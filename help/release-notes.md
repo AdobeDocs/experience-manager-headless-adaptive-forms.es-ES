@@ -3,9 +3,9 @@ title: Información general sobre los formularios adaptables sin encabezado de A
 description: Información general de los formularios adaptables sin encabezado de AEM.
 hide: true
 exl-id: cd7c7972-376c-489f-a684-f479d92c37e7
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
-workflow-type: ht
-source-wordcount: '477'
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+workflow-type: tm+mt
+source-wordcount: '513'
 ht-degree: 100%
 
 ---
@@ -47,6 +47,7 @@ Los formularios adaptables sin encabezado reciben mejoras de forma continua. Par
 
 * The service was executing some event handlers twice. The issue is fixed.
 * Fixing Data Generation with different values of dataRef, name and type.
+-->
 
 <!-- ### React Renderer component -->
 
@@ -76,11 +77,11 @@ El [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/) pro
 
 <!-- Forms components are the structural elements that constitute the content of the form being authored. These components provide various form fields and ability to customize those fields. -->
 
-Los componentes principales son un conjunto de componentes estandarizados de la gestión de contenidos web (WCM) que le ayudan a acelerar el tiempo de desarrollo y reducir el coste de mantenimiento de sus formularios. El componente Contenedor de Forms es el principal. Le ayuda a incrustar y procesar una estructura JSON de formulario adaptable sin encabezado en el editor de formularios adaptables del SDK de Forms as a Cloud Service.
+Los componentes principales son un conjunto de componentes estandarizados de la gestión de contenidos web (WCM) que le ayudan a acelerar el tiempo de desarrollo y reducir el coste de mantenimiento de sus formularios. El componente Contenedor de Forms es un componente principal. Le ayuda a incrustar y procesar una estructura JSON de formulario adaptable sin encabezado en el editor de formularios adaptables del SDK de Forms as a Cloud Service.
 
 ### Especificaciones de formularios adaptables V2
 
-La especificación de formularios adaptables sin encabezado proporciona información detallada sobre todos los componentes, restricciones y métodos disponibles para definir formularios adaptables sin encabezado. La especificación está disponible en formato [PDF](/help/assets/Headless-Adaptive-Form-Specification.pdf).
+La especificación de formularios adaptables sin encabezado proporciona información detallada sobre todos los componentes, restricciones y métodos disponibles para definir formularios adaptables sin encabezado. La especificación está disponible en formato [PDF](/help/assets/headless-adaptive-forms-specification.pdf).
 
 ### API de HTTP y JS
 
@@ -90,7 +91,8 @@ Las [API de HTTP](https://opensource.adobe.com/aem-forms-af-runtime/api/) le per
 
 [Extensión de código de Visual Studio](visual-studio-code-extension-for-headless-adaptive-forms.md) para crear una estructura JSON válida. Proporciona soporte y validación de IntelliSense para la estructura JSON de formularios junto con funciones comunes como añadir, eliminar o cambiar el nombre de componentes de una estructura JSON.
 
-<!-- ## What's next
+<!-- 
+## What's next
 
 The following features would be available in upcoming releases:
 

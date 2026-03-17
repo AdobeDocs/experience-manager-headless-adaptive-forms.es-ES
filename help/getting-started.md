@@ -3,9 +3,9 @@ title: Introducción a Formularios adaptables sin encabezado
 description: Introducción a Formularios adaptables sin encabezado
 keywords: sin encabezado, formulario adaptable, tutorial
 hide: true
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
-workflow-type: ht
-source-wordcount: '360'
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+workflow-type: tm+mt
+source-wordcount: '362'
 ht-degree: 100%
 
 ---
@@ -18,7 +18,7 @@ Este tutorial proporciona un marco de trabajo completo para crear un formulario 
 * Crear un formulario adaptable sin encabezado
 * Agregar reglas empresariales al formulario
 * Usar la interfaz de usuario de Google Material para aplicar estilo al formulario
-* Rellenar previamente el formulario 
+* Rellenar previamente el formulario
 * Incrustar el formulario en una página web
 
 También obtendrá una idea de la arquitectura, los artefactos disponibles y la estructura JSON de los formularios adaptables sin encabezado.

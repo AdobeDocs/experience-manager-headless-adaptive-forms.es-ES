@@ -6,12 +6,12 @@ feature: Adaptive Forms
 topic: Headless
 role: Admin, Developer
 level: Beginner, Intermediate
-hide: false
+index: true
 exl-id: 476509d5-f4c1-4d1c-b124-4c278f67b1ef
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
-workflow-type: ht
-source-wordcount: '870'
-ht-degree: 100%
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+workflow-type: tm+mt
+source-wordcount: '1060'
+ht-degree: 98%
 
 ---
 
@@ -35,7 +35,7 @@ Los pasos principales que hay que seguir al utilizar los componentes de IU de Go
 
 ![](assets/headless-forms-graphics-source-main.svg)
 
-## &#x200B;1. Instalar la IU de Google Material
+## &#x200B;1. Instalar la interfaz de usuario de Google Material
 
 De forma predeterminada, el kit de inicio utiliza los componentes [Espectro de Adobe](https://spectrum.adobe.com/). Vamos a definirlo para utilizar la [IU de materiales de Google](https://mui.com/):
 
@@ -54,7 +54,7 @@ De forma predeterminada, el kit de inicio utiliza los componentes [Espectro de A
 Instala las bibliotecas npm de la IU de Google Material y las añade a las dependencias de los kits de inicio. Ahora puede utilizar los componentes de la IU de Material para procesar los componentes de formulario.
 
 
-## &#x200B;2. Crear componentes React personalizados
+## &#x200B;2. Creación de componentes React personalizados
 
 Vamos a crear un componente personalizado que reemplace el componente [entrada de texto](https://spectrum.adobe.com/page/text-field/) predeterminado por el componente [Campo de texto de IU de Google Material](https://mui.com/material-ui/react-text-field/).
 

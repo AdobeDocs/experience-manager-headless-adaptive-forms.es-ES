@@ -7,15 +7,14 @@ topic: Headless
 role: Admin, Developer
 level: Beginner, Intermediate
 keywords: formularios sin encabezado, biblioteca de formularios sin encabezado, formularios adaptables, administración de estado, validación, sistema de diseño, SSR, CMS
-hide: false
-exl-id: a1b2c3d4-e5f6-7890-abcd-ef1234567890
-source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
+index: true
+exl-id: 539da3e9-25c5-4e26-ba4e-f68cf849bca4
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
 source-wordcount: '2605'
 ht-degree: 5%
 
 ---
-
 
 # Explicación de los formularios sin encabezado: conceptos y preguntas frecuentes {#understanding-headless-forms}
 

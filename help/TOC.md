@@ -4,8 +4,8 @@ breadcrumb-title: Formularios adaptables sin encabezado de AEM
 user-guide-description: Documentación de formularios adaptables sin encabezado de Adobe Experience Manager
 feature: Adaptive Forms
 role: Developer
-hide: false
-source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
+index: true
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 82%

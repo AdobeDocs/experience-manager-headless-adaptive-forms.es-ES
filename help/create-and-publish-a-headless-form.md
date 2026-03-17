@@ -6,12 +6,12 @@ feature: Adaptive Forms
 topic: Headless
 role: Admin, Developer
 level: Beginner, Intermediate
-hide: false
+index: true
 exl-id: cd7c7972-376c-489f-a684-f479d92c37e7
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
-workflow-type: ht
-source-wordcount: '990'
-ht-degree: 100%
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+workflow-type: tm+mt
+source-wordcount: '1037'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,7 @@ Para crear y ejecutar una aplicación React, debe tener instalado lo siguiente e
 
 * Instale la [última versión de Git](https://git-scm.com/downloads). Si es nuevo en Git, consulte [Instalación de Git](https://git-scm.com/book/es/v2/Getting-Started-Installing-Git).
 
-* Instale [Node.js 16.13.0 o posterior](https://nodejs.org/es/download/). <!-- URL is 404!! If you are new to Node.js, see [How to install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs). -->. 
+* Instale [Node.js 16.13.0 o posterior](https://nodejs.org/es/download/). <!-- URL is 404!! If you are new to Node.js, see [How to install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs). -->.
 
 ## Introducción
 
@@ -52,7 +52,7 @@ Una vez que cumpla los requisitos, realice los siguientes pasos para empezar:
 
 
 
-## &#x200B;1. Configurar el kit de inicio de formularios adaptables sin encabezado {#install}
+## &#x200B;1.  Configurar el de kit de inicio de formularios adaptables sin encabezado {#install}
 
 El kit de inicio es una aplicación React con un formulario adaptable sin encabezado de muestra y las bibliotecas correspondientes. Utilice el kit para desarrollar y probar sus formularios adaptables sin encabezado y los componentes de React correspondientes. Ejecute los siguientes comandos para configurar el kit de inicio de formularios adaptables sin encabezado:
 
@@ -89,7 +89,7 @@ El kit de inicio es una aplicación React con un formulario adaptable sin encabe
    ![](/help/assets/install-react-app-starter-kit.png)
 
 
-## &#x200B;2. Obtener una vista previa del formulario adaptable sin encabezado {#preview}
+## &#x200B;2. Previsualización del formulario adaptable sin encabezado {#preview}
 
 Después de configurar el kit de inicio, puede obtener una vista previa del formulario adaptable sin encabezado de muestra y reemplazarlo por su propio formulario personalizado. También puede configurar el kit de inicio para recuperar un formulario de un servidor de AEM Forms. Para obtener una vista previa del formulario
 
@@ -97,9 +97,11 @@ Después de configurar el kit de inicio, puede obtener una vista previa del form
 
    ![](/help/assets/rename-env-file.png)
 
-   <!-- The options in the .env file help you configure source of the forms definantion (.JSON):
+   <!-- 
+    The options in the .env file help you configure source of the forms definantion (.JSON):
     *  To source forms definantion (.JSON) from an AEM Server, set USE_LOCAL_JSON option to false, use the AEM_URL option to specify URL  of your AEM Server, and set the AEM_FORM_PATH option to path of your adaptive form.
-    *  To source forms definantion (.JSON) form-model.json file included in the starter-kit, set USE_LOCAL_JSON option to false. -->
+    *  To source forms definantion (.JSON) form-model.json file included in the starter-kit, set USE_LOCAL_JSON option to false. 
+    -->
 
 1. Utilice el siguiente comando para ejecutar la aplicación:
 
