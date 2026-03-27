@@ -6,9 +6,9 @@ seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
 exl-id: ef99ffe9-4a37-4f0a-a4d3-78976c92220f
 source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
-workflow-type: ht
-source-wordcount: '2452'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '2629'
+ht-degree: 97%
 
 ---
 
@@ -214,7 +214,7 @@ Configure un repositorio local del tema:
 
 1. Establezca los siguientes valores para las variables del archivo .env y guarde el archivo:
 
-   * **AEM_URL**: especifique el entorno de publicación de su servicio en la nube. Por ejemplo, `https://publish-p105303-e986623.adobeaemcloud.com/`. 
+   * **AEM_URL**: especifique el entorno de publicación de su servicio en la nube. Por ejemplo, `https://publish-p105303-e986623.adobeaemcloud.com/`.
 
    * **AEM_ADAPTIVE_FORM**: especifique la ruta del formulario. Por ejemplo, si la ruta del formulario es `/content/forms/af/registration`, el valor de esta variable sería `registration`.
 
@@ -336,7 +336,7 @@ Para procesar el formulario alojado en el entorno de publicación de su servicio
    ![](/help/assets/screenshot2028117729.png)
 
 1. Establezca los siguientes valores para las variables del archivo .env. Después de actualizar las variables, guarde el archivo.
-   * **AEM_URL**: especifique la URL del entorno de publicación del servicio en la nube. Por ejemplo, `https://publish-p105303-e986623.adobeaemcloud.com`. 
+   * **AEM_URL**: especifique la URL del entorno de publicación del servicio en la nube. Por ejemplo, `https://publish-p105303-e986623.adobeaemcloud.com`.
 
    * **AEM_FORM_PATH**: especifique la ruta del formulario adaptable creado en la lección anterior. Por ejemplo, `/content/forms/af/registration/`
 
@@ -503,7 +503,7 @@ Para procesar el formulario alojado en el entorno de publicación de su servicio
 
 1. Para evaluar la ejecución de la misma lógica empresarial en esta representación de formulario:
 
-   Seleccione **Marque la casilla para recibir un 5 % de descuento**. La opción siguiente **¿Desea solicitar el formulario para la `We.Finance`tarjeta de crédito corporativa?** se deshabilita.
+   Seleccione **Marque la casilla para recibir un 5 % de descuento**. La opción siguiente **¿Desea solicitar el formulario de tarjeta de crédito corporativa de `We.Finance`?** se desactiva.
 
    ![](/help/assets/screenshot2028127329.png){width="50%" align="left"}
 
@@ -558,32 +558,32 @@ en cuestión. Por ejemplo, un canal web en este laboratorio.
 
 ## Preguntas frecuentes (FAQ)
 
-+++ ¿El asistente de formularios adaptables está disponible públicamente?
++++ ¿El asistente de formularios adaptables está disponible públicamente?  
 
 Sí, está disponible con AEM Forms as a Cloud Service.
 
 +++
 
 
-+++ ¿Los componentes principales están disponibles públicamente?
++++ ¿Los componentes principales están disponibles públicamente?  
 
 Sí, los componentes principales de Formularios adaptables están disponibles con AEM Forms como Cloud Service.
 
 +++
 
-+++ ¿Los formularios sin encabezado están disponibles públicamente?
++++ ¿Los formularios sin encabezado están disponibles públicamente?  
 
 Sí, los formularios sin encabezado están disponibles con AEM Forms como Cloud Service.
 
 +++
 
-+++ ¿Los formularios sin encabezado requieren una licencia independiente?
++++ ¿Los formularios sin encabezado requieren una licencia independiente?  
 
 No, los formularios sin encabezado utilizan la misma métrica de valor de licencia y el mismo número de envíos de formularios.
 
 +++
 
-+++ ¿Los componentes principales y los formularios sin encabezado están disponibles con AEM 6.5 Forms?
++++ ¿Los componentes principales y los formularios sin encabezado están disponibles con AEM 6.5 Forms?  
 
 Sí, tanto los componentes principales de los formularios adaptables como los formularios sin encabezado están disponibles con el Service Pack 16 y posteriores de AEM Forms 6.5.
 
@@ -599,10 +599,10 @@ Ahora ya ha aprendido a crear formularios adaptables y distribuirlos en varios c
 
 * [Introducción a los componentes principales del formulario adaptable](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/introduction)
 
-* [Creación de un formulario adaptable mediante componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
+* [Crear un formulario adaptable mediante los componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
 
-* [Actualización del estilo para el AF basado en componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
+* [Actualizar el estilo para AF basado en componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
 
 * [Formularios adaptables sin encabezado](https://experienceleague.adobe.com/es/docs/experience-manager-headless-adaptive-forms/using/overview)
 
-* [Uso de un kit de inicio de React sin encabezado](https://experienceleague.adobe.com/es/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)
+* [Uso de un kit de inicio React sin encabezado](https://experienceleague.adobe.com/es/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)
