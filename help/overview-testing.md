@@ -8,9 +8,8 @@ role: Admin, Developer
 level: Beginner, Intermediate
 keywords: CMS sin encabezado, formularios adaptables, IU sin encabezado, CMS con encabezado, asistentes de voz, Alexa, bots de chat, arquitectura de WhatsApp
 hide: true
-hidefromtoc: true
 exl-id: f6a383ea-684b-479d-a15f-8ebced75635e
-source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+source-git-commit: 3af67fd41cdd1e63a460e56ef1d273c90b3954d7
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 100%

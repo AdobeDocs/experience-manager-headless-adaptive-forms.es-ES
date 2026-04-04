@@ -5,10 +5,10 @@ user-guide-description: Documentación de formularios adaptables sin encabezado 
 feature: Adaptive Forms
 role: Developer
 index: true
-source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+source-git-commit: 3af67fd41cdd1e63a460e56ef1d273c90b3954d7
 workflow-type: tm+mt
 source-wordcount: '195'
-ht-degree: 82%
+ht-degree: 75%
 
 ---
 
@@ -16,12 +16,12 @@ ht-degree: 82%
 # Formularios adaptables sin encabezado de Adobe Experience Manager {#using}
 
 + [Información general](overview.md)
-+ [Pruebas generales](overview-testing.md)
++ {hide-from-toc}[Pruebas generales](overview-testing.md)
 + [Arquitectura](architecture.md)
 + [Explicación de los formularios sin encabezado: conceptos y preguntas frecuentes](understanding-headless-forms.md)
 + Configuración rápida {#quick-setup}
    + [Habilitación de formularios adaptables sin encabezado en AEM 6.5 Forms](enable-headless-adaptive-forms-and-core-components.md)
-   + [Habilitación de formularios adaptables sin encabezado en AEM Forms as a Cloud Service](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md)
+   + {hide-from-toc}[Habilitar Forms adaptable sin encabezado en AEM Forms as a Cloud Service](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md)
 + Tutorial {#tutorial}
    + [Genere formularios atractivos utilizando componentes principales y formularios adaptables sin encabezado en AEM Forms as a Cloud Service](build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service.md)
    + [Genere formularios atractivos utilizando componentes principales y formularios adaptables sin encabezado en AEM 6.5 Forms](build-engaging-forms-using-core-components-and-headless-adaptive-forms-on-aem-65-forms.md)
@@ -29,7 +29,7 @@ ht-degree: 82%
    + [Creación y publicación de un formulario sin encabezado con el kit de inicio](create-and-publish-a-headless-form.md)
    + [Utilice una biblioteca de React personalizada para procesar un formulario sin encabezado](use-google-material-ui-react-components-to-render-a-headless-form.md)
    + [Uso de componentes personalizados para procesar un formulario sin encabezado](developing-for-headless-forms-using-your-own-components.md)
-   + [Usar eventos para gestionar y enviar datos de formulario](use-events-to-handle-and-submit-form-data.md)
+   + {hide-from-toc}[Usar eventos para controlar y enviar datos de formulario](use-events-to-handle-and-submit-form-data.md)
    + [Prácticas recomendadas de Mobile Forms](mobile-forms-best-practices.md)
 + Creación de formularios adaptables sin encabezado {#authoring-headless-adaptive-forms}
    + [Creación de un formulario adaptable sin encabezado mediante el editor de formularios adaptables](create-a-headless-adaptive-form.md)
