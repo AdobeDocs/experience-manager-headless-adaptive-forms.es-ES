@@ -3,10 +3,19 @@ title: Configuración de un entorno de desarrollo para una zona protegida de For
 description: Configure un entorno de desarrollo para una zona protegida de Forms as a Cloud Service.
 hide: true
 exl-id: befac9ad-d2c4-4705-96fc-f0ea0ef823b8
-source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+TQID: https://experienceleague.adobe.com/r2jtS8Z3QIN99-a-z2lLLtW6tVroO3FF--CmzklJVig
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
 workflow-type: tm+mt
-source-wordcount: '1369'
-ht-degree: 86%
+source-wordcount: 1369
+ht-degree: 84%
 
 ---
 
@@ -61,7 +70,7 @@ Para habilitar formularios adaptables sin encabezado en la zona protegida de For
 </tr>
 <tr>
   <td>
-    &#x200B;3. Para su programa, pulse el icono ... y seleccione la opción <b> Editar programa </b>. Aparecerá un cuadro de diálogo. 
+    &#x200B;3. Para su programa, pulse el icono ... y seleccione la opción <b> Editar programa </b>. Aparece un cuadro de diálogo. 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -136,7 +145,7 @@ Para clonar el repositorio, haga lo siguiente:
 
 El tipo de archivo del proyecto es una plantilla basada en Maven. Crea un proyecto mínimo basado en las prácticas recomendadas para empezar a utilizar formularios adaptables sin encabezado. También incluye la funcionalidad principal de formularios adaptables sin encabezado para Forms as a Cloud Service. Es obligatorio crear e implementar el proyecto basado en el arquetipo 37 o posterior.
 ®®®
-Según el sistema operativo, ejecute el comando de Maven para crear un proyecto Experience Manager Forms as a Cloud Service. Utilice la versión 37 o posterior del arquetipo. Consulte [Documentación del arquetipo](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/developing/archetype/overview) para encontrar la última versión del arquetipo.
+Según el sistema operativo, ejecute el comando de Maven para crear un proyecto de Experience Manager Forms as a Cloud Service. Utilice la versión 37 o posterior del arquetipo. Consulte [Documentación del arquetipo](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/developing/archetype/overview) para encontrar la última versión del arquetipo.
 
 +++ Microsoft® Windows
 

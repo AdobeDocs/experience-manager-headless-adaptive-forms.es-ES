@@ -5,10 +5,17 @@ description: Creación de formularios atractivos con componentes principales y s
 seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
 exl-id: ef99ffe9-4a37-4f0a-a4d3-78976c92220f
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+TQID: https://experienceleague.adobe.com/vxO7ZkfNQ001uvMujjDotL5le6Q0gYN-YGoYMThWbAs
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
 workflow-type: tm+mt
-source-wordcount: '2629'
-ht-degree: 97%
+source-wordcount: 2629
+ht-degree: 93%
 
 ---
 
@@ -157,7 +164,7 @@ En esta lección, como usuario empresarial, creará un formulario adaptable para
 
       La URL publicada del formulario es similar a `https://publish-p105303-e986623.adobeaemcloud.com/content/forms/af/registration.html`.
 
-   1. Para ver el formulario publicado, reemplace el ID de programa (pXXXXXX) y el ID de entorno (eXXXXXX) en la URL anterior por los ID de su
+   1. Para ver el formulario publicado, sustituya el ID de programa (pXXXXXX) y el ID de entorno (eXXXXXX) en la URL anterior por los ID de su
 entorno.
 
 ## Lección 3
@@ -407,7 +414,8 @@ Vamos a publicar el formulario actualizado para propagar los cambios al entorno 
 
    ![](/help/assets/screenshot2028120529.png)
 
-1. Abra la ventana del símbolo del sistema que se utiliza para iniciar el proyecto **react-starter-kit-aem-headless-forms**, pulse **CTRL+C** y, a continuación, introduzca **Y** y pulse la tecla Intro para terminar el proceso de npm. Es importante detener el servidor npm para que no entre en conflicto con el siguiente conjunto de ejercicios.
+1. Abra la ventana del símbolo del sistema que se usa para iniciar el proyecto **react-starter-kit-aem-headless-forms**, presione **CTRL+C** y, a continuación,
+escriba **Y** y presione la tecla Intro para finalizar el proceso npm. Es importante detener el servidor npm para que no entre en conflicto con el siguiente conjunto de ejercicios.
 
 1. Cierre las ventanas de Visual Studio Code y del símbolo del sistema.
 
@@ -493,7 +501,8 @@ Para procesar el formulario alojado en el entorno de publicación de su servicio
 
    ![](/help/assets/screenshot2028127129.png)
 
-   El comando inicia un servidor de desarrollo local y procesa la definición de formulario recuperada de AEM en una forma sin encabezado mediante la biblioteca de front-end de la IU de Google Material.
+   El comando inicia un servidor de desarrollo local y procesa la definición del formulario recuperada de AEM de forma directa mediante Google
+Biblioteca de front-end de IU de material.
 
    >[!NOTE]
    >
@@ -548,8 +557,8 @@ Actualice la variación de los componentes en el proyecto sin encabezado. Cambia
    ![](/help/assets/screenshot2028127729.png)
 
 
-   Este cambio se produce para los usuarios finales sin ningún cambio en la definición del formulario en el servidor de AEM Forms y es específico del canal sin encabezado
-en cuestión. Por ejemplo, un canal web en este laboratorio.
+   Este cambio se produce para los usuarios finales sin ningún cambio en la definición del formulario en AEM Forms Server y es específico para los usuarios sin encabezado
+canal en consideración. Por ejemplo, un canal web en este laboratorio.
 
    ![](/help/assets/screenshot2028127529.png){width="50%" align="left"}
 
