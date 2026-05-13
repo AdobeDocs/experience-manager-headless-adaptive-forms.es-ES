@@ -5,9 +5,12 @@ description: Aprenda a habilitar formularios adaptables sin encabezado en AEM 6.
 contentOwner: Khushwant Singh
 role: Admin
 exl-id: e1a5e7e0-d445-4cca-b8d7-693d9531f075
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
-workflow-type: ht
-source-wordcount: '728'
+TQID: https://experienceleague.adobe.com/-jg00RrTORgL35qnU6vjy58UibBQE05bRWmvvYkMjSU
+product_v2: id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
+workflow-type: tm+mt
+source-wordcount: 782
 ht-degree: 100%
 
 ---
@@ -117,7 +120,7 @@ Para crear un proyecto basado en el arquetipo de AEM 41 o [posterior](https://gi
 >
 >
 >
->Si tiene dificultades para acceder al cuadro de diálogo de inicio de sesión en una instancia de publicación para instalar el paquete a través del Administrador de paquetes, intente iniciar sesión a través de la siguiente URL: `http://[Publish Server URL]`[PORT]/system/console.  Este proceso le permite acceder para iniciar sesión en la instancia de publicación y continuar con el proceso de instalación.
+>Si tiene dificultades para acceder al cuadro de diálogo de inicio de sesión en una instancia de publicación para instalar el paquete a través del Administrador de paquetes, intente iniciar sesión a través de la siguiente URL: `http://[Publish Server URL]`[PORT]/system/console. Este proceso le permite acceder para iniciar sesión en la instancia de publicación y continuar con el proceso de instalación.
 
 
 Los componentes principales están habilitados para su entorno. Se implementan una plantilla de formularios adaptables basados en componentes principales en blanco y una temática de Lienzo 3.0 que le permiten [crear formularios adaptables basados en los componentes principales](create-a-headless-adaptive-form.md).
@@ -136,4 +139,4 @@ Cuando los componentes principales de formularios adaptables se habilitan para s
 * Crear componentes principales basados en formularios adaptables.
 * Crear componentes principales basados en plantillas de formulario adaptable.
 * Crear temáticas personalizadas para componentes principales basadas en plantillas de formulario adaptable.
-* Proporcione representaciones JSON de un formulario adaptable basado en componentes principales a canales como mobile, web, apps nativas y servicios que requieren la representación sin encabezado de un formulario.
+* Proporcione representaciones JSON de un formulario adaptable basado en componentes principales a canales como móvil, web, apps nativas y servicios que requieren la representación sin encabezado de un formulario.

@@ -9,10 +9,14 @@ level: Beginner, Intermediate
 topic-tags: develop
 hide: true
 exl-id: 07a71aac-de38-4839-b8d6-b47c3f575eb3
-source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+TQID: https://experienceleague.adobe.com/akgLAvLprxdXwMCXmwobbeFDvQF0rPR2qiENi3dLLDM
+product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
 workflow-type: tm+mt
-source-wordcount: '2311'
-ht-degree: 98%
+source-wordcount: 2311
+ht-degree: 95%
 
 ---
 
@@ -365,7 +369,8 @@ Vamos a publicar el formulario actualizado para propagar los cambios al entorno 
 
    ![](/help/assets/headless-adaptive-form.png)
 
-1. Abra la ventana del símbolo del sistema que se utiliza para iniciar el proyecto **react-starter-kit-aem-headless-forms**, pulse **CTRL+C** y, a continuación, introduzca **Y** y pulse la tecla Intro para terminar el proceso de npm. Es importante detener el servidor npm para que no entre en conflicto con el siguiente conjunto de ejercicios.
+1. Abra la ventana del símbolo del sistema que se usa para iniciar el proyecto **react-starter-kit-aem-headless-forms**, presione **CTRL+C** y, a continuación,
+escriba **Y** y presione la tecla Intro para finalizar el proceso npm. Es importante detener el servidor npm para que no entre en conflicto con el siguiente conjunto de ejercicios.
 
 1. Cierre las ventanas de Visual Studio Code y del símbolo del sistema.
 
@@ -498,8 +503,8 @@ Actualice la variación de los componentes en el proyecto sin encabezado. Cambia
    ![](/help/assets/screenshot2028127729.png){width="50%" align="left"}
 
 
-   Este cambio se produce para los usuarios finales sin ningún cambio en la definición del formulario en el servidor de AEM Forms y es específico del canal sin encabezado
-en cuestión. Por ejemplo, un canal web en este laboratorio.
+   Este cambio se produce para los usuarios finales sin ningún cambio en la definición del formulario en AEM Forms Server y es específico para los usuarios sin encabezado
+canal en consideración. Por ejemplo, un canal web en este laboratorio.
 
    ![](/help/assets/aem65-lab-mui-style-update.png)
 

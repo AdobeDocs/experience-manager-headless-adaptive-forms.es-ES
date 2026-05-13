@@ -4,9 +4,15 @@ description: Cree su primer formulario adaptable sin encabezado.
 keywords: formulario adaptable sin encabezado
 hide: true
 exl-id: 99985fed-4a34-47d6-bb6f-79f81e1cd71b
-source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+TQID: https://experienceleague.adobe.com/QzzuB8TzXgkumIu6mdap5ruodWqz7nbXP2XtSJbxPPE
+product_v2: id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: ae478996-b206-4712-9b0c-dc78a2644453
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
 workflow-type: tm+mt
-source-wordcount: '1619'
+source-wordcount: 1619
 ht-degree: 93%
 
 ---
@@ -68,7 +74,7 @@ Según el sistema operativo, ejecute el siguiente comando para crear un proyecto
 
    * Establezca `appTitle` para definir el título y los grupos de componentes.
    * Establezca `appId` para definir el artifactId de Maven, los nombres de carpetas de componentes, configuración y contenido y los nombres de bibliotecas de cliente.
-   * Establezca `groupId` para definir el groupId de Maven y el paquete de origen de Java.
+   * Establezca `groupId` para definir el groupId de Maven y el Paquete de origen de Java.
    * Utilice la opción `includeFormsenrollment=y` para incluir configuraciones, temáticas, plantillas, componentes principales y dependencias específicos para formularios, que son necesarios para crear formularios adaptables.
    * Utilice la opción `includeFormsheadless=y` para incluir los componentes principales y las dependencias de Forms necesarios para incluir la funcionalidad de Formularios adaptables sin encabezado. Al habilitar esta opción, se incluyen las siguientes opciones:
       * La plantilla **En blanco con componentes principales** con [componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/introduction).
@@ -125,7 +131,7 @@ Al implementar el proyecto en la instancia de AEM SDK, se agrega la funcionalida
    Puede llevar mucho tiempo resolver las dependencias e implementar el proyecto. Si se produce un error al implementar el proyecto, consulte el artículo [Solución de problemas](troubleshooting.md) para problemas comunes y su resolución.
 
 
-<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=es#coding-against-the-right-aem-version) article : -->
+<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=en#coding-against-the-right-aem-version) article : -->
 
 
 ### &#x200B;3. Cree el esquema JSON de un formulario adaptable sin encabezado y cárguelo en la instancia de AEM SDK {#create-add-json-representation-of-headless-adaptive-forms}
@@ -181,10 +187,10 @@ You can deploy the project to local development environment. It adds Headless Ad
 
     `mvn -PautoInstallPackage clean install`
 
-If you are on Windows, run the above with Administrative privileges (Run command prompt or [bash shell as an administrator](https://khushwantsehgal.wordpress.com/2022/06/29/check-if-git-bash-is-running-in-administrator-mode/)). For the complete list of commands, see [Building and Installing](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=es#building-and-installing).
+If you are on Windows, run the above with Administrative privileges (Run command prompt or [bash shell as an administrator](https://khushwantsehgal.wordpress.com/2022/06/29/check-if-git-bash-is-running-in-administrator-mode/)). For the complete list of commands, see [Building and Installing](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#building-and-installing).
 -->
 
-<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=es#coding-against-the-right-aem-version) article : -->
+<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=en#coding-against-the-right-aem-version) article : -->
 
 ### &#x200B;4. Crear un formulario adaptable basado en la plantilla En blanco con componentes principales {#create-adaptive-form-with-blank-with-core-components-template}
 
