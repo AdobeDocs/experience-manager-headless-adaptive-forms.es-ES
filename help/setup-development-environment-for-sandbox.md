@@ -4,10 +4,14 @@ description: Configure un entorno de desarrollo para una zona protegida de Forms
 hide: true
 exl-id: befac9ad-d2c4-4705-96fc-f0ea0ef823b8
 TQID: https://experienceleague.adobe.com/r2jtS8Z3QIN99-a-z2lLLtW6tVroO3FF--CmzklJVig
-product_v2: id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2: id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
 workflow-type: tm+mt
 source-wordcount: 1369
@@ -66,7 +70,7 @@ Para habilitar formularios adaptables sin encabezado en la zona protegida de For
 </tr>
 <tr>
   <td>
-    3. Para su programa, pulse el icono ... y seleccione la opción <b> Editar programa </b>. Aparece un cuadro de diálogo. 
+    &#x200B;3. Para su programa, pulse el icono ... y seleccione la opción <b> Editar programa </b>. Aparece un cuadro de diálogo. 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -77,7 +81,7 @@ Para habilitar formularios adaptables sin encabezado en la zona protegida de For
 </tr>
 <tr>
   <td>
-    4. En el cuadro de diálogo Editar programa, vaya a la pestaña </b> Soluciones y complementos de <b>, seleccione la opción <b> Forms - Inscripción digital </b> y pulse <b> actualizar </b>. 
+    &#x200B;4. En el cuadro de diálogo Editar programa, vaya a la pestaña </b> Soluciones y complementos de <b>, seleccione la opción <b> Forms - Inscripción digital </b> y pulse <b> actualizar </b>. 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -122,7 +126,7 @@ Para clonar el repositorio, haga lo siguiente:
 </tr>
 <tr>
   <td>
-    3. En el equipo local, abra el símbolo del sistema, cree una carpeta, ejecute el siguiente comando y proporcione las credenciales del repositorio, tal y como se solicita:
+    &#x200B;3. En el equipo local, abra el símbolo del sistema, cree una carpeta, ejecute el siguiente comando y proporcione las credenciales del repositorio, tal y como se solicita:
     </br>
     <code> git clone [Repository URL] </code> </br></br>
     Por ejemplo, </br> 
@@ -248,7 +252,7 @@ Al finalizar correctamente el comando, se creará una carpeta de proyecto con el
 </tr>
 <tr>
   <td>
-    3. Para su canalización, pulse el icono ... y seleccione la opción <b> Ejecutar </b>. Si se le solicita que ejecute la canalización, pulse <b> Ejecutar </b> y espere a que cambie el <b> estado </b> de la canalización a <b> Completado</b>.  
+    &#x200B;3. Para su canalización, pulse el icono ... y seleccione la opción <b> Ejecutar </b>. Si se le solicita que ejecute la canalización, pulse <b> Ejecutar </b> y espere a que cambie el <b> estado </b> de la canalización a <b> Completado</b>.  
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
