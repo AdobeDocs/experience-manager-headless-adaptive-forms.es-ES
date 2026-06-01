@@ -10,19 +10,13 @@ topic-tags: develop
 hide: true
 exl-id: 07a71aac-de38-4839-b8d6-b47c3f575eb3
 TQID: https://experienceleague.adobe.com/akgLAvLprxdXwMCXmwobbeFDvQF0rPR2qiENi3dLLDM
-product_v2:
-  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
+product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: 33435b2ff6c7ff5c936f9256889d1f85f977adfe
 workflow-type: tm+mt
-source-wordcount: 2311
-ht-degree: 95%
+source-wordcount: 2301
+ht-degree: 94%
 
 ---
 
@@ -66,20 +60,20 @@ En esta lección, se familiarizará con AEM 6.5 navegando por la interfaz de usu
 
 ### Ejercicio {#lesson-1-excercise}
 
-1. Abra el explorador e introduzca la dirección URL del entorno de creación de Por ejemplo:
+1. Abra el explorador e introduzca la dirección URL del entorno de creación. Por ejemplo:
    [https://localhost:4502](https://localhost:4502).
 
 1. Una vez que haya iniciado sesión, vaya a la IU de AEM Forms. Haga clic en **Formularios**.
 
-   ![](/help/assets/screenshot2028113829.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028113829.png){width="50%"}
 
 1. Haga clic en **Formularios y documentos**. Descarte cualquier elemento emergente relacionado con las preferencias o la información.
 
-   ![](/help/assets/screenshot2028113929.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028113929.png){width="50%"}
 
    Se muestran todos los formularios disponibles.
 
-   ![](/help/assets/screenshot2028114029.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028114029.png){width="50%"}
 
 ## Lección 2
 
@@ -96,10 +90,10 @@ Como usuario empresarial, va a utilizar el editor de formularios adaptables y su
 1. Cree un punto final de envío para el formulario:
 
    1. Abra <https://pipedream.com/requestbin> en una nueva pestaña del explorador.
-      ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
+      ![](/help/assets/screenshot2028114329.png){width="50%"}
 
    1. Haga clic en **Crear un grupo público** y copie la dirección URL del punto final.
-      ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
+      ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%"}
 
    Este punto final en particular sirve como ejemplo para enviar y ver datos. En la producción real, se utiliza un punto final propio o fuentes de datos para almacenar los datos capturados.
 
@@ -108,13 +102,13 @@ Como usuario empresarial, va a utilizar el editor de formularios adaptables y su
    1. En la pestaña del explorador empleada en la Lección 1, vaya a la interfaz web de AEM Forms y a **Formularios** > **Formularios y documentos**.
 
    1. Haga clic en **Crear** y seleccione Formulario adaptable.
-      ![](/help/assets/creating-adaptive-form-6-5.png){width="50%" align="left"}
+      ![](/help/assets/creating-adaptive-form-6-5.png){width="50%"}
 
    1. Seleccione la plantilla **En blanco con componentes principales** en la pantalla de selección de plantillas como se muestra a continuación y haga clic en **Siguiente**.
-      ![](/help/assets/creating-adaptive-form-6-5-select-blank-template.png){width="50%" align="left"}
+      ![](/help/assets/creating-adaptive-form-6-5-select-blank-template.png){width="50%"}
 
-   1. Especifique `Contact us` como **Título** del formulario. Asegúrese de que la variable **Nombre** del formulario es `contact-us`.
-      ![](/help/assets/creating-adaptive-form-65-specify-title.png){width="50%" align="left"}
+   1. Especifique `Contact us` como **Título** del formulario. Asegúrese de que el **Nombre** del formulario sea `contact-us`.
+      ![](/help/assets/creating-adaptive-form-65-specify-title.png){width="50%"}
 
    1. Haga clic en **Crear**. Se muestra un cuadro de diálogo.
 
@@ -122,11 +116,11 @@ Como usuario empresarial, va a utilizar el editor de formularios adaptables y su
 
    1. Abra el explorador de componentes y arrastre y suelte el componente Panel en medio de la pantalla.
 
-      ![](/help/assets/lab65-add-panel.png){width="50%" align="left"}
+      ![](/help/assets/lab65-add-panel.png){width="50%"}
 
    1. Arrastre y suelte los componentes desde el explorador de componentes para crear un formulario, de forma similar a lo siguiente:
 
-      ![](/help/assets/contact-us-headless-adaptive-form.png){width="50%" align="left"}
+      ![](/help/assets/contact-us-headless-adaptive-form.png){width="50%"}
 
 
    1. Abra el explorador de contenido, haga clic en el icono de propiedades del contenedor de la guía y abra la pestaña **Envío**.
@@ -135,7 +129,7 @@ Como usuario empresarial, va a utilizar el editor de formularios adaptables y su
 
    1. Seleccione la opción **Habilitar petición POST** y especifique el punto final REST creado en la lección 2 en el cuadro de texto **URL para la petición POST**; a continuación, haga clic en el icono **Listo**.
 
-      ![](/help/assets/configure-submit-action.png){width="50%" align="left"}
+      ![](/help/assets/configure-submit-action.png){width="50%"}
 
 1. Publique un formulario adaptable:
 
@@ -159,7 +153,7 @@ Configure un repositorio local del tema:
 
 1. Abra el símbolo del sistema o shell con derechos de administrador:
 
-   ![](/help/assets/screenshot2028115829.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028115829.png){width="50%"}
 
 1. En el símbolo del sistema, utilice el siguiente comando para ir hasta la carpeta `c:\git`.
 
@@ -182,19 +176,19 @@ Configure un repositorio local del tema:
    code .
    ```
 
-   ![](/help/assets/screenshot2028126029.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028126029.png){width="50%"}
 
 1. Seleccione **Confiar en los autores de todos los archivos de la carpeta principal** y haga clic en **Sí, confío en los autores**.
 
-   ![](/help/assets/screenshot2028116229.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028116229.png){width="50%"}
 
 1. Cambie el nombre del archivo `env_template` archivo a .env.  Para cambiar el nombre, haga clic con el botón derecho en el archivo **env_template** y seleccione la opción **Cambiar nombre**.
 
-   ![](/help/assets/screenshot2028116429.png){width="30%" align="left"}
+   ![](/help/assets/screenshot2028116429.png){width="30%"}
 
    </br>
 
-   ![](/help/assets/screenshot2028116529.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028116529.png){width="50%"}
 
 1. Establezca los siguientes valores para las variables del archivo .env y guarde el archivo:
 
@@ -235,12 +229,12 @@ Configure un repositorio local del tema:
    >Si aparece una pantalla en blanco en el explorador después de ejecutar el comando `npm run live` durante más de tres o cuatro minutos, cambie `localhost` en la dirección URL del explorador por 127.0.0.1 y pulse **Entrar**.
 
 
-   ![](/help/assets/contact-us-headless-adaptive-form-with-canvas-theme.png){width="50%" align="left"}
+   ![](/help/assets/contact-us-headless-adaptive-form-with-canvas-theme.png){width="50%"}
 
 
 1. En Visual Studio Code, abra el archivo `PROJECT\src\site\_variables.scss`. Observe que el color de `$error` es un tono de rojo.
 
-   ![](/help/assets/screenshot2028120729.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028120729.png){width="50%"}
 
 1. En el explorador, envíe el formulario para ver el color rojo en el campo **Nombre**.
 
@@ -271,7 +265,7 @@ Configure un repositorio local mediante el proyecto de inicio de React:
 
 1. Abra el símbolo del sistema con derechos de administrador.
 
-   ![](/help/assets/screenshot2028115829.png){width="30%" align="left"}
+   ![](/help/assets/screenshot2028115829.png){width="30%"}
 
 1. En el símbolo del sistema, utilice el siguiente comando para ir hasta la carpeta `c:\git`.
 
@@ -300,13 +294,13 @@ Configure un repositorio local mediante el proyecto de inicio de React:
 
    Se abre la ventana de Visual Studio Code.
 
-   ![](/help/assets/screenshot2028117429.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028117429.png){width="50%"}
 
 Para procesar el formulario alojado en su entorno de publicación:
 
 1. Cambie el nombre del archivo env_template por el del archivo .env. Para cambiar el nombre, haga clic con el botón derecho en el archivo **env_template** y seleccione la opción **Cambiar nombre**.
 
-   ![](/help/assets/screenshot2028117629.png){width="30%" align="left"}
+   ![](/help/assets/screenshot2028117629.png){width="30%"}
 
    ![](/help/assets/screenshot2028117729.png)
 
@@ -355,7 +349,7 @@ Haga cambios en el formulario del servidor como usuario empresarial y vea los ca
 
 1. Seleccione el campo **Número de contacto** y haga clic en el **icono Editar (icono de lápiz)** en la barra de herramientas. Si no puede ver la barra de herramientas emergente, cambie al modo Editar. Haga clic en el botón **Editar** en la parte superior derecha, a la izquierda del botón **Vista previa**.
 
-   ![](/help/assets/change-field-title.png){width="50%" align="left"}
+   ![](/help/assets/change-field-title.png){width="50%"}
 
 1. Cambie la etiqueta a **Número de móvil**. Haga clic en cualquier espacio vacío del formulario y se guardarán los cambios realizados en él.
 
@@ -397,7 +391,7 @@ Configure un repositorio local con el proyecto de inicio de la interfaz de usuar
 
 1. Abra el símbolo del sistema con derechos de administrador.
 
-   ![](/help/assets/screenshot2028115829.png){width="30%" align="left"}
+   ![](/help/assets/screenshot2028115829.png){width="30%"}
 
 1. En el símbolo del sistema, utilice el siguiente comando para ir hasta la carpeta `c:\git`.
 
@@ -435,7 +429,7 @@ Para procesar el formulario alojado en su entorno de publicación:
 
 1. Cambie el nombre del archivo **env_template** por el del archivo **.env**. Para cambiar el nombre, haga clic con el botón derecho en el archivo **env_template** y seleccione **Cambiar nombre**.
 
-   ![](/help/assets/screenshot2028126629.png){width="30%" align="left"}
+   ![](/help/assets/screenshot2028126629.png){width="30%"}
 
 1. Establezca los siguientes valores para las variables del archivo .env. Después de actualizar las variables, guarde el archivo. Utilice la combinación de teclas **CTRL + S** para guardar el archivo.
 
@@ -506,7 +500,7 @@ Actualice la variación de los componentes en el proyecto sin encabezado. Cambia
 
 1. Actualice el explorador, si no se actualiza automáticamente, para ver si el componente de entrada de texto utiliza una variante diferente.
 
-   ![](/help/assets/screenshot2028127729.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028127729.png){width="50%"}
 
 
    Este cambio se produce para los usuarios finales sin ningún cambio en la definición del formulario en AEM Forms Server y es específico para los usuarios sin encabezado
