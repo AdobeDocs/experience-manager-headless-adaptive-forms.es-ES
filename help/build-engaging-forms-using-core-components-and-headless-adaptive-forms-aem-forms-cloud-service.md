@@ -12,10 +12,10 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
+source-git-commit: 33435b2ff6c7ff5c936f9256889d1f85f977adfe
 workflow-type: tm+mt
-source-wordcount: 2629
-ht-degree: 93%
+source-wordcount: 2589
+ht-degree: 92%
 
 ---
 
@@ -66,13 +66,13 @@ En esta lección, puede familiarizarse con el entorno de AEM Forms as a Cloud Se
 1. Abra el explorador e introduzca la dirección URL del entorno de creación de Cloud Service. <!-- URL is 404! EXPLAIN THE URL IS FOR ILLUSTRATION PURPOSES ONLY? For example: [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/start.html](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/start.html) -->
 
 1. Inicie sesión en el entorno de creación de Cloud Service.
-   ![](/help/assets/screenshot2028113829.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028113829.png){width="50%"}
 
 1. Para ir hasta la interfaz de usuario de AEM Forms, haga clic en **Formularios > Formularios y documentos**.
 
 
 
-   ![](/help/assets/screenshot2028113929.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028113929.png){width="50%"}
 
    Descarte cualquier elemento emergente relacionado con las preferencias o la información. Se muestran todos los formularios disponibles.
 
@@ -93,9 +93,9 @@ En esta lección, como usuario empresarial, creará un formulario adaptable para
 
    1. Abra <https://pipedream.com/requestbin> en una nueva pestaña del explorador.
    1. Haga clic en **Crear un grupo público** y copie la dirección URL del punto final.
-      ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
+      ![](/help/assets/screenshot2028114329.png){width="50%"}
 
-      ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
+      ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%"}
 
 1. Cree un formulario adaptable mediante la interfaz del asistente:
 
@@ -116,21 +116,21 @@ En esta lección, como usuario empresarial, creará un formulario adaptable para
 
    1. Haga clic en **Crear**. Especifique un nombre y título en el formulario. Por ejemplo, **registro**. Haga clic en **Crear**.
 
-   1. Se abre el editor de formularios adaptables. Descarte cualquier ventana emergente o diálogo para obtener preferencias o información. Haga clic en el explorador de componentes en el carril izquierdo y añada los componentes **Encabezado** y **Pie de página**, respectivamente, en la parte superior e inferior del formulario en blanco.
+   1. Se abrirá el editor de formularios adaptables. Descarte los elementos emergentes o los cuadros de diálogo para ver las preferencias o la información. Haga clic en el explorador de componentes en el carril izquierdo y agregue los componentes **Encabezado** y **Pie de página** respectivamente a la parte superior e inferior del formulario en blanco.
       ![](/help/assets/screenshot2028121929.png)
 
    1. Arrastre y suelte los componentes desde el explorador de componentes para crear un formulario, de forma similar a lo siguiente:
 
-      ![](/help/assets/screenshot2028115129.png){width="50%" align="left"}
+      ![](/help/assets/screenshot2028115129.png){width="50%"}
 
 1. Añada validaciones al formulario:
 
    1. Haga clic en el componente **Número de teléfono** para que se muestre el menú emergente. Haga clic en el componente **icono de llave inglesa** en el menú para configurar el campo.
 
-   1. Abra la **pestaña Validaciones**, marque el campo **Requerido** y haga clic en **Listo**. Se muestra el mensaje de éxito.
-      ![](/help/assets/screenshot2028123529.png){width="50%" align="left"}
+   1. Abra la **pestaña de validaciones**, marque el campo **Requerido** y haga clic en **Listo**. Se muestra el mensaje de éxito.
+      ![](/help/assets/screenshot2028123529.png){width="50%"}
 
-      ![](/help/assets/screenshot2028123629.png){width="50%" align="left"}
+      ![](/help/assets/screenshot2028123629.png){width="50%"}
 
 1. Previsualice y envíe el formulario.
 
@@ -183,7 +183,7 @@ Configure un repositorio local del tema:
 
 1. Abra el símbolo del sistema o shell con derechos de administrador:
 
-   ![](/help/assets/screenshot2028115829.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028115829.png){width="50%"}
 
 1. En el símbolo del sistema, utilice el siguiente comando para desplazarse a la carpeta **c:\git**
 
@@ -209,15 +209,15 @@ Configure un repositorio local del tema:
 
 1. Seleccione **Confiar en los autores de todos los archivos de la carpeta principal** y haga clic en **Sí, confío en los autores**.
 
-   ![](/help/assets/screenshot2028116229.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028116229.png){width="50%"}
 
 1. Para procesar el formulario alojado en el entorno de publicación de su servicio en la nube, cambie el nombre del archivo `env_template`.  Para cambiar el nombre, haga clic con el botón derecho en el archivo **env_template** y seleccione la opción **Cambiar nombre**.
 
-   ![](/help/assets/screenshot2028116429.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028116429.png){width="50%"}
 
    </br>
 
-   ![](/help/assets/screenshot2028116529.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028116529.png){width="50%"}
 
 1. Establezca los siguientes valores para las variables del archivo .env y guarde el archivo:
 
@@ -225,7 +225,7 @@ Configure un repositorio local del tema:
 
    * **AEM_ADAPTIVE_FORM**: especifique la ruta del formulario. Por ejemplo, si la ruta del formulario es `/content/forms/af/registration`, el valor de esta variable sería `registration`.
 
-     ![](/help/assets/screenshot2028116429.png){width="50%" align="left"}
+     ![](/help/assets/screenshot2028116429.png){width="50%"}
 
 1. Cree un usuario local en el entorno de AEM.
 
@@ -265,12 +265,12 @@ Configure un repositorio local del tema:
    >Si aparece una pantalla en blanco en el explorador después de ejecutar el comando `npm run live` durante más de tres o cuatro minutos, cambie `localhost` en la dirección URL del explorador por 127.0.0.1 y pulse **Entrar**.
 
 
-   ![](/help/assets/screenshot2028115129.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028115129.png){width="50%"}
 
 
 1. En Visual Studio Code, abra el archivo `PROJECT\src\site\_variables.scss`. Observe que el color de `$error` es un tono de rojo.
 
-   ![](/help/assets/screenshot2028120729.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028120729.png){width="50%"}
 
 1. En el explorador, envíe el formulario para ver el color rojo en el campo **Nombre**.
 
@@ -278,7 +278,7 @@ Configure un repositorio local del tema:
 
 1. Configure el color del **$error** en **#5736eb**, y guarde el archivo.
 
-   ![](/help/assets/screenshot2028120729.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028120729.png){width="50%"}
 
 1. Actualice el explorador y envíe el formulario. Observe que el color del error en el campo de nombre ha cambiado como corresponde.
 
@@ -303,7 +303,7 @@ Configure un repositorio local mediante el proyecto de inicio de React:
 
 1. Abra el símbolo del sistema con derechos de administrador.
 
-   ![](/help/assets/screenshot2028115829.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028115829.png){width="50%"}
 
 1. En el símbolo del sistema, utilice el siguiente comando para desplazarse a la carpeta **c:\git**
 
@@ -332,13 +332,13 @@ Configure un repositorio local mediante el proyecto de inicio de React:
 
    Se abre la ventana de Visual Studio Code.
 
-   ![](/help/assets/screenshot2028117429.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028117429.png){width="50%"}
 
 Para procesar el formulario alojado en el entorno de publicación de su servicio en la nube, haga lo siguiente:
 
 1. Cambie el nombre del archivo env_template por el del archivo .env. Para cambiar el nombre, haga clic con el botón derecho en el archivo **env_template** y seleccione la opción **Cambiar nombre**.
 
-   ![](/help/assets/screenshot2028117629.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028117629.png){width="50%"}
 
    ![](/help/assets/screenshot2028117729.png)
 
@@ -436,7 +436,7 @@ Configure un repositorio local con el proyecto de inicio de la interfaz de usuar
 
 1. Abra el símbolo del sistema con derechos de administrador.
 
-   ![](/help/assets/screenshot2028115829.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028115829.png){width="50%"}
 
 
 1. En el símbolo del sistema, utilice el siguiente comando para desplazarse a la carpeta **c:\git**:
@@ -475,7 +475,7 @@ Para procesar el formulario alojado en el entorno de publicación de su servicio
 
 1. Cambie el nombre del archivo **env_template** por el del archivo **.env**. Para cambiar el nombre, haga clic con el botón derecho en el archivo **env_template** y seleccione **Cambiar nombre**.
 
-   ![](/help/assets/screenshot2028126629.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028126629.png){width="50%"}
 
 1. Establezca los siguientes valores para las variables del archivo .env. Después de actualizar las variables, guarde el archivo. Utilice la combinación de teclas **CTRL + S** para guardar el archivo.
 
@@ -514,7 +514,7 @@ Biblioteca de front-end de IU de material.
 
    Seleccione **Marque la casilla para recibir un 5 % de descuento**. La opción siguiente **¿Desea solicitar el formulario de tarjeta de crédito corporativa de `We.Finance`?** se desactiva.
 
-   ![](/help/assets/screenshot2028127329.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028127329.png){width="50%"}
 
 ## Lección 6
 
@@ -560,7 +560,7 @@ Actualice la variación de los componentes en el proyecto sin encabezado. Cambia
    Este cambio se produce para los usuarios finales sin ningún cambio en la definición del formulario en AEM Forms Server y es específico para los usuarios sin encabezado
 canal en consideración. Por ejemplo, un canal web en este laboratorio.
 
-   ![](/help/assets/screenshot2028127529.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028127529.png){width="50%"}
 
 
 1. Cierre las ventanas de Visual Studio Code y del símbolo del sistema.
