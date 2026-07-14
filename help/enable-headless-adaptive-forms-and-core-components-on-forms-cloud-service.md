@@ -9,22 +9,18 @@ level: Beginner, Intermediate
 contentOwner: Khushwant Singh
 docset: CloudService
 hide: true
-exl-id: 7afff771-1296-4162-84c5-c8266b94af2f
 TQID: https://experienceleague.adobe.com/T5J7Am-NsZ-hzZkRRg3LEk0anMjhXaEznf1bijy2H-Q
-product_v2:
-  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: cc2553bb4b16ea8c31664c227921c4e91d1c7a62
+product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+exl-id: 7afff771-1296-4162-84c5-c8266b94af2f
+source-git-commit: 64fe5704fcd6ace7461a02007d99710233b74d22
 workflow-type: tm+mt
-source-wordcount: 943
-ht-degree: 96%
+source-wordcount: 946
+ht-degree: 95%
 
 ---
+
 
 # Habilitación de formularios adaptables sin encabezado en AEM Forms as a Cloud Service {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
 
@@ -33,23 +29,18 @@ Al habilitar formularios adaptables sin encabezado en AEM Forms as a Cloud Servi
 ## Consideraciones
 
 * Cuando se crea un nuevo programa as a Cloud Service de AEM Forms, [los formularios adaptables sin encabezado ya están habilitados para su entorno](#are-adaptive-forms-core-components-enabled-for-my-environment).
-
 * Si está ejecutando un programa de Forms as a Cloud Service anterior en el que los componentes principales [no están habilitados](#enable-components), primero [añada las dependencias de los componentes principales de formularios adaptables](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment) a su repositorio de Cloud Service. Implemente el repositorio actualizado en cada entorno para habilitar los formularios adaptables sin encabezado.
-
 * Si su entorno de Cloud Service ya le permite [crear formularios adaptables basados en componentes principales](create-a-headless-adaptive-form.md), los formularios adaptables sin encabezado se habilitarán automáticamente. A continuación, puede enviar estos formularios como experiencias sin encabezado a dispositivos móviles, web, aplicaciones nativas o cualquier servicio que los requiera.
 
 >[!NOTE]
 >
->
-> Adobe proporciona un [kit de inicio (aplicación React)](create-and-publish-a-headless-form.md) de los formularios adaptables para ayudar a los desarrolladores a empezar rápidamente con el desarrollo de los formularios adaptables sin encabezado, sin habilitar los formularios adaptables sin encabezado en el entorno de AEM Forms as a Cloud Service. Puede habilitar los formularios adaptables sin encabezado en un entorno de Forms as a Cloud Service más tarde después de un [rápido tutorial práctico con el desarrollo de formularios sin encabezado](create-and-publish-a-headless-form.md).
+>Adobe proporciona un [kit de inicio (aplicación React)](create-and-publish-a-headless-form.md) de los formularios adaptables para ayudar a los desarrolladores a empezar rápidamente con el desarrollo de los formularios adaptables sin encabezado, sin habilitar los formularios adaptables sin encabezado en el entorno de AEM Forms as a Cloud Service. Puede habilitar los formularios adaptables sin encabezado en un entorno de Forms as a Cloud Service más tarde después de un [rápido tutorial práctico con el desarrollo de formularios sin encabezado](create-and-publish-a-headless-form.md).
 
 ## Habilitación de formularios adaptables sin encabezado para un entorno de AEM Forms as a Cloud Service
 
 Realice los siguientes pasos, en el orden indicado, para habilitar los formularios adaptables sin encabezado para un entorno de AEM Forms as a Cloud Service
 
-<!-- Missing image ALT tag -->
-![](/help/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
-
+![habilitar imagen de formularios](/help/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
 
 ## &#x200B;1. Clone su repositorio Git de AEM Forms as a Cloud Service {#clone-git-repository}
 
@@ -207,18 +198,18 @@ Realice los siguientes pasos, en el orden indicado, para habilitar los formulari
    >[!NOTE]
    >
    >
-   >  Reemplace `${appId}` con su appId.
+   >Reemplace `${appId}` con su appId.
    >
-   >  Para encontrar su `${appId}`, en el archivo `[AEM Repository Folder]/all/pom.xml`, busque el término `-packages/application/install`. El texto antes del término `-packages/application/install` es su `${appId}`. Por ejemplo, el siguiente código, `myheadlessform` es `${appId}`.
+   >Para encontrar su `${appId}`, en el archivo `[AEM Repository Folder]/all/pom.xml`, busque el término `-packages/application/install`. El texto antes del término `-packages/application/install` es su `${appId}`. Por ejemplo, el siguiente código, `myheadlessform` es `${appId}`.
    >
-   >   ```
-   >             <embedded>
-   >                     <groupId>com.myheadlessform</groupId>
-   >                     <artifactId>myheadlessform.ui.apps<artifactId>
-   >                     <type>zip</type>
-   >                   <target>/apps/myheadlessform-packages/application install</target>
-   >             </embedded>
-   >   ```
+   >```
+   >         <embedded>
+   >                 <groupId>com.myheadlessform</groupId>
+   >                 <artifactId>myheadlessform.ui.apps<artifactId>
+   >                 <type>zip</type>
+   >               <target>/apps/myheadlessform-packages/application install</target>
+   >         </embedded>
+   >```
 
 1. En la `<dependencies>` sección del archivo `[AEM Repository Folder]/all/pom.xml`, agregue las siguientes dependencias y guarde el archivo:
 
