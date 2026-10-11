@@ -3,13 +3,14 @@ title: Configurar el entorno de desarrollo para formularios adaptables sin encab
 description: Configurar el entorno de desarrollo para formularios adaptables sin encabezado de AEM
 hide: true
 exl-id: fd92f057-1217-42f8-a454-1bc7e3827e01
-source-git-commit: 893f0428c08e6216cb293ab2f4c427b7d1c26060
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+source-git-commit: b34afbc4f692b81838ad6947895c9b347dff6d62
 workflow-type: tm+mt
-source-wordcount: '810'
-ht-degree: 90%
-
+source-wordcount: '805'
+ht-degree: 89%
 ---
-
 
 # Configuración de un entorno de desarrollo local {#headless-adaptive-forms-setup-development-environment}
 
@@ -93,7 +94,7 @@ Está en formato .zip. La versión compatible es aem-sdk-2022.7.8085.20220725T14
    * El conmutador `-r prerelease` habilita las funciones disponibles solo en los programas de versión preliminar y de versión limitada.
    * Puede utilizar `admin` como nombre de usuario y contraseña para el desarrollo local con el fin de reducir la carga cognitiva.
 
-   Una vez iniciado AEM, se abre la página de inicio de sesión en el explorador web. También puede abrir la página de inicio de sesión de la instancia de SDK de AEM en la dirección de correo electrónico `http://localhost:<port>` en el explorador web. Por ejemplo, [http://localhost:4502](http://localhost:4502)..
+   Una vez iniciado AEM, se abre la página de inicio de sesión en el explorador web. También puede abrir la página de inicio de sesión de la instancia de SDK de AEM en la dirección de correo electrónico `http://localhost:<port>` en el explorador web. Por ejemplo, [http://localhost:4502](http://localhost:4502).
 
 1. Inicie sesión en la instancia de autor. Pulse el icono ![ayuda](/help/assets/Help-icon.svg), pulse Acerca de Adobe Experience Manager y asegúrese de que el número de versión incluya el sufijo Versión preliminar.
 

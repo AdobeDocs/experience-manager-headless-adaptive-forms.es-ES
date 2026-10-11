@@ -9,26 +9,37 @@ level: Beginner, Intermediate
 keywords: CMS sin encabezado, formularios adaptables, IU sin encabezado, CMS con encabezado, asistentes de voz, Alexa, bots de chat, arquitectura de WhatsApp
 index: true
 exl-id: 3b5b955b-d59c-43d9-9cc4-3244a08f80dc
-TQID: https://experienceleague.adobe.com/ohy-aaFe-yZDL8uQFFps1jKHFRW5ZxB77GVsOvRZDy4
+TQID: 'https://experienceleague.adobe.com/ohy-aaFe-yZDL8uQFFps1jKHFRW5ZxB77GVsOvRZDy4'
 product_v2:
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 feature_v2:
   - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+    internal-label: APIs
   - id: f013e6ab-27b8-4645-b5a7-31ffa474d04f
+    internal-label: APIs
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
+    internal-label: Beginner
+source-git-commit: b34afbc4f692b81838ad6947895c9b347dff6d62
 workflow-type: tm+mt
-source-wordcount: 361
+source-wordcount: '361'
 ht-degree: 90%
-
 ---
-
 # Introducción
 
 Formularios adaptables sin encabezado de Adobe Experience Manager (AEM) es una solución para crear y administrar los formularios web sin encabezado dentro de la plataforma de Adobe Experience Manager. Esta función permite a las organizaciones crear, publicar y administrar formularios interactivos a los que se puede acceder e interactuar mediante API, en lugar de a través de una interfaz de usuario gráfica tradicional. Los formularios adaptables sin encabezado de AEM permiten una mayor flexibilidad y escalabilidad en el desarrollo e implementación de formularios, así como una mejor experiencia del usuario con la posibilidad de adaptar el diseño y la funcionalidad del formulario a sus necesidades específicas. Al utilizar las capacidades de AEM y la tecnología &quot;sin encabezado&quot;, esta solución proporciona una plataforma sólida para crear, administrar e implementar formularios web para varios casos de uso y aplicaciones.
