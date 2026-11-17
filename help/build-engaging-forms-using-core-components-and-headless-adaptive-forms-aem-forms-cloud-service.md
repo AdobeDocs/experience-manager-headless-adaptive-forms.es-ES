@@ -17,11 +17,9 @@ topic_v2:
     internal-label: Security
 source-git-commit: 33435b2ff6c7ff5c936f9256889d1f85f977adfe
 workflow-type: tm+mt
-source-wordcount: 2589
-ht-degree: 92%
-
+source-wordcount: '2629'
+ht-degree: 93%
 ---
-
 # Genere formularios atractivos utilizando componentes principales y formularios adaptables sin encabezado en AEM Forms as a Cloud Service {#build-engaging-forms-using-core-components-and-headless}
 
 <!-- This article is completely missing the image ALT tags (descriptions) for each added image asset. That is impacting the CQI score for Experience Manager in a negative way. Be sure you add the required missing image ALT tags.  -->
@@ -119,7 +117,7 @@ En esta lección, como usuario empresarial, creará un formulario adaptable para
 
    1. Haga clic en **Crear**. Especifique un nombre y título en el formulario. Por ejemplo, **registro**. Haga clic en **Crear**.
 
-   1. Se abrirá el editor de formularios adaptables. Descarte los elementos emergentes o los cuadros de diálogo para ver las preferencias o la información. Haga clic en el explorador de componentes en el carril izquierdo y agregue los componentes **Encabezado** y **Pie de página** respectivamente a la parte superior e inferior del formulario en blanco.
+   1. Se abre el editor de formularios adaptables. Descarte cualquier ventana emergente o diálogo para obtener preferencias o información. Haga clic en el explorador de componentes en el carril izquierdo y añada los componentes **Encabezado** y **Pie de página**, respectivamente, en la parte superior e inferior del formulario en blanco.
       ![](/help/assets/screenshot2028121929.png)
 
    1. Arrastre y suelte los componentes desde el explorador de componentes para crear un formulario, de forma similar a lo siguiente:
@@ -130,7 +128,7 @@ En esta lección, como usuario empresarial, creará un formulario adaptable para
 
    1. Haga clic en el componente **Número de teléfono** para que se muestre el menú emergente. Haga clic en el componente **icono de llave inglesa** en el menú para configurar el campo.
 
-   1. Abra la **pestaña de validaciones**, marque el campo **Requerido** y haga clic en **Listo**. Se muestra el mensaje de éxito.
+   1. Abra la **pestaña Validaciones**, marque el campo **Requerido** y haga clic en **Listo**. Se muestra el mensaje de éxito.
       ![](/help/assets/screenshot2028123529.png){width="50%"}
 
       ![](/help/assets/screenshot2028123629.png){width="50%"}
@@ -168,7 +166,7 @@ En esta lección, como usuario empresarial, creará un formulario adaptable para
       La URL publicada del formulario es similar a `https://publish-p105303-e986623.adobeaemcloud.com/content/forms/af/registration.html`.
 
    1. Para ver el formulario publicado, sustituya el ID de programa (pXXXXXX) y el ID de entorno (eXXXXXX) en la URL anterior por los ID de su
-entorno.
+      entorno.
 
 ## Lección 3
 
@@ -505,7 +503,7 @@ Para procesar el formulario alojado en el entorno de publicación de su servicio
    ![](/help/assets/screenshot2028127129.png)
 
    El comando inicia un servidor de desarrollo local y procesa la definición del formulario recuperada de AEM de forma directa mediante Google
-Biblioteca de front-end de IU de material.
+   Biblioteca de front-end de IU de material.
 
    >[!NOTE]
    >
@@ -561,7 +559,7 @@ Actualice la variación de los componentes en el proyecto sin encabezado. Cambia
 
 
    Este cambio se produce para los usuarios finales sin ningún cambio en la definición del formulario en AEM Forms Server y es específico para los usuarios sin encabezado
-canal en consideración. Por ejemplo, un canal web en este laboratorio.
+   canal en consideración. Por ejemplo, un canal web en este laboratorio.
 
    ![](/help/assets/screenshot2028127529.png){width="50%"}
 

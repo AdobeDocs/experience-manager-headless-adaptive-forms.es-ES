@@ -27,11 +27,9 @@ level_v2:
     internal-label: Beginner
 source-git-commit: 33435b2ff6c7ff5c936f9256889d1f85f977adfe
 workflow-type: tm+mt
-source-wordcount: 2301
+source-wordcount: '2314'
 ht-degree: 94%
-
 ---
-
 # Genere formularios atractivos utilizando componentes principales y formularios adaptables sin encabezado en AEM 6.5 Forms {#build-engaging-forms-using-core-components-and-headless}
 
 <!-- This article and many others in this entire repo are completely missing the image ALT tags (descriptions) for each added image asset. That is impacting the CQI score for Experience Manager in a negative way. Be sure you take the time to add the required missing image ALT tags.  -->
@@ -72,7 +70,7 @@ En esta lección, se familiarizará con AEM 6.5 navegando por la interfaz de usu
 
 ### Ejercicio {#lesson-1-excercise}
 
-1. Abra el explorador e introduzca la dirección URL del entorno de creación. Por ejemplo:
+1. Abra el explorador e introduzca la dirección URL del entorno de creación de Por ejemplo:
    [https://localhost:4502](https://localhost:4502).
 
 1. Una vez que haya iniciado sesión, vaya a la IU de AEM Forms. Haga clic en **Formularios**.
@@ -119,7 +117,7 @@ Como usuario empresarial, va a utilizar el editor de formularios adaptables y su
    1. Seleccione la plantilla **En blanco con componentes principales** en la pantalla de selección de plantillas como se muestra a continuación y haga clic en **Siguiente**.
       ![](/help/assets/creating-adaptive-form-6-5-select-blank-template.png){width="50%"}
 
-   1. Especifique `Contact us` como **Título** del formulario. Asegúrese de que el **Nombre** del formulario sea `contact-us`.
+   1. Especifique `Contact us` como **Título** del formulario. Asegúrese de que la variable **Nombre** del formulario es `contact-us`.
       ![](/help/assets/creating-adaptive-form-65-specify-title.png){width="50%"}
 
    1. Haga clic en **Crear**. Se muestra un cuadro de diálogo.
@@ -445,7 +443,7 @@ Para procesar el formulario alojado en su entorno de publicación:
 
 1. Establezca los siguientes valores para las variables del archivo .env. Después de actualizar las variables, guarde el archivo. Utilice la combinación de teclas **CTRL + S** para guardar el archivo.
 
-   * **AEM_URL**: especifique la URL del entorno de publicación. Por ejemplo, [http://localhost:4503](https://localhost:4503)
+   * **AEM_URL**: especifique la URL del entorno de publicación. Por ejemplo, [https://localhost:4503](https://localhost:4503)
 
    * **AEM_FORM_PATH**: especifique la ruta del formulario adaptable creado en la lección anterior. Por ejemplo, /content/forms/af/contact-us/
 
@@ -516,7 +514,7 @@ Actualice la variación de los componentes en el proyecto sin encabezado. Cambia
 
 
    Este cambio se produce para los usuarios finales sin ningún cambio en la definición del formulario en AEM Forms Server y es específico para los usuarios sin encabezado
-canal en consideración. Por ejemplo, un canal web en este laboratorio.
+   canal en consideración. Por ejemplo, un canal web en este laboratorio.
 
    ![](/help/assets/aem65-lab-mui-style-update.png)
 
